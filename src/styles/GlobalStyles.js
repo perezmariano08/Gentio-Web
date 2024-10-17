@@ -5,7 +5,12 @@ export const GlobalStyles = createGlobalStyle`
         --bg: #0A0311;
         --white: #F4E5D4;
         --orange-500: #FB773C;
+
+        --gray-300: #898178;
+        --violet: #140622;
+
         --blue: #140622;
+
     }
 
     @font-face {
