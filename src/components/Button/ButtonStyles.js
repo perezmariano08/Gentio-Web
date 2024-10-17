@@ -14,5 +14,6 @@ export const ButtonWrapper = styled.button`
     cursor: pointer;
     span {
         padding-left: 8px;
+        color: var(--bg);
     }
 `

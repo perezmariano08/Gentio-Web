@@ -114,6 +114,9 @@ export const CrecimientoItemColumn = styled.div`
     @media (max-width: 900px) {
         flex-direction: row;
     }
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
 `
 
 export const Servicios = styled.div`
@@ -141,14 +144,24 @@ export const ServicioItem = styled.div`
 
 export const CitaMarca = styled.div`
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 
     img {
         width: 10%;
     }
 
-    p {
-        font-weight: 500;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        p {
+            font-weight: 500;
+        }
+        span {
+            color: var(--bg);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
     }
 `
