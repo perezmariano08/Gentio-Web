@@ -5,8 +5,12 @@ export const GlobalStyles = createGlobalStyle`
         --bg: #0A0311;
         --white: #F4E5D4;
         --orange-500: #FB773C;
+
         --gray-300: #898178;
         --violet: #140622;
+
+        --blue: #140622;
+
     }
 
     @font-face {
@@ -86,7 +90,14 @@ export const GlobalStyles = createGlobalStyle`
     img {
         user-select: none;
     }
-
+    
+    p {
+        font-size: 16px;
+        color: #898178;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
     
     h1 {
         font-size: 128px;
@@ -98,6 +109,32 @@ export const GlobalStyles = createGlobalStyle`
 
         @media (max-width: 768px) {
             font-size: 60px;
+        }
+    }
+
+    h2 {
+        font-size: 60px;
+        line-height: 90%;
+        font-weight: 400;
+
+        @media (max-width: 768px) {
+        }
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 90%;
+        font-weight: 400;
+
+        @media (max-width: 768px) {
+        }
+
+        @media (max-width: 768px) {
+            font-size: 26px;
         }
     }
 `
