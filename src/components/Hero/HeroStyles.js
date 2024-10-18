@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { fadeIn } from "../../styles/GlobalStyles";
 
 // Define la animación de desenfoque
 const glowAnimation = keyframes`
@@ -20,6 +21,9 @@ const glowAnimation = keyframes`
 `;
 
 
+
+
+
 export const HeroContainer = styled(ContainerStyled)`
     padding: 160px 0 80px 0; 
     /* background-image: url(/videos/bg_hero.mov);
@@ -38,6 +42,7 @@ export const HeroContainer = styled(ContainerStyled)`
         height: 100%;
         object-fit: cover;
         z-index: 0;
+        animation: ${fadeIn} 2s ease-in-out; /* Aplica la animación de fade */
     }
     
     &::before {

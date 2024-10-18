@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { motion } from "framer-motion";
 
 export const NavbarContainer = styled(ContainerStyled)`
     height: 80px;
@@ -37,7 +38,7 @@ export const NavbarWrapper = styled(WrapperStyled)`
     }
 `
 
-export const NavbarList = styled.ul`
+export const NavbarList = styled(motion.ul)`
     display: flex;
     gap: 30px;
     li a {
@@ -48,4 +49,8 @@ export const NavbarList = styled.ul`
     @media (max-width: 768px) {
         display: none;
     }
+`
+
+export const SvgLogo = styled(motion.svg)`
+
 `

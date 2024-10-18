@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { fadeInLeft, floating } from "../../styles/GlobalStyles";
 
 export const NosotrosContainer = styled(ContainerStyled)`
     
@@ -18,11 +19,23 @@ export const NosotrosText = styled(WrapperStyled)`
     overflow: hidden;
     position: relative;
     
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición suave */
+
+    &.visible {
+        opacity: 1; /* Aparece cuando está visible */
+        h3, p {
+            animation: ${fadeInLeft} 1s ease-in-out; /* Aplica la animación de fade */
+        }
+    }
+
     svg {
         position: absolute;
         top: 60px;
         right: -20px;
         height: 200px;
+        animation: ${floating} 2s ease-in-out infinite; // Aplica la animación
+
         @media (max-width: 968px) {
             display: none;
         }
