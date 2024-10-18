@@ -1,13 +1,34 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { CitaMarca, CrecimientoContainer, CrecimientoItem, CrecimientoItemColumn, CrecimientoItemsWrapper, CrecimientoText, CrecimientoWrapper, ServicioItem, Servicios } from './CrecimientoStyles'
 import Button from '../Button/Button'
 import { ImQuotesLeft } from "react-icons/im";
 
 const Crecimiento = () => {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const textRef = useRef(null);
+
+    const checkVisibility = () => {
+        if (textRef.current) {
+            const { top, bottom } = textRef.current.getBoundingClientRect();
+            const isInViewport = top < window.innerHeight && bottom >= 0; // Comprueba si el elemento está en el viewport
+            setIsVisible(isInViewport);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // Verifica la visibilidad al cargar el componente
+
+        return () => {
+            window.removeEventListener('scroll', checkVisibility);
+        };
+    }, []);
+
     return (
         <CrecimientoContainer>
             <CrecimientoWrapper>
-                <CrecimientoText>
+                <CrecimientoText ref={textRef} className={isVisible ? 'visible' : ''}>
                     <h2>Impulsamos el crecimiento de su negocio</h2>
                     <p>Libere el potencial de su marca con nuestra probada experiencia en marketing. Desde la estrategia hasta la ejecución, impulsamos el crecimiento.</p>
                     <Button>
@@ -52,7 +73,6 @@ const Crecimiento = () => {
                                 <span>lionel messi</span>
                                 <p>Dueño empresa "Secretos de Campo"</p>
                             </div>
-                            
                         </CitaMarca>
                         
                     </CrecimientoItem>

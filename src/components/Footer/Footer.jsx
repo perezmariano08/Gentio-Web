@@ -1,5 +1,29 @@
 import React from 'react'
 import { Divider, FooterContainer, FooterLeft, FooterRight, FooterTop, FooterWrapper, FooterWrapperText, SocialContainer } from './FooterStyles'
+import styled, { keyframes } from "styled-components";
+
+// Define a floating animation
+const float = keyframes`
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Adjust the floating height */
+    }
+    100% {
+        transform: translateY(0);
+    }
+`;
+
+// Style for the individual words
+export const FloatingWord = styled.span`
+    display: inline-block; // Ensure words are treated as blocks
+    animation: ${float} 2s ease-in-out infinite; // Apply floating animation
+    margin: 0 5px; // Optional: space between words
+    /* Optional: add a delay for a staggered effect */
+    animation-delay: ${(props) => props.index * 0.1}s; // Stagger animation based on index
+    color: var(--white);
+`;
 
 const Footer = () => {
   return (
@@ -8,7 +32,13 @@ const Footer = () => {
             <FooterWrapperText>
                 <FooterTop>
                 <p><span>Comenzá a elaborar la histora de tu marca</span></p>
-                <h3>Sumate a nosotros para construir una narrativa poderosa que potencie tu marca.</h3>
+                <h3>
+                    {['Sumate', 'a', 'nosotros', 'para', 'construir', 'una', 'narrativa', 'poderosa', 'que', 'potencie', 'tu', 'marca.'].map((word, index) => (
+                        <FloatingWord key={index} index={index} style={{ color: 'var(--white)' }}>
+                        {word}
+                    </FloatingWord>
+                    ))}
+                </h3>
                 <p>Hagamos realidad sus ideas, comencemos a colaborar con su agencia creativa y hagamos realidad su visión.</p>
             </FooterTop>
             <Divider/>

@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { fadeInLeft, floating, fadeInDown, fadeInUp, fadeInRight, fadeIn } from "../../styles/GlobalStyles";
 
 // Animación de caída libre
 const drop = keyframes`
@@ -40,6 +41,13 @@ export const CrecimientoText = styled.div`
         width: 100%;
         p {
             width: 100%;
+        }
+    }
+
+    &.visible {
+        opacity: 1; /* Aparece cuando está visible */
+        h2, p, button {
+            animation: ${fadeInLeft} 1s ease-in-out; /* Aplica la animación de fade */
         }
     }
 `
@@ -83,12 +91,27 @@ export const CrecimientoItem = styled.div`
         color: var(--bg);
     }
 
+    /* Animaciones de entrada */
+    &.fadeInLeft {
+        animation: ${fadeInLeft} 1s ease-in-out;
+    }
+
+    &.fadeInRight {
+        animation: ${fadeInRight} 1s ease-in-out;
+    }
+
+    &.fadeInUp {
+        animation: ${fadeInUp} 1s ease-in-out;
+    }
+
+    &.fadeInDown {
+        animation: ${fadeInDown} 1s ease-in-out;
+    }
 
     @media (max-width: 900px) {
         flex-wrap: wrap;
     }
-
-`
+`;
 
 export const CrecimientoItemColumn = styled.div`
     display: flex;
@@ -124,7 +147,7 @@ export const Servicios = styled.div`
     flex-wrap: wrap;
     gap: 10px;
     align-items: end;
-    overflow: hidden;
+    /* overflow: hidden; */
 `
 
 export const ServicioItem = styled.div`
@@ -139,6 +162,26 @@ export const ServicioItem = styled.div`
     &.filled {
         background-color: var(--bg);
         color: var(--white);
+    }
+
+    animation: ${floating} 2s ease-in-out infinite; // Aplica la animación
+    &:nth-child(1) {
+        animation-delay: 0s; // Sin retraso
+    }
+    &:nth-child(2) {
+        animation-delay: 0.2s; // 200 ms de retraso
+    }
+    &:nth-child(3) {
+        animation-delay: 0.4s; // 400 ms de retraso
+    }
+    &:nth-child(4) {
+        animation-delay: 0.6s; // 600 ms de retraso
+    }
+    &:nth-child(5) {
+        animation-delay: 0.8s; // 800 ms de retraso
+    }
+    &:nth-child(6) {
+        animation-delay: 1s; // 1 segundo de retraso
     }
 `;
 

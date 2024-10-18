@@ -1,8 +1,30 @@
-import styled from "styled-components";
+/* ServiciosStyles.js */
+import styled, { keyframes } from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
-export const ServiciosContainer = styled(ContainerStyled)`
-`
+const slideInLeft = keyframes`
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+const slideInRight = keyframes`
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+export const ServiciosContainer = styled(ContainerStyled)``;
 
 export const ServiciosWrapper = styled(WrapperStyled)`
     z-index: 3;
@@ -11,17 +33,29 @@ export const ServiciosWrapper = styled(WrapperStyled)`
     gap: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
-`
+    overflow: hidden;
+`;
+
 export const ServicioContainer = styled.section`
     display: flex;
     gap: 20px;
     width: 100%;
     height: 400px;
 
+    &.animate {
+        &:nth-child(odd) {
+            animation: ${slideInLeft} 1s forwards; /* Aumentar la duración */
+        }
+        &:nth-child(even) {
+            animation: ${slideInRight} 1s forwards; /* Aumentar la duración */
+        }
+    }
+
     @media (max-width: 768px) {
         height: 250px;
     }
-`
+`;
+
 export const ServicioImg = styled.div`
     width: 70%;
     height: 100%;
@@ -31,6 +65,14 @@ export const ServicioImg = styled.div`
     background-size: cover;
     border-radius: 20px;
 
+    &.animate.left {
+        animation: ${slideInLeft} 1s forwards;
+    }
+
+    &.animate.right {
+        animation: ${slideInRight} 1s forwards;
+    }
+
     @media (max-width: 968px) {
         width: 50%;
     }
@@ -38,7 +80,8 @@ export const ServicioImg = styled.div`
     @media (max-width: 768px) {
         display: none;
     }
-`
+`;
+
 export const ServicioDescripcion = styled.div`
     width: 30%;
     text-align: center;
@@ -47,6 +90,14 @@ export const ServicioDescripcion = styled.div`
     color: var(--bg);
     min-height: 100%;
 
+    &.animate.left {
+        animation: ${slideInRight} 1s forwards;
+    }
+
+    &.animate.right {
+        animation: ${slideInLeft} 1s forwards;
+    }
+
     @media (max-width: 968px) {
         width: 50%;
     }
@@ -54,7 +105,8 @@ export const ServicioDescripcion = styled.div`
     @media (max-width: 768px) {
         width: 100%;
     }
-`
+`;
+
 export const DescripcionContainer = styled.span`
     display: flex;
     width: 100%;
@@ -71,18 +123,20 @@ export const DescripcionContainer = styled.span`
         color: var(--bg);
         text-transform: uppercase;
     }
-    
+
     &.right {
         text-align: end;
         align-items: end;
     }
-`
+`;
+
 export const IconsContainer = styled.span`
     display: flex;
     gap: 10px;
     align-items: center;
 
-    & i,svg {
+    & i,
+    svg {
         font-size: 20px;
     }
-`
+`;

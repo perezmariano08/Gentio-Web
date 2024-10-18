@@ -66,6 +66,7 @@ const Navbar = () => {
         setOpenModalMenu(!openModalMenu);  // Alterna entre abrir y cerrar
     };
 
+
     return (
         <>
         <NavbarContainer className={scrollNav ? 'scrolled' : ''}>
@@ -88,10 +89,10 @@ const Navbar = () => {
                     animate="visible"
                     variants={navVariants}
                 >
-                    <li><a href="">nosotros</a></li>
-                    <li><a href="">servicios</a></li>
-                    <li><a href="">contacto</a></li>
-                    <li><a href="">staff</a></li>
+                    <li><a href="#nosotros">nosotros</a></li>
+                    <li><a href="#servicios">servicios</a></li>
+                    <li><a href="#staff">staff</a></li>
+                    <li><a href="#contacto">contacto</a></li>
                 </NavbarList>
                 <motion.div
                     initial="hidden"

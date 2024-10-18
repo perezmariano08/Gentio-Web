@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { fadeInLeft, floating, fadeInDown, fadeInUp, fadeInRight, fadeIn } from "../../styles/GlobalStyles";
 
 export const FotografiaVideoContainer = styled(ContainerStyled)`
 
@@ -20,6 +21,13 @@ export const TitleContainer = styled.div`
     width: 100%;
     gap: 20px;
     align-items: start;
+
+    &.servicios {
+        margin: 40px 0 20px 0;
+        h2 {
+            width: 100%;
+        }
+    }
 
     h2 {
         font-size: 80px;
@@ -44,6 +52,13 @@ export const TitleContainer = styled.div`
 
     & span {
         color: var(--orange-500);
+    }
+
+    &.visible {
+        opacity: 1; /* Aparece cuando está visible */
+        h2, p, button {
+            animation: ${fadeInLeft} 1s ease-in-out; /* Aplica la animación de fade */
+        }
     }
 `
 export const FotoVideoContainer = styled.div`
@@ -92,6 +107,47 @@ export const FotoVideoImg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(10, 3, 17, 0.3); /* Ajustamos la opacidad a 20% para hacerlo más suave */
+        z-index: 1; /* Asegura que esté encima de la imagen */
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(10, 3, 17, 0.1) 0%, rgba(10, 3, 17, 0.4) 40%, var(--bg) 100%); 
+        z-index: 2; /* Asegura que el degradado esté encima del color sólido */
+    }
+`;
+
+export const Video = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        animation: ${fadeIn} 2s ease-in-out; /* Aplica la animación de fade */
+    }
 
     &::before {
         content: '';

@@ -16,4 +16,9 @@ export const ButtonWrapper = styled.button`
         padding-left: 8px;
         color: var(--bg);
     }
+
+    &:hover {
+        opacity: .5;
+        transition: opacity 0.5s ease;
+    }
 `

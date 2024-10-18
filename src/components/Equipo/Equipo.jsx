@@ -1,16 +1,37 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { CardEquipo, CardText, EquipoContainer, EquipoWrapper, ServicioContainer, TitleContainer } from './EquipoStyles'
 
 const Equipo = () => {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const textRef = useRef(null);
+
+    const checkVisibility = () => {
+        if (textRef.current) {
+            const { top, bottom } = textRef.current.getBoundingClientRect();
+            const isInViewport = top < window.innerHeight && bottom >= 0; // Comprueba si el elemento está en el viewport
+            setIsVisible(isInViewport);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // Verifica la visibilidad al cargar el componente
+
+        return () => {
+            window.removeEventListener('scroll', checkVisibility);
+        };
+    }, []);
+
   return (
-    <EquipoContainer>
+    <EquipoContainer id='staff'>
         <EquipoWrapper>
-            <TitleContainer>
+            <TitleContainer ref={textRef} className={isVisible ? 'visible' : ''}>
                 <h2>TU <span>ÉXITO</span>, NUESTRA MISIÓN<span>.</span></h2>
             </TitleContainer>
             <ServicioContainer>
 
-                <CardEquipo>
+                <CardEquipo ref={textRef} className={isVisible ? 'visible' : ''}>
                 <CardText>
                     <h3>NUESTRO EQUIPO</h3>
                     <p>

@@ -1,11 +1,13 @@
 import React from 'react'
-import { ModalMenuContainer, ModalMenuHeader } from './ModalMenuStyles'
+import { ModalMenuContainer, ModalMenuHeader, NavbarList } from './ModalMenuStyles'
 import { IoMdClose } from "react-icons/io";
 import { AnimatePresence } from 'framer-motion';
 
 const ModalMenu = ({ closeModal, isOpen }) => {
     return (
-        <AnimatePresence>
+        <AnimatePresence
+            onExitComplete={closeModal} // Ejecuta closeModal al completar la animación de salida
+        >
             {
                 isOpen && (
                     <ModalMenuContainer
@@ -26,6 +28,12 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                             </svg>
                             <IoMdClose onClick={closeModal} className='icon-close' />
                         </ModalMenuHeader>
+                        <NavbarList>
+                            <li onClick={closeModal}><a href="#nosotros">nosotros</a></li>
+                            <li onClick={closeModal}><a href="#servicios">servicios</a></li>
+                            <li onClick={closeModal}><a href="#staff">staff</a></li>
+                            <li onClick={closeModal}><a href="#contacto">contacto</a></li>
+                        </NavbarList>
                     </ModalMenuContainer>
                 )
             }

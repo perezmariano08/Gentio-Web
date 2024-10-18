@@ -22,8 +22,9 @@ const Nosotros = () => {
         };
     }, []);
 
+
     return (
-        <NosotrosContainer>
+        <NosotrosContainer id='nosotros'>
             <NosotrosWrapper>
                 <NosotrosText ref={textRef} className={isVisible ? 'visible' : ''}>
                     <h3>¿quienes somos?</h3>

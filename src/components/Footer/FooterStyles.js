@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { floating } from "../../styles/GlobalStyles";
 
 export const FooterContainer = styled(ContainerStyled)`
 `
@@ -30,6 +31,7 @@ export const FooterTop = styled.div`
     padding: 80px 0;
 
     h3 {
+        animation: ${floating} 2s ease-in-out infinite; // Aplica la animación
         font-size: 50px;
         color: var(--white);
         line-height: 50px;

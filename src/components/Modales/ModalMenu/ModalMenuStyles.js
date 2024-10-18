@@ -28,3 +28,20 @@ export const ModalMenuHeader = styled.div`
         font-size: 30px;
     }
 `
+export const NavbarList = styled.nav`
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30px;
+    text-transform: uppercase;
+    
+    a {
+        color: var(--white);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+`

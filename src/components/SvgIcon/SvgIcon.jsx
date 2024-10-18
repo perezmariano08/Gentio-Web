@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { floating } from "../../styles/GlobalStyles";
 
 const IconWrapper = styled.div`
   position: absolute;
@@ -14,6 +15,7 @@ const IconWrapper = styled.div`
   @media (max-width: 768px) {
         left: 100px;
     }
+    animation: ${floating} 2s ease-in-out infinite; // Aplica la animación
 `;
 
 const CircleBackground = styled.div`

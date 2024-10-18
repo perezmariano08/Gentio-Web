@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
+import { fadeInRight, floating } from "../../styles/GlobalStyles";
 
 export const EquipoContainer = styled(ContainerStyled)`
 
@@ -52,6 +53,13 @@ export const TitleContainer = styled.div`
     & span {
         color: var(--orange-500);
     }
+
+    &.visible {
+        opacity: 1; /* Aparece cuando está visible */
+        h2, p {
+            animation: ${fadeInRight} 1s ease-in-out; /* Aplica la animación de fade */
+        }
+    }
 `
 
 export const ServicioContainer = styled.section`
@@ -86,7 +94,14 @@ export const CardEquipo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición suave */
 
+    &.visible {
+        opacity: 1; /* Aparece cuando está visible */
+        animation: ${fadeInRight} 1.5s ease-in-out; /* Aplica la animación de fade */
+    }
+    
 
     div {
         display: flex;

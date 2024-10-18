@@ -10,11 +10,12 @@ import Servicios from "./components/Servicios/Servicios"
 import Nosotros from "./components/Nosotros/Nosotros"
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
-
+import { MenuProvider } from "./components/Context/MenuContext.jsx"
 
 function App() {
    return (
       <>
+      <MenuProvider>
          <Navbar/>
          <Hero/>
          <Nosotros/>
@@ -25,6 +26,7 @@ function App() {
          <FotografiaVideo/>
          <Equipo/>
          <Footer/>
+      </MenuProvider>
       </>
    )
 }

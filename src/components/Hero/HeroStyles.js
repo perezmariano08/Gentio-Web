@@ -26,10 +26,10 @@ const glowAnimation = keyframes`
 
 export const HeroContainer = styled(ContainerStyled)`
     padding: 160px 0 80px 0; 
-    /* background-image: url(/videos/bg_hero.mov);
+    /* background-image: url(/videos/bg_hero.mov); */
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     height: 100%;
     position: relative;
     overflow: hidden;
