@@ -1,11 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { NosotrosContainer, NosotrosText, NosotrosWrapper } from './NosotrosStyles'
 
 const Nosotros = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const textRef = useRef(null);
+
+    const checkVisibility = () => {
+        if (textRef.current) {
+            const { top, bottom } = textRef.current.getBoundingClientRect();
+            const isInViewport = top < window.innerHeight && bottom >= 0; // Comprueba si el elemento está en el viewport
+            setIsVisible(isInViewport);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // Verifica la visibilidad al cargar el componente
+
+        return () => {
+            window.removeEventListener('scroll', checkVisibility);
+        };
+    }, []);
+
     return (
         <NosotrosContainer>
             <NosotrosWrapper>
-                <NosotrosText>
+                <NosotrosText ref={textRef} className={isVisible ? 'visible' : ''}>
                     <h3>¿quienes somos?</h3>
                     <p>En <span>GENTÍO</span>, transformamos ideas en conversaciones. Somos una agencia de comunicación que impulsa tu marca con estrategias basadas en análisis, optimización de pautas en Ads y creatividad que resuena. Nos enfocamos en datos, pero nunca perdemos de vista el impacto humano. ¿Listo para poner tu marca en boca de todos?</p>
                     <svg viewBox="0 0 93 78" fill="none" xmlns="http://www.w3.org/2000/svg">

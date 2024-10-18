@@ -1,4 +1,38 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, keyframes } from "styled-components"
+
+// Definir la animación de fade in para el video
+export const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`;
+
+export const fadeInLeft = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* Mueve el elemento fuera de la pantalla hacia la izquierda */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* El elemento vuelve a su posición original */
+    }
+`;
+
+export const floating = keyframes`
+    0% {
+        transform: translateY(0); /* Posición original */
+    }
+    50% {
+        transform: translateY(-10px); /* Mueve el elemento ligeramente hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Vuelve a la posición original */
+    }
+`;
+
 
 export const GlobalStyles = createGlobalStyle`
     :root {
