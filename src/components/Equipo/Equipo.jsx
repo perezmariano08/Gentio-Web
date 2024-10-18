@@ -8,8 +8,9 @@ const Equipo = () => {
             <TitleContainer>
                 <h2>TU <span>ÉXITO</span>, NUESTRA MISIÓN<span>.</span></h2>
             </TitleContainer>
-            <ServicioContainer/>
-            <CardEquipo>
+            <ServicioContainer>
+
+                <CardEquipo>
                 <CardText>
                     <h3>NUESTRO EQUIPO</h3>
                     <p>
@@ -27,6 +28,8 @@ const Equipo = () => {
                     </svg>
                 </div>
             </CardEquipo>
+            </ServicioContainer>
+            
         </EquipoWrapper>
     </EquipoContainer>
   )

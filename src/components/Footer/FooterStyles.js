@@ -2,17 +2,23 @@ import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
 export const FooterContainer = styled(ContainerStyled)`
-    padding: 120px 0;
 `
 
 export const FooterWrapper = styled(WrapperStyled)`
+    padding-bottom: 80px;
+`
+
+export const FooterWrapperText = styled.footer`
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     background-color: var(--violet);
-    padding: 50px;
     border-radius: 20px;
+    padding: 0 80px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
 `
 export const FooterTop = styled.div`
     width: 100%;
@@ -21,33 +27,36 @@ export const FooterTop = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding: 80px 0;
 
     h3 {
         font-size: 50px;
         color: var(--white);
-        width: 90%;
         line-height: 50px;
-
+        text-transform: uppercase;
+        
         @media (max-width: 768px) {
             font-size: 30px;
             line-height: 30px;
             width: 100%;
+            
         }
     }
 
     p {
         font-size: 16px;
-        font-weight: 300;
-        width: 60%;
-        color: var(--gray-300);
+        width: 40%;
         @media (max-width: 768px) {
-            font-size: 14px;
             width: 100%;
         }
     }
 
     & span {
         color: var(--orange-500);
+    }
+
+    @media (max-width: 768px) {
+        padding: 50px 0;
     }
 `
 
@@ -62,37 +71,28 @@ export const SocialContainer = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
-
+    padding: 50px 0;
+    align-items: end;
     @media (max-width: 768px) {
-            flex-direction: column;
-            gap: 30px;
-        }
+        flex-direction: column;
+        gap: 30px;
+    }   
+`
 
-    p {
-        font-size: 16px;
-        color: var(--gray-300);
-        @media (max-width: 768px) {
-            font-size: 14px;
-            
-        }
-    }
-    `
-
-export const FooterLeft = styled.span`
+export const FooterLeft = styled.div`
     display: flex;
     flex-direction: column;
-
+    width: 100%;
+    gap: 20px;
+    
     svg {
-        width: 200px;
-
-        @media (max-width: 768px) {
-            width: 200px;
-        }
+        width: 20%;
     }
 
 `
 export const FooterRight = styled.span`
     display: flex;
-    align-items: end;
+    justify-content: end;
     gap: 30px;
+    width: 100%;
 `

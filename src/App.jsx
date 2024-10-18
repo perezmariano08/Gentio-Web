@@ -21,11 +21,10 @@ function App() {
          <Marcas/>
          <Crecimiento/>
          <MarcasSlider/>
-          <Servicios/>
+         <Servicios/>
          <FotografiaVideo/>
          <Equipo/>
          <Footer/>
-
       </>
    )
 }

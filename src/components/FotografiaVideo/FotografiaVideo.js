@@ -2,15 +2,16 @@ import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
 export const FotografiaVideoContainer = styled(ContainerStyled)`
-    padding: 120px 0;
+
 `
 
 export const FotografiaVideoWrapper = styled(WrapperStyled)`
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 `
 
 export const TitleContainer = styled.div`
@@ -28,17 +29,14 @@ export const TitleContainer = styled.div`
         text-align: start;
 
         @media (max-width: 768px) {
-            font-size: 60px;
-            line-height: 60px;
-            width: 90%;
+            font-size: 40px;
+            line-height: 40px;
+            width: 100%;
         }
     }
 
     p {
-        font-size: 16px;
-        font-weight: 200;
         width: 50%;
-        color: var(--gray-300);
         @media (max-width: 768px) {
             width: 90%;
         }
@@ -124,7 +122,7 @@ export const FotoTitle = styled.span`
     left: 30px;
     color: var(--white);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
     width: 40%;
     z-index: 3;
