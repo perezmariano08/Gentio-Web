@@ -162,6 +162,7 @@ export const HeroEstadisticaNumero = styled.div`
     font-size: 40px;
     align-items: start;
     justify-content: end;
+    color: white;
 
     span {
         display: inline-block;
