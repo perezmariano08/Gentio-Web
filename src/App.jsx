@@ -8,7 +8,7 @@ import MarcasSlider from "./components/MarcasSlider/MarcasSlider"
 import Navbar from "./components/Navbar/Navbar"
 import Servicios from "./components/Servicios/Servicios"
 import Nosotros from "./components/Nosotros/Nosotros"
-import 'primereact/resources/themes/saga-blue/theme.css'; // o el tema que estés usando
+import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 
 
