@@ -3,11 +3,10 @@ import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 import { fadeInLeft, floating } from "../../styles/GlobalStyles";
 
 export const NosotrosContainer = styled(ContainerStyled)`
-    
+    scroll-margin-top: 100px;
 `
 
 export const NosotrosWrapper = styled(WrapperStyled)`
-    
 `
 
 export const NosotrosText = styled(WrapperStyled)`

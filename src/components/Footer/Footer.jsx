@@ -33,7 +33,7 @@ const Footer = () => {
                 <FooterTop>
                 <p><span>Comenzá a elaborar la histora de tu marca</span></p>
                 <h3>
-                    {['Sumate', 'a', 'nosotros', 'para', 'construir', 'una', 'narrativa', 'poderosa', 'que', 'potencie', 'tu', 'marca.'].map((word, index) => (
+                    {['Sumate', 'a', 'nosotros', 'para', 'construir', 'una', 'narrativa', 'poderosa', 'que', 'potencie', 'tu', 'marca', '.'].map((word, index) => (
                         <FloatingWord key={index} index={index} style={{ color: 'var(--white)' }}>
                         {word}
                     </FloatingWord>

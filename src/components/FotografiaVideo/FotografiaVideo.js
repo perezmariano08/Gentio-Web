@@ -21,6 +21,8 @@ export const TitleContainer = styled.div`
     width: 100%;
     gap: 20px;
     align-items: start;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
 
     &.servicios {
         margin: 40px 0 20px 0;
@@ -54,13 +56,14 @@ export const TitleContainer = styled.div`
         color: var(--orange-500);
     }
 
+    /* Cuando es visible, cambia la opacidad y aplica la animación */
     &.visible {
-        opacity: 1; /* Aparece cuando está visible */
+        opacity: 1; /* Ahora será visible */
         h2, p, button {
-            animation: ${fadeInLeft} 1s ease-in-out; /* Aplica la animación de fade */
+            animation: ${fadeInLeft} 1s ease-in-out;
         }
     }
-`
+`;
 export const FotoVideoContainer = styled.div`
     display: flex;
     width: 100%;

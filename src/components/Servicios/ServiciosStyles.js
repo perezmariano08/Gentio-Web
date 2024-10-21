@@ -64,7 +64,9 @@ export const ServicioImg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
-
+    opacity: 0; /* Inicia invisible */
+    will-change: opacity, transform; /* Optimiza las animaciones */
+    
     &.animate.left {
         animation: ${slideInLeft} 1s forwards;
     }
@@ -89,6 +91,8 @@ export const ServicioDescripcion = styled.div`
     border-radius: 20px;
     color: var(--bg);
     min-height: 100%;
+    opacity: 0; /* Inicia invisible */
+    will-change: opacity, transform; /* Optimiza las animaciones */
 
     &.animate.left {
         animation: ${slideInRight} 1s forwards;

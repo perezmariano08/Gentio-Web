@@ -3,6 +3,7 @@ import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 import { fadeInRight, floating } from "../../styles/GlobalStyles";
 
 export const EquipoContainer = styled(ContainerStyled)`
+    scroll-margin-top: 100px;
 
 `
 
@@ -24,6 +25,8 @@ export const TitleContainer = styled.div`
     gap: 20px;
     z-index: 2;
     right: 0;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
 
     @media (max-width: 768px) {
         top: -200px;
@@ -95,7 +98,7 @@ export const CardEquipo = styled.div`
     flex-direction: column;
     justify-content: space-between;
     opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.5s ease; /* Transición suave */
+    /* transition: opacity 0.5s ease; Transición suave */
 
     &.visible {
         opacity: 1; /* Aparece cuando está visible */
