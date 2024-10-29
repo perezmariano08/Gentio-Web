@@ -64,7 +64,7 @@ export const CrecimientoItemsWrapper = styled.div`
 `
 
 export const CrecimientoItem = styled.div`
-    max-height: 400px;
+    max-height: 600px;
     background-color: var(--white);
     width: 100%;
     padding: 20px 30px;
@@ -79,6 +79,7 @@ export const CrecimientoItem = styled.div`
         font-weight: 500;
         color: var(--bg);
         text-transform: uppercase;
+        margin-bottom: 15px;
     }
 
     svg {
