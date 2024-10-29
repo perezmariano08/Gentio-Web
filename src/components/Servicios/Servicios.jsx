@@ -160,19 +160,19 @@ const Servicios = () => {
                         </DescripcionContainer>
                     </ServicioDescripcion>
                     <ServicioImg 
-                        ref={el => serviciosRef.current[10] = el} 
-                        className={animateIndices.has(10) ? 'animate right' : ''} 
+                        ref={el => serviciosRef.current[11] = el} 
+                        className={animateIndices.has(11) ? 'animate right' : ''} 
                     />
                 </ServicioContainer>
 
                 <ServicioContainer>
                     <ServicioImg 
-                        ref={el => serviciosRef.current[11] = el} 
-                        className={animateIndices.has(11) ? 'animate left' : ''} 
+                        ref={el => serviciosRef.current[12] = el} 
+                        className={animateIndices.has(12) ? 'animate left' : ''} 
                     />
                     <ServicioDescripcion 
-                        ref={el => serviciosRef.current[11] = el} 
-                        className={animateIndices.has(11) ? 'animate right' : ''}>
+                        ref={el => serviciosRef.current[13] = el} 
+                        className={animateIndices.has(13) ? 'animate right' : ''}>
                         <DescripcionContainer>
                             <h3>Manejo de redes sociales</h3>
                             <p>Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales.</p>
