@@ -35,7 +35,7 @@ const Hero = () => {
         <HeroContainer>
             <video src={bgHero} autoPlay muted loop playsInline />
             <HeroWrapper>
-                <HeroEstadisticasWrapper>
+                {/* <HeroEstadisticasWrapper>
                     <HeroEstadistica>
                         <HeroEstadisticaNumero>
                             <span>+</span>
@@ -57,7 +57,7 @@ const Hero = () => {
                         </HeroEstadisticaNumero>
                         <span>descripcion estadistica</span>
                     </HeroEstadistica>
-                </HeroEstadisticasWrapper>
+                </HeroEstadisticasWrapper> */}
                 <HeroText>
                     <a href="">
                         sé tendencia

@@ -28,7 +28,7 @@ export const FooterTop = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 80px 0;
+    padding: 40px 0;
 
     h3 {
         animation: ${floating} 2s ease-in-out infinite; // Aplica la animación
@@ -97,4 +97,8 @@ export const FooterRight = styled.span`
     justify-content: end;
     gap: 30px;
     width: 100%;
+
+    @media (max-width: 768px) {
+        justify-content: start;
+    }   
 `

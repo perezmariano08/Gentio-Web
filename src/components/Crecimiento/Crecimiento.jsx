@@ -29,8 +29,8 @@ const Crecimiento = () => {
         <CrecimientoContainer>
             <CrecimientoWrapper>
                 <CrecimientoText ref={textRef} className={isVisible ? 'visible' : ''}>
-                    <h2>Impulsamos el crecimiento de su negocio</h2>
-                    <p>Libere el potencial de su marca con nuestra probada experiencia en marketing. Desde la estrategia hasta la ejecución, impulsamos el crecimiento.</p>
+                    <h2>Impulsamos el crecimiento de tu negocio</h2>
+                    <p>Desatá el potencial de tu marca con nuestra experiencia comprobada en marketing. Desde la estrategia hasta la ejecución, transformamos cada acción en crecimiento real.</p>
                     <Button>
                         <span>Agendá una reunion</span>
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,25 +42,31 @@ const Crecimiento = () => {
                     <CrecimientoItem>
                         <h5>Servicios</h5>
                         <Servicios>
-                            <ServicioItem>Analiticas</ServicioItem>
+                            <ServicioItem>Comunicación institucional</ServicioItem>
+                            <ServicioItem className='filled'>Estrategias de marketing</ServicioItem>
+                            <ServicioItem className='filled'>Analíticas</ServicioItem>
+                            <ServicioItem>Manejo de redes sociales</ServicioItem>
+                            <ServicioItem>Diseño gráfico</ServicioItem>
                             <ServicioItem className='filled'>Paid Ads</ServicioItem>
-                            <ServicioItem className='filled'>Desarrollo Web</ServicioItem>
-                            <ServicioItem>Diseño Web</ServicioItem>
                             <ServicioItem>SDR</ServicioItem>
-                            <ServicioItem className='filled'>Fotografia - Video</ServicioItem>
+                            <ServicioItem className='filled'>Video-fotografia</ServicioItem>
                         </Servicios>
                     </CrecimientoItem>
                     <CrecimientoItemColumn>
                         <CrecimientoItem>
-                            <h5>1.2M</h5>
-                            <p>Los usuarios han interactuado con sitios web creados por nosotros.</p>
+                            <h5>15</h5>
+                            <p>Marcas confían en nosotros.</p>
                         </CrecimientoItem>
                         <CrecimientoItem>
-                            <h5>$3M</h5>
-                            <p>Los usuarios han interactuado con sitios web creados por nosotros.</p>
+                            <h5>2.6M</h5>
+                            <p>Impresiones totales</p>
+                        </CrecimientoItem>
+                        <CrecimientoItem>
+                            <h5>$15M</h5>
+                            <p>Invertidos en publicidad mensualmente.</p>
                         </CrecimientoItem>
                     </CrecimientoItemColumn>
-                    <CrecimientoItem>
+                    {/* <CrecimientoItem>
                         <ImQuotesLeft/>
                         <h6>Trabajar con Gentío fue una experiencia increíble. Nos ayudaron a redefinir nuestra presencia digital.
                             <br />
@@ -75,7 +81,7 @@ const Crecimiento = () => {
                             </div>
                         </CitaMarca>
                         
-                    </CrecimientoItem>
+                    </CrecimientoItem> */}
                 </CrecimientoItemsWrapper>
                 
             </CrecimientoWrapper>

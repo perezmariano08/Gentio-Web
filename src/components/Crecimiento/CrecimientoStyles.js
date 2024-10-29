@@ -31,7 +31,9 @@ export const CrecimientoText = styled.div`
     display: flex;
     gap: 30px;
     width: 75%;
-
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+    
     p {
         width: 65%;
         color: #898178;
@@ -62,15 +64,15 @@ export const CrecimientoItemsWrapper = styled.div`
 `
 
 export const CrecimientoItem = styled.div`
-    min-height: 400px;
+    max-height: 400px;
     background-color: var(--white);
     width: 100%;
-    padding: 35px 30px;
+    padding: 20px 30px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    /* gap: 10px; */
 
     h5 {
         font-size: 40px;
@@ -120,13 +122,13 @@ export const CrecimientoItemColumn = styled.div`
     width: 100%;
 
     div {
-        min-height: calc(50% - 10px);
+        min-height: calc(30% - 10px);
         H5 {
-            font-size: 55px;
+            font-size: 40px;
             line-height: 55px;
             font-weight: 600;
         }
-        &:nth-child(1) {
+        &:nth-child(2) {
             background-color: var(--blue);
             h5 {
                 color: var(--orange-500);

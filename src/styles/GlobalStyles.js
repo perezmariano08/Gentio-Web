@@ -1,7 +1,5 @@
 import { createGlobalStyle, keyframes } from "styled-components"
 
-
-
 // Definir la animación de fade in para el video
 export const fadeIn = keyframes`
     0% {

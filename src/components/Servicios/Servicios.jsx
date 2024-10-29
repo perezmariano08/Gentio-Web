@@ -53,6 +53,7 @@ const Servicios = () => {
                 <h2>NUESTROS <span>SERVICIOS.</span></h2>
                 <p>¡Hagamos magia juntos!</p>
                 </TitleContainer>
+                
                 {/* Primer Servicio: Analíticas */}
                 <ServicioContainer>
                     <ServicioImg 
@@ -63,8 +64,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[1] = el} 
                         className={animateIndices.has(1) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>Analíticas</h3>
-                            <p>Transformamos datos en decisiones. Con analíticas precisas, optimizamos tus campañas para obtener resultados reales y medibles.</p>
+                            <h3>Estrategías de Marketing y analítica</h3>
+                            <p>Convertimos datos en acción. Diseñamos estrategias basadas en analíticas precisas que optimizan tus campañas y maximizan resultados reales y medibles.</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
@@ -101,7 +102,7 @@ const Servicios = () => {
                         className={animateIndices.has(5) ? 'animate right' : ''}>
                         <DescripcionContainer>
                             <h3>Diseño Gráfico</h3>
-                            <p>Diseñamos con propósito. Creamos piezas gráficas de alta calidad que reflejan la identidad de tu marca y dejan una impresión duradera.</p>
+                            <p>Diseñamos para impactar. Piezas visuales que comunican y dejan huella.</p>
                             <IconsContainer>
                                 <SiAdobeillustrator />
                                 <SiAdobephotoshop />
@@ -140,10 +141,45 @@ const Servicios = () => {
                         className={animateIndices.has(9) ? 'animate right' : ''}>
                         <DescripcionContainer>
                             <h3>SDR: Sales Development Representative</h3>
-                            <p>Impulsamos tu crecimiento. Nuestros SDRs califican prospectos y generan oportunidades de venta, conectando tu negocio con los clientes ideales</p>
+                            <p>Prospectos calificados para tu crecimiento. Conectamos tu negocio con los clientes ideales</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
+
+                {/* Sexto Servicio: Comunicación Institucional */}
+                <ServicioContainer>
+                    <ServicioDescripcion 
+                        ref={el => serviciosRef.current[10] = el} 
+                        className={animateIndices.has(10) ? 'animate left' : ''}>
+                        <DescripcionContainer className='right'>
+                            <h3>Comunicación Institucional</h3>
+                            <p>Construimos relaciones sólidas. Comunicamos tus valores y fortalecemos la conexión entre tu marca y su audiencia.</p>
+                            <IconsContainer>
+                                <FaCode />
+                            </IconsContainer>
+                        </DescripcionContainer>
+                    </ServicioDescripcion>
+                    <ServicioImg 
+                        ref={el => serviciosRef.current[10] = el} 
+                        className={animateIndices.has(10) ? 'animate right' : ''} 
+                    />
+                </ServicioContainer>
+
+                <ServicioContainer>
+                    <ServicioImg 
+                        ref={el => serviciosRef.current[11] = el} 
+                        className={animateIndices.has(11) ? 'animate left' : ''} 
+                    />
+                    <ServicioDescripcion 
+                        ref={el => serviciosRef.current[11] = el} 
+                        className={animateIndices.has(11) ? 'animate right' : ''}>
+                        <DescripcionContainer>
+                            <h3>Manejo de redes sociales</h3>
+                            <p>Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales.</p>
+                        </DescripcionContainer>
+                    </ServicioDescripcion>
+                </ServicioContainer>
+
             </ServiciosWrapper>
         </ServiciosContainer>
     );

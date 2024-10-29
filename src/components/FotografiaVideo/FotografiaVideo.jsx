@@ -32,7 +32,7 @@ const FotografiaVideo = () => {
         <FotografiaVideoWrapper>
             <TitleContainer ref={textRef} className={isVisible ? 'visible' : ''}>
                 <h2>LA <span>CALIDAD</span> NO SE NEGOCIA<span>.</span></h2>
-                <p>Libere el potencial de su marca con nuestra probada experiencia en marketing. Desde la estrategia hasta la ejecución, impulsamos el crecimiento.</p>
+                <p>Impulsa tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.</p>
             </TitleContainer>
             <FotoVideoContainer>
               <FotoContenedorColumna className='first-row'>

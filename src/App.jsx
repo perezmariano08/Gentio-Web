@@ -24,7 +24,7 @@ function App() {
          <MarcasSlider/>
          <Servicios/>
          <FotografiaVideo/>
-         <Equipo/>
+         {/* <Equipo/> */}
          <Footer/>
       </MenuProvider>
       </>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { NavbarContainer, NavbarList, NavbarWrapper, SvgLogo } from './NavbarStyles'
+import { NavbarContainer, NavbarItem, NavbarList, NavbarWrapper, SvgLogo } from './NavbarStyles'
 import { RiMenu3Fill } from "react-icons/ri";
 import ModalMenu from '../Modales/ModalMenu/ModalMenu';
 import { motion } from "framer-motion";
@@ -66,7 +66,6 @@ const Navbar = () => {
         setOpenModalMenu(!openModalMenu);  // Alterna entre abrir y cerrar
     };
 
-
     return (
         <>
         <NavbarContainer className={scrollNav ? 'scrolled' : ''}>
@@ -89,10 +88,10 @@ const Navbar = () => {
                     animate="visible"
                     variants={navVariants}
                 >
-                    <li><a href="#nosotros">nosotros</a></li>
-                    <li><a href="#servicios">servicios</a></li>
-                    <li><a href="#staff">staff</a></li>
-                    <li><a href="#contacto">contacto</a></li>
+                    <NavbarItem><a href="#nosotros">nosotros</a></NavbarItem>
+                    <NavbarItem><a href="#servicios">servicios</a></NavbarItem>
+                    <NavbarItem><a href="#staff">staff</a></NavbarItem>
+                    <NavbarItem><a href="#contacto">contacto</a></NavbarItem>
                 </NavbarList>
                 <motion.div
                     initial="hidden"
