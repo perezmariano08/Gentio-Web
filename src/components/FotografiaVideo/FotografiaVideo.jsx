@@ -4,6 +4,8 @@ import SvgIcon from '../SvgIcon/SvgIcon'
 import bgHero from '/videos/bg_fotovideo_3.mp4';
 import bgHero2 from '/videos/bg_fotovideo_2.mp4';
 import bgHero3 from '/videos/bg_fotovideo_4.mp4';
+import bgHero4 from '/videos/bg_fotovideo_5.mp4';
+import bgHero5 from '/videos/bg_fotovideo_6.mp4';
 
 const FotografiaVideo = () => {
 
@@ -32,12 +34,14 @@ const FotografiaVideo = () => {
         <FotografiaVideoWrapper>
             <TitleContainer ref={textRef} className={isVisible ? 'visible' : ''}>
                 <h2>LA <span>CALIDAD</span> NO SE NEGOCIA<span>.</span></h2>
-                <p>Impulsa tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.</p>
+                <p>Impulsá tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.</p>
             </TitleContainer>
             <FotoVideoContainer>
               <FotoContenedorColumna className='first-row'>
                 <SvgIcon/>
-                <FotoVideoImg/>
+                <FotoVideoImg
+                bgUrl={'/imgs/bk_foto_1.jpg'}
+                />
                 <FotoTitle>Fotografia y Video</FotoTitle>
                 <Video>
                   <video src={bgHero3} autoPlay muted loop playsInline />
@@ -52,7 +56,9 @@ const FotografiaVideo = () => {
                 <Video>
                   <video src={bgHero2} autoPlay muted loop playsInline />
                 </Video>
-                <FotoVideoImg/>
+                <FotoVideoImg
+                bgUrl={'/imgs/bk_foto_2.jpg'}
+                />
               </FotoContenedorColumna>
             </FotoVideoContainer>
         </FotografiaVideoWrapper>

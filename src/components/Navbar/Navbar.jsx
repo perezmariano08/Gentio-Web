@@ -49,7 +49,6 @@ const Navbar = () => {
         },
     };
     
-
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
         window.addEventListener('resize', handleResize);
@@ -90,8 +89,8 @@ const Navbar = () => {
                 >
                     <NavbarItem><a href="#nosotros">nosotros</a></NavbarItem>
                     <NavbarItem><a href="#servicios">servicios</a></NavbarItem>
-                    <NavbarItem><a href="#staff">staff</a></NavbarItem>
-                    <NavbarItem><a href="#contacto">contacto</a></NavbarItem>
+                    {/* <NavbarItem><a href="#staff">staff</a></NavbarItem> */}
+                    <NavbarItem><a href="#footer">contacto</a></NavbarItem>
                 </NavbarList>
                 <motion.div
                     initial="hidden"

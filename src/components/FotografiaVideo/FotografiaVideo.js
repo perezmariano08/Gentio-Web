@@ -105,7 +105,7 @@ export const FotoVideoImg = styled.div`
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(/imgs/bg_hero.jpg);
+    background-image: ${({ bgUrl }) => `url(${bgUrl})`}; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -59,7 +59,7 @@ export const ServicioContainer = styled.section`
 export const ServicioImg = styled.div`
     width: 70%;
     height: 100%;
-    background-image: url(/imgs/bg_hero.jpg);
+    background-image: ${({ bgUrl }) => `url(${bgUrl})`};
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

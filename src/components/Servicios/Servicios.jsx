@@ -59,13 +59,15 @@ const Servicios = () => {
                     <ServicioImg 
                         ref={el => serviciosRef.current[0] = el} 
                         className={animateIndices.has(0) ? 'animate left' : ''} 
+                        bgUrl="/imgs/bg_services_1.jpg"
                     />
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[1] = el} 
-                        className={animateIndices.has(1) ? 'animate right' : ''}>
+                        className={animateIndices.has(1) ? 'animate right' : ''}
+                        >
                         <DescripcionContainer>
-                            <h3>Estrategías de Marketing y analítica</h3>
-                            <p>Convertimos datos en acción. Diseñamos estrategias basadas en analíticas precisas que optimizan tus campañas y maximizan resultados reales y medibles.</p>
+                            <h3>Comunicación Institucional</h3>
+                            <p>Construimos relaciones sólidas. Comunicamos tus valores y fortalecemos la conexión entre tu marca y su audiencia.</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
@@ -74,10 +76,11 @@ const Servicios = () => {
                 <ServicioContainer>
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[2] = el} 
-                        className={animateIndices.has(2) ? 'animate left' : ''}>
+                        className={animateIndices.has(2) ? 'animate left' : ''}
+                        >
                         <DescripcionContainer className='right'>
-                            <h3>Paid Ads</h3>
-                            <p>Maximizamos cada inversión en Ads. Creamos campañas optimizadas para llegar a la audiencia correcta y generar el mayor impacto con cada clic.</p>
+                            <h3>Estrategías de Marketing y analítica</h3>
+                            <p>Convertimos datos en acción. Diseñamos estrategias basadas en analíticas precisas que optimizan tus campañas y maximizan resultados reales y medibles.</p>
                             <IconsContainer>
                                 <FaGoogle />
                                 <FaInstagram />
@@ -88,6 +91,7 @@ const Servicios = () => {
                     <ServicioImg 
                         ref={el => serviciosRef.current[3] = el} 
                         className={animateIndices.has(3) ? 'animate right' : ''} 
+                        bgUrl="/imgs/bg_services_2.jpg"
                     />
                 </ServicioContainer>
 
@@ -96,6 +100,7 @@ const Servicios = () => {
                     <ServicioImg 
                         ref={el => serviciosRef.current[4] = el} 
                         className={animateIndices.has(4) ? 'animate left' : ''} 
+                        bgUrl="/imgs/bg_services_3.jpg"
                     />
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[5] = el} 
@@ -117,8 +122,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[6] = el} 
                         className={animateIndices.has(6) ? 'animate left' : ''}>
                         <DescripcionContainer className='right'>
-                            <h3>Desarrollo Web</h3>
-                            <p>Diseñamos experiencias web a medida. Sitios dinámicos, funcionales y visualmente atractivos que convierten visitantes en clientes.</p>
+                            <h3>Manejo de redes sociales</h3>
+                            <p>Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales.</p>
                             <IconsContainer>
                                 <FaCode />
                             </IconsContainer>
@@ -127,6 +132,7 @@ const Servicios = () => {
                     <ServicioImg 
                         ref={el => serviciosRef.current[7] = el} 
                         className={animateIndices.has(7) ? 'animate right' : ''} 
+                        bgUrl="/imgs/bg_services_4.jpg"
                     />
                 </ServicioContainer>
                 
@@ -134,14 +140,15 @@ const Servicios = () => {
                 <ServicioContainer>
                     <ServicioImg 
                         ref={el => serviciosRef.current[8] = el} 
-                        className={animateIndices.has(8) ? 'animate left' : ''} 
+                        className={animateIndices.has(8) ? 'animate left' : ''}
+                        bgUrl="/imgs/bg_services_5.jpg" 
                     />
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[9] = el} 
                         className={animateIndices.has(9) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>SDR: Sales Development Representative</h3>
-                            <p>Prospectos calificados para tu crecimiento. Conectamos tu negocio con los clientes ideales</p>
+                            <h3>Paid Ads</h3>
+                            <p>Maximizamos cada inversión en Ads. Creamos campañas optimizadas para llegar a la audiencia correcta y generar el mayor impacto con cada clic.</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
@@ -152,8 +159,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[10] = el} 
                         className={animateIndices.has(10) ? 'animate left' : ''}>
                         <DescripcionContainer className='right'>
-                            <h3>Comunicación Institucional</h3>
-                            <p>Construimos relaciones sólidas. Comunicamos tus valores y fortalecemos la conexión entre tu marca y su audiencia.</p>
+                            <h3>Desarrollo Web</h3>
+                            <p>Diseñamos experiencias web a medida. Sitios dinámicos, funcionales y visualmente atractivos que convierten visitantes en clientes.</p>
                             <IconsContainer>
                                 <FaCode />
                             </IconsContainer>
@@ -162,6 +169,7 @@ const Servicios = () => {
                     <ServicioImg 
                         ref={el => serviciosRef.current[11] = el} 
                         className={animateIndices.has(11) ? 'animate right' : ''} 
+                        bgUrl="/imgs/bg_services_6.jpg"
                     />
                 </ServicioContainer>
 
@@ -169,13 +177,14 @@ const Servicios = () => {
                     <ServicioImg 
                         ref={el => serviciosRef.current[12] = el} 
                         className={animateIndices.has(12) ? 'animate left' : ''} 
+                        bgUrl="/imgs/bg_services_7.jpg"
                     />
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[13] = el} 
                         className={animateIndices.has(13) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>Manejo de redes sociales</h3>
-                            <p>Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales.</p>
+                            <h3>SDR: Sales Development Representative</h3>
+                            <p>Prospectos calificados para tu crecimiento. Conectamos tu negocio con los clientes ideales</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>

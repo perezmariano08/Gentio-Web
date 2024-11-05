@@ -3,7 +3,7 @@ import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
 export const MarcasSliderContainer = styled(ContainerStyled)`
     height: 600px;
-    background-image: url(/imgs/slider_01.jpg);
+    background-image: ${({ bgUrl }) => `url(${bgUrl})`}; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +97,21 @@ export const MarcasSliderTitulo = styled.div`
     }
 `
 
+export const MarcasSliderBackground = styled.div`
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: ${({ bkUrl }) => `url(${bkUrl})`};
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+`;
+
 export const MarcasSliderDescripcion = styled.div`
+    z-index: 3;
     display: flex;
     flex-direction: column;
     gap: 25px;

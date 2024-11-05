@@ -1,5 +1,9 @@
 import React from 'react'
 import { MarcasContainer, MarcasWrapper } from './MarcasStyles'
+import LogoTijuca from '../Logos/LogoTijuca'
+import LogoElectro from '../Logos/LogoElectro'
+import LogoDonNunez from '../Logos/LogoDonNunez'
+import LogoSecretos from '../Logos/LogoSecretos'
 
 const Marcas = () => {
     return (
@@ -11,6 +15,10 @@ const Marcas = () => {
                 <img src="/imgs/marcas/secretos.png" alt="" srcset="" />
                 <img src="/imgs/marcas/odonto.png" alt="" srcset="" />
                 <img src="/imgs/marcas/tijuca.png" alt="" srcset="" className='tijuca' />
+                {/* <LogoTijuca/>
+                <LogoElectro/>
+                <LogoDonNunez/>
+                <LogoSecretos/> */}
             </MarcasWrapper>
         </MarcasContainer>
     )

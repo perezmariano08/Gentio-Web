@@ -31,13 +31,12 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                         <NavbarList>
                             <li onClick={closeModal}><a href="#nosotros">nosotros</a></li>
                             <li onClick={closeModal}><a href="#servicios">servicios</a></li>
-                            <li onClick={closeModal}><a href="#staff">staff</a></li>
+                            {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}
                             <li onClick={closeModal}><a href="#contacto">contacto</a></li>
                         </NavbarList>
                     </ModalMenuContainer>
                 )
             }
-            
         </AnimatePresence>
         
     )
