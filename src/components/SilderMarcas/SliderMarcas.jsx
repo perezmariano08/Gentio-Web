@@ -11,40 +11,40 @@ import Flecha from '../Logos/Flecha';
 
 const marcas = [
     {
-        img: LogoTijuca,
-        nombre: 'Tijuca',
-        descripcion: 'Gracias a nuestra estrategia, Tijuca aumentó su base de seguidores en un 8.85% y su alcance diario en redes creció un 75.55%.',
-        pdf: '/pdf/pdf-tijuca.pdf',
-        bk: '/imgs/backgrounds/bk-tijuca.jpg'
-    },
-    {
-        img: LogoSecretos,
-        nombre: 'Secretos de Campo',
-        descripcion: 'Gracias a nuestra estrategia, Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses.',
-        pdf: '/pdf/pdf-secretos.pdf',
-        bk: '/imgs/backgrounds/bk-secretos.jpg'
-    },
-    {
-        img: LogoDonNunez,
-        nombre: 'Don Nuñez',
-        descripcion: 'Gracias a nuestra estrategia de comunicación, Don Nuñez superó los 6.000 seguidores en menos de 20 días de creada la cuenta de Instagram.',
-        pdf: '/pdf/pdf-don-nunez.pdf',
-        bk: '/imgs/backgrounds/bk-don-nunez.jpg'
-    },
-    {
         img: LogoLuco,
         nombre: 'Luco Gourmet',
-        descripcion: 'Con nuestra estrategia, Luco Gourmet experimentó un crecimiento del 62.41% en seguidores.',
+        descripcion: 'Luco Gourmet logró su primera franquicia y experimentó un crecimiento del 62,41% en seguidores. Además tiene más de 1 millón de impresiones mensuales.',
         pdf: '/pdf/pdf-luco.pdf',
         bk: '/imgs/backgrounds/bk-luco.jpg'
     },
     {
         img: LogoElectro,
         nombre: 'Electro Manantiales',
-        descripcion: 'Gracias a nuestras estrategias de comunicación, Tijuca ha logrado aumentar su base de seguidores.',
+        descripcion: 'En solo dos meses, los seguidores crecieron un 72,68%, las visitas al perfil un +906,96% y los ingresos al sitio web para ver los productos un +755,56% Además, en este mismo periodo logramos más de 100K de impresiones.',
         pdf: '/pdf/pdf-electro.pdf',
         bk: '/imgs/backgrounds/bk-electro.jpg'
-    }
+    },
+    {
+        img: LogoDonNunez,
+        nombre: 'Don Nuñez',
+        descripcion: 'Don Nuñez superó los 5.600 seguidores en menos de 20 días de creada su cuenta de Instagram.',
+        pdf: '/pdf/pdf-don-nunez.pdf',
+        bk: '/imgs/backgrounds/bk-don-nunez.jpg'
+    },
+    {
+        img: LogoTijuca,
+        nombre: 'Tijuca',
+        descripcion: 'Gracias a nuestras estrategias de comunicación, Tijuca ha logrado aumentar su base de seguidores y sus ventas a través de canales digitales y en su oficina de manera presencial.',
+        pdf: '/pdf/pdf-tijuca.pdf',
+        bk: '/imgs/backgrounds/bk-tijuca.jpg'
+    },
+    {
+        img: LogoSecretos,
+        nombre: 'Secretos de Campo',
+        descripcion: 'Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses.',
+        pdf: '/pdf/pdf-secretos.pdf',
+        bk: '/imgs/backgrounds/bk-secretos.jpg'
+    },
 ];
 
 
@@ -79,7 +79,7 @@ const SliderMarcas = () => {
                     zIndex: 1
                 }}></div>
                 <MarcasSliderTitulo>
-                    <h2>Nuestras Marcas</h2>
+                    <h2>Nuestros resultados</h2>
                     <p>Descubrí el <span>impacto</span> que generamos</p>
                 </MarcasSliderTitulo>
 
@@ -109,11 +109,10 @@ const SliderMarcas = () => {
                 numVisible={1}
                 numScroll={1}
                 itemTemplate={itemTemplate}
-                circular
+                className="custom-carousel" circular
+                autoplayInterval={3000}
                 showIndicators
                 showNavigators
-                autoplay
-                interval={5000} // Cambia la imagen cada 5 segundos
                 style={{ width: '100%', height: '600px' }} // Ajusta el carousel a 600px de altura
             />
             {/* Ajustar las flechas para que estén más centradas en el medio */}

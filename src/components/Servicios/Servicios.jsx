@@ -3,6 +3,11 @@ import { ServiciosContainer, ServiciosWrapper, ServicioContainer, ServicioImg, S
 import { FaGoogle, FaInstagram, FaFacebook, FaCode } from 'react-icons/fa';
 import { SiAdobeillustrator, SiAdobephotoshop } from 'react-icons/si';
 import { TitleContainer } from '../FotografiaVideo/FotografiaVideo';
+import { SiGoogleads } from "react-icons/si";
+import { FaMeta } from "react-icons/fa6";
+import LogoMetricool from '../Logos/LogoMetricool';
+import { FaLinkedin } from "react-icons/fa6";
+import { FaSalesforce } from "react-icons/fa";
 
 const Servicios = () => {
     const serviciosRef = useRef([]);
@@ -125,7 +130,7 @@ const Servicios = () => {
                             <h3>Manejo de redes sociales</h3>
                             <p>Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales.</p>
                             <IconsContainer>
-                                <FaCode />
+                                <LogoMetricool/>
                             </IconsContainer>
                         </DescripcionContainer>
                     </ServicioDescripcion>
@@ -149,6 +154,10 @@ const Servicios = () => {
                         <DescripcionContainer>
                             <h3>Paid Ads</h3>
                             <p>Maximizamos cada inversión en Ads. Creamos campañas optimizadas para llegar a la audiencia correcta y generar el mayor impacto con cada clic.</p>
+                            <IconsContainer>
+                                <FaMeta />
+                                <SiGoogleads />
+                            </IconsContainer>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
@@ -185,6 +194,10 @@ const Servicios = () => {
                         <DescripcionContainer>
                             <h3>SDR: Sales Development Representative</h3>
                             <p>Prospectos calificados para tu crecimiento. Conectamos tu negocio con los clientes ideales</p>
+                            <IconsContainer>
+                                <FaSalesforce />
+                                <FaLinkedin />
+                            </IconsContainer>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
