@@ -11,6 +11,7 @@ import Nosotros from "./components/Nosotros/Nosotros"
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import { MenuProvider } from "./components/Context/MenuContext.jsx"
+import SliderMarcas from "./components/SilderMarcas/SliderMarcas.jsx"
 
 function App() {
    return (
@@ -21,7 +22,8 @@ function App() {
          <Nosotros/>
          <Marcas/>
          <Crecimiento/>
-         <MarcasSlider/>
+         {/* <MarcasSlider/> */}
+         <SliderMarcas/>
          <Servicios/>
          <FotografiaVideo/>
          {/* <Equipo/> */}
