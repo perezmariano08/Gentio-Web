@@ -9,6 +9,8 @@ export const MarcasSliderContainer = styled(ContainerStyled)`
     background-size: cover;
     position: relative;
 
+    border: 1px solid red;
+
     &::before {
         content: '';
         position: absolute;
@@ -24,6 +26,8 @@ export const MarcasSliderContainer = styled(ContainerStyled)`
 export const MarcasSliderWrapper = styled(WrapperStyled)`
     z-index: 3;
     justify-content: center;
+
+    border: 1px solid red;
 `
 
 export const MarcasSliderText = styled.div`
@@ -40,6 +44,7 @@ export const MarcasSliderText = styled.div`
     .p-carousel-container {
         display: flex;
         gap: 50px;
+        background-color: black;
 
         @media (max-width: 768px) {
             gap: 20px
@@ -71,7 +76,7 @@ export const MarcasSliderText = styled.div`
         color: var(--white);
 
         &:hover {
-            color: var(--bg)
+            color: var(--bg);
         }
     }
 `
@@ -139,5 +144,63 @@ export const MarcasSliderNavegadorItem = styled.div`
     border-radius: 20px;
     &.active {
         background-color: var(--orange-500);
+    }
+`
+
+export const CarouselContainer = styled.div`
+    .p-carousel-content {
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    .p-carousel-items-container {
+        position: relative; /* Esto hará que la imagen se posicione correctamente dentro del contenedor */
+
+    }
+
+    .p-carousel-container {
+        display: flex;
+        gap: 50px;
+        background-color: black;
+        overflow: hidden; /* Esto asegura que la imagen no se desborde */
+        height: 100%; /* Esto asegura que el contenedor tenga una altura definida, o asigna un valor específico */
+
+        img {
+            width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+            object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+        }
+        @media (max-width: 768px) {
+            gap: 20px
+        }
+    }
+
+    .p-carousel-indicators {
+        gap: 10px;
+
+        .p-carousel-indicator {
+            border-radius:20px;
+            overflow: hidden;
+            
+            button {
+                background-color: var(--white);
+                height: 5px;
+                width: 45px;
+            }
+
+            &.p-highlight {
+                button {
+                    background-color: var(--orange-500);
+                }
+            }
+        }
+    }
+
+    .p-carousel-prev, .p-carousel-next {
+        color: var(--white);
+
+        &:hover {
+            color: var(--bg);
+        }
     }
 `

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-    MarcasSliderBackground,
+    CarouselContainer,
     MarcasSliderContainer, 
     MarcasSliderDescripcion, 
     MarcasSliderText, 
@@ -17,6 +17,7 @@ import Flecha from '../Logos/Flecha';
 import LogoDonNunez from '../Logos/LogoDonNunez';
 
 const MarcasSlider = () => {
+    const [backgroundImage, setBackgroundImage] = useState('/imgs/backgrounds/bk-tijuca.jpg');
 
     const marcas = [
         {
@@ -55,32 +56,52 @@ const MarcasSlider = () => {
             bk: '/imgs/backgrounds/bk-electro.jpg'
         }
     ];
-    
-    const handleDownload = (pdf) => {
 
-        // Usar un elemento <a> para descargar el PDF
+    const handleDownload = (pdf) => {
         const link = document.createElement('a');
-        link.href = pdf; // URL del PDF
-        link.target = '_blank'; // Abrir en una nueva pestaña
-        link.download = pdf.split('/').pop(); // Nombre del archivo
-        document.body.appendChild(link); // Añadir a la página
-        link.click(); // Hacer clic para descargar
-        document.body.removeChild(link); // Remover el enlace después de la descarga
+        link.href = pdf;
+        link.target = '_blank';
+        link.download = pdf.split('/').pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
-    const marcaTemplate = (marca) => (
-            <MarcasSliderDescripcion key={marca.nombre}>
-                {React.createElement(marca.img)}
-                <p>{marca.descripcion}.</p>
-                <Button onClick={() => handleDownload(marca.pdf)}>
-                    <span>Ver analíticas</span>
-                    <Flecha />
-                </Button>
-            </MarcasSliderDescripcion>
-    );
+    const marcaTemplate = (marca) => {
+        setBackgroundImage(marca.bk); // Actualiza el fondo al renderizar cada slide
+        return (
+            <>
+                <img src={marca.bk} alt="" srcset="" />
+                <MarcasSliderDescripcion key={marca.nombre}>
+                    {React.createElement(marca.img)}
+                    <p>{marca.descripcion}.</p>
+                    <Button onClick={() => handleDownload(marca.pdf)}>
+                        <span>Ver analíticas</span>
+                        <Flecha />
+                    </Button>
+                </MarcasSliderDescripcion>
+            </>
+            
+        );
+    };
 
+    console.log(backgroundImage);
+    
     return (
-        <MarcasSliderContainer>
+        <>
+        <CarouselContainer>
+            <Carousel
+                value={marcas}
+                numVisible={1}
+                numScroll={1}
+                itemTemplate={marcaTemplate}
+                circular
+                showNavigators
+                showIndicators
+            />
+        </CarouselContainer>
+        
+        <MarcasSliderContainer >
             <MarcasSliderWrapper>
                 <MarcasSliderText>
                     <MarcasSliderTitulo>
@@ -88,19 +109,13 @@ const MarcasSlider = () => {
                         <p>Descubrí el <span>impacto</span> que generamos</p>
                     </MarcasSliderTitulo>
                     <div className='card'>
-                        <Carousel
-                            value={marcas} 
-                            numVisible={1} 
-                            numScroll={1} 
-                            itemTemplate={marcaTemplate} 
-                            circular 
-                            showNavigators 
-                            showIndicators 
-                        />
+                        
                     </div>
                 </MarcasSliderText>
             </MarcasSliderWrapper>
         </MarcasSliderContainer>
+        </>
+        
     );
 };
 
