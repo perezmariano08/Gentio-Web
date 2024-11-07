@@ -68,7 +68,7 @@ const Crecimiento = () => {
     return (
         <CrecimientoContainer>
             <CrecimientoWrapper>
-                <CrecimientoText >
+                <CrecimientoText className={'visible'}>
                     <h2>Impulsamos el crecimiento de tu negocio</h2>
                     <p>Desatá el potencial de tu marca con nuestra experiencia comprobada en marketing. Desde la estrategia hasta la ejecución, transformamos cada acción en crecimiento real.</p>
                     <Button onClick={handleWhatsAppClick}>
