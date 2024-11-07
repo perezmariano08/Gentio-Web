@@ -32,7 +32,7 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                             <li onClick={closeModal}><a href="#nosotros">nosotros</a></li>
                             <li onClick={closeModal}><a href="#servicios">servicios</a></li>
                             {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}
-                            <li onClick={closeModal}><a href="#contacto">contacto</a></li>
+                            <li onClick={closeModal}><a href="#footer">contacto</a></li>
                         </NavbarList>
                     </ModalMenuContainer>
                 )

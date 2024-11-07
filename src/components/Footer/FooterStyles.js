@@ -99,6 +99,6 @@ export const FooterRight = styled.span`
     width: 100%;
 
     @media (max-width: 768px) {
-        justify-content: start;
+        justify-content: space-between;
     }   
 `
