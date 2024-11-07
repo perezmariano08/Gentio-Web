@@ -3,9 +3,9 @@ import { Carousel } from 'primereact/carousel';
 import Button from '../Button/Button';
 import LogoTijuca from '../Logos/LogoTijuca';
 import LogoSecretos from '../Logos/LogoSecretos';
-import LogoLuco from '../Logos/LogoLuco';
-import LogoElectro from '../Logos/LogoElectro';
-import LogoDonNunez from '../Logos/LogoDonNunez';
+import LogoLuco from '../Logos/Svgs/LogoLucoSvg';
+import LogoElectro from '../Logos/Svgs/LogoElectroSvg';
+import LogoDonNunez from '../Logos/Svgs/LogoDonNunezSvg';
 import { MarcasSliderDescripcion, MarcasSliderTitulo } from './SliderMarcas';
 import Flecha from '../Logos/Flecha';
 
@@ -79,8 +79,9 @@ const SliderMarcas = () => {
                     zIndex: 1
                 }}></div>
                 <MarcasSliderTitulo>
-                    <h2>Nuestros resultados</h2>
-                    <p>Descubrí el <span>impacto</span> que generamos</p>
+                        <h2>Descubrí el</h2>
+                        <h2><span>Impacto</span> que</h2>
+                        <h2>generamos</h2>
                 </MarcasSliderTitulo>
 
                 {/* Contenido dentro del slider */}
@@ -91,7 +92,7 @@ const SliderMarcas = () => {
                     margin: '0 auto', // Centrar horizontalmente
                     padding: '20px', // Añadir un poco de espacio alrededor
                 }}>
-                    {React.createElement(marca.img)} {/* Muestra el logo */}
+                    {React.createElement(marca.img)}
                     <p>{marca.descripcion}</p>
                     <Button onClick={() => window.open(marca.pdf, '_blank')} >
                         <span>Ver analíticas</span>

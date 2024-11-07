@@ -1,18 +1,23 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { CitaMarca, CrecimientoContainer, CrecimientoItem, CrecimientoItemColumn, CrecimientoItemsWrapper, CrecimientoText, CrecimientoWrapper, ServicioItem, Servicios } from './CrecimientoStyles'
-import Button from '../Button/Button'
+import React, { useEffect, useRef, useState } from 'react';
+import { CitaMarca, CrecimientoContainer, CrecimientoItem, CrecimientoItemColumn, CrecimientoItemsWrapper, CrecimientoText, CrecimientoWrapper, ServicioItem, Servicios } from './CrecimientoStyles';
+import Button from '../Button/Button';
 import { ImQuotesLeft } from "react-icons/im";
 import Flecha from '../Logos/Flecha';
 
 const Crecimiento = () => {
-
     const [isVisible, setIsVisible] = useState(false);
     const textRef = useRef(null);
 
+    // Estados para los valores que se animarán
+    const [count15, setCount15] = useState(0);
+    const [count2_6M, setCount2_6M] = useState(0);
+    const [count15M, setCount15M] = useState(0);
+
+    // Función para verificar si el componente está en el viewport
     const checkVisibility = () => {
         if (textRef.current) {
             const { top, bottom } = textRef.current.getBoundingClientRect();
-            const isInViewport = top < window.innerHeight && bottom >= 0; // Comprueba si el elemento está en el viewport
+            const isInViewport = top < window.innerHeight && bottom >= 0;
             setIsVisible(isInViewport);
         }
     };
@@ -25,6 +30,33 @@ const Crecimiento = () => {
             window.removeEventListener('scroll', checkVisibility);
         };
     }, []);
+
+    // Efecto de conteo cuando el componente es visible
+    useEffect(() => {
+        if (isVisible) {
+            let count1 = 0, count2 = 0, count3 = 0;
+
+            // Iniciar intervalos de conteo para cada número
+            const interval1 = setInterval(() => {
+                count1 += 1;
+                if (count1 >= 15) clearInterval(interval1);
+                setCount15(count1);
+            }, 50); // Ajustar velocidad según sea necesario
+
+            const interval2 = setInterval(() => {
+                count2 += 10000;
+                if (count2 >= 2600000) clearInterval(interval2);
+                setCount2_6M(count2);
+            }, 8);
+
+            // Limpiar intervalos cuando el componente se desmonta o no es visible
+            return () => {
+                clearInterval(interval1);
+                clearInterval(interval2);
+                // clearInterval(interval3);
+            };
+        }
+    }, [isVisible]);
 
     const handleWhatsAppClick = () => {
         const phoneNumber = "+5493516528777";
@@ -41,7 +73,7 @@ const Crecimiento = () => {
                     <p>Desatá el potencial de tu marca con nuestra experiencia comprobada en marketing. Desde la estrategia hasta la ejecución, transformamos cada acción en crecimiento real.</p>
                     <Button onClick={handleWhatsAppClick}>
                         <span>Agendá una reunion</span>
-                        <Flecha/>
+                        <Flecha />
                     </Button>
                 </CrecimientoText>
                 <CrecimientoItemsWrapper>
@@ -53,46 +85,28 @@ const Crecimiento = () => {
                             <ServicioItem>Diseño gráfico</ServicioItem>
                             <ServicioItem>Manejo de redes sociales</ServicioItem>
                             <ServicioItem className='filled'>Paid Ads</ServicioItem>
-                            {/* <ServicioItem className='filled'>Analíticas</ServicioItem> */}
                             <ServicioItem className='filled'>Video-fotografia</ServicioItem>
                             <ServicioItem>SDR: Sales Development Representative</ServicioItem>
                         </Servicios>
                     </CrecimientoItem>
                     <CrecimientoItemColumn>
                         <CrecimientoItem>
-                            <h5>15</h5>
+                            <h5>{count15}</h5>
                             <p>Marcas confían en nosotros.</p>
                         </CrecimientoItem>
                         <CrecimientoItem>
-                            <h5>2.6M</h5>
+                            <h5>{(count2_6M / 1000000).toFixed(1)}M</h5>
                             <p>Impresiones mensuales entre todas nuestras marcas</p>
                         </CrecimientoItem>
                         <CrecimientoItem>
-                            <h5>$15M</h5>
+                            <h5>${count15}M</h5>
                             <p>Invertidos en publicidad mensualmente.</p>
                         </CrecimientoItem>
                     </CrecimientoItemColumn>
-                    {/* <CrecimientoItem>
-                        <ImQuotesLeft/>
-                        <h6>Trabajar con Gentío fue una experiencia increíble. Nos ayudaron a redefinir nuestra presencia digital.
-                            <br />
-                            <br />
-                            Impresionante resultado!
-                        </h6>
-                        <CitaMarca>
-                            <img src="/imgs/marcas/secretos_dark.png" alt="" />
-                            <div>
-                                <span>lionel messi</span>
-                                <p>Dueño empresa "Secretos de Campo"</p>
-                            </div>
-                        </CitaMarca>
-                        
-                    </CrecimientoItem> */}
                 </CrecimientoItemsWrapper>
-                
             </CrecimientoWrapper>
         </CrecimientoContainer>
-    )
-}
+    );
+};
 
-export default Crecimiento
+export default Crecimiento;

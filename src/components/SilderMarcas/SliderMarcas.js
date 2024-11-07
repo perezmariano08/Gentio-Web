@@ -5,7 +5,6 @@ export const MarcasSliderTitulo = styled.div`
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    gap: 10px;
     z-index: 2;
 
     h2 {
@@ -14,13 +13,11 @@ export const MarcasSliderTitulo = styled.div`
         color: var(--white);
     }
 
-    p {
-        color: var(--white);
-        span {
-            color: var(--orange-500);
-            font-weight: 500;
-        }
+    span {
+        color: var(--orange-500);
+        font-weight: 500;
     }
+
 `
 
 export const MarcasSliderDescripcion = styled.div`
@@ -35,7 +32,7 @@ export const MarcasSliderDescripcion = styled.div`
     }
 
     img {
-        width: 200px;
+        width: 100px;
     }
 
     @media (max-width: 768px) {
