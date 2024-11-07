@@ -6,7 +6,6 @@ import Flecha from '../Logos/Flecha';
 
 const Crecimiento = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const [hasCounted, setHasCounted] = useState(false); // Nuevo estado para prevenir múltiples conteos
     const textRef = useRef(null);
 
     // Estados para los valores que se animarán
@@ -34,38 +33,30 @@ const Crecimiento = () => {
 
     // Efecto de conteo cuando el componente es visible
     useEffect(() => {
-        if (isVisible && !hasCounted) {
-            setHasCounted(true); // Para evitar que se active de nuevo en scroll
-
+        if (isVisible) {
             let count1 = 0, count2 = 0, count3 = 0;
 
             // Iniciar intervalos de conteo para cada número con un intervalo mayor
             const interval1 = setInterval(() => {
                 count1 += 1;
-                setCount15(count1);
                 if (count1 >= 15) clearInterval(interval1);
+                setCount15(count1);
             }, 100); // Ajuste de la velocidad para contar más lentamente (cada 100ms)
 
             const interval2 = setInterval(() => {
                 count2 += 5000; // Aumento más lento en el conteo
-                setCount2_6M(count2);
                 if (count2 >= 2600000) clearInterval(interval2);
-            }, 30); // Ajuste de velocidad para un conteo más lento
+                setCount2_6M(count2);
+            }, 5); // Ajuste de velocidad para un conteo más lento
 
-            const interval3 = setInterval(() => {
-                count3 += 1;
-                setCount15M(count3);
-                if (count3 >= 15) clearInterval(interval3);
-            }, 100);
-
-            // Limpiar intervalos cuando el componente se desmonta
+            // Limpiar intervalos cuando el componente se desmonta o no es visible
             return () => {
                 clearInterval(interval1);
                 clearInterval(interval2);
-                clearInterval(interval3);
+                // clearInterval(interval3);
             };
         }
-    }, [isVisible, hasCounted]);
+    }, [isVisible]);
 
     const handleWhatsAppClick = () => {
         const phoneNumber = "+5493516528777";
@@ -108,7 +99,7 @@ const Crecimiento = () => {
                             <p>Impresiones mensuales entre todas nuestras marcas</p>
                         </CrecimientoItem>
                         <CrecimientoItem>
-                            <h5>${count15M}M</h5>
+                            <h5>${count15}M</h5>
                             <p>Invertidos en publicidad mensualmente.</p>
                         </CrecimientoItem>
                     </CrecimientoItemColumn>
