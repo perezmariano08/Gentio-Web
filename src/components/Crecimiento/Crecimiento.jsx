@@ -68,7 +68,7 @@ const Crecimiento = () => {
     return (
         <CrecimientoContainer>
             <CrecimientoWrapper>
-                <CrecimientoText ref={textRef} className={isVisible ? 'visible' : ''}>
+                <CrecimientoText >
                     <h2>Impulsamos el crecimiento de tu negocio</h2>
                     <p>Desatá el potencial de tu marca con nuestra experiencia comprobada en marketing. Desde la estrategia hasta la ejecución, transformamos cada acción en crecimiento real.</p>
                     <Button onClick={handleWhatsAppClick}>
@@ -89,7 +89,7 @@ const Crecimiento = () => {
                             <ServicioItem>SDR: Sales Development Representative</ServicioItem>
                         </Servicios>
                     </CrecimientoItem>
-                    <CrecimientoItemColumn>
+                    <CrecimientoItemColumn ref={textRef} className={isVisible ? 'visible' : ''}>
                         <CrecimientoItem>
                             <h5>{count15}</h5>
                             <p>Marcas confían en nosotros.</p>
