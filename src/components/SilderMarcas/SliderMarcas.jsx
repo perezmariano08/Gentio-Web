@@ -47,8 +47,6 @@ const marcas = [
     },
 ];
 
-
-
 const SliderMarcas = () => {
 
     // Template para el carousel

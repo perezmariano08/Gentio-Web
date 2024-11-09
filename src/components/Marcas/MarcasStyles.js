@@ -41,7 +41,7 @@ export const MarcasWrapper = styled(WrapperStyled)`
     display: flex;
     gap: 30px; /* Espacio entre los logos */
     width: calc(150px * 42); /* 42 porque se duplican los logos (14 logos x 3 veces) */
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     align-items: center;
 
     img {
@@ -55,9 +55,9 @@ export const MarcasWrapper = styled(WrapperStyled)`
     @media (max-width: 768px) {
         gap: 20px; /* Reducir el gap en pantallas pequeñas */
         width: calc(80px * 42); /* 42 porque se duplican los logos (14 logos x 3 veces) */
-        animation: scroll 15s linear infinite;
+        animation: scroll 20s linear infinite;
         img {
-            width: 60px;
+            width: 80px;
         }
         ${sliderMobile}
     }

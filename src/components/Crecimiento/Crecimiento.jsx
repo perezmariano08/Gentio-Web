@@ -96,7 +96,7 @@ const Crecimiento = () => {
                         </CrecimientoItem>
                         <CrecimientoItem>
                             <h5>{(count2_6M / 1000000).toFixed(1)}M</h5>
-                            <p>Impresiones mensuales entre todas nuestras marcas</p>
+                            <p>Impresiones mensuales entre todas nuestras marcas.</p>
                         </CrecimientoItem>
                         <CrecimientoItem>
                             <h5>${count15}M</h5>
