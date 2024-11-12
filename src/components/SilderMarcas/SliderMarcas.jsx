@@ -52,6 +52,7 @@ const SliderMarcas = () => {
     // Template para el carousel
     const itemTemplate = (marca) => {
         const isSecretosDeCampo = marca.nombre === 'Secretos de Campo';
+        const isTijuca = marca.nombre === 'Tijuca'
 
         return (
             <div className="carousel-item" style={{
@@ -92,7 +93,12 @@ const SliderMarcas = () => {
                     margin: '0 auto', // Centrar horizontalmente
                     padding: '20px', // Añadir un poco de espacio alrededor
                 }}>
-                    <img src={marca.img} className={isSecretosDeCampo ? 'secretos' : ''} alt={marca.nombre} />
+                    <img 
+                    src={marca.img} 
+                    className={`${isSecretosDeCampo ? 'secretos' : ''} ${isTijuca ? 'tijuca' : ''}`} 
+                    alt={marca.nombre} 
+                    />
+
                     <p>{marca.descripcion}</p>
                     <Button onClick={() => window.open(marca.pdf, '_blank')} >
                         <span>Ver analíticas</span>
