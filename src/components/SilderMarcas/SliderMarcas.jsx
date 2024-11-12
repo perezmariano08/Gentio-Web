@@ -39,7 +39,7 @@ const marcas = [
         bk: '/imgs/backgrounds/bk-tijuca.jpg'
     },
     {
-        img: './imgs/marcas/Secretos.png',
+        img: './imgs/marcas/secretos.png',
         nombre: 'Secretos de Campo',
         descripcion: 'Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses.',
         pdf: '/pdf/pdf-secretos.pdf',

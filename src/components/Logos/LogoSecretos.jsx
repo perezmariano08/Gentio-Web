@@ -1,8 +1,8 @@
 import React from 'react'
 
-const LogoSecretos = ({ classname }) => {
+const LogoSecretos = () => {
   return (
-        <img src="./imgs/marcas/Secretos.png" alt="logo-secretos"  className={classname}/> 
+      <img src="./imgs/marcas/secretos.png" alt="logo-secretos" /> 
   )
 }
 
