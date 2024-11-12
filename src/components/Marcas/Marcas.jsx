@@ -52,7 +52,7 @@ const Marcas = () => {
                 <LogoOdonto />
                 <LogoLaTeca />
 
-                <LogoZCSeguridad />
+                <LogoZCIng />
                 <LogoLuco />
                 <LogoTijuca />
                 <LogoElectro />
