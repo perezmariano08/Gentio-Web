@@ -1,11 +1,6 @@
 import React from 'react';
 import { Carousel } from 'primereact/carousel';
 import Button from '../Button/Button';
-import LogoTijuca from '../Logos/LogoTijuca';
-import LogoSecretos from '../Logos/LogoSecretos';
-import LogoLuco from '../Logos/Svgs/LogoLucoSvg';
-import LogoElectro from '../Logos/Svgs/LogoElectroSvg';
-import LogoDonNunez from '../Logos/Svgs/LogoDonNunezSvg';
 import { MarcasSliderDescripcion, MarcasSliderTitulo } from './SliderMarcas';
 import Flecha from '../Logos/Flecha';
 

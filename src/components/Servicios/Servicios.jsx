@@ -84,7 +84,7 @@ const Servicios = () => {
                         className={animateIndices.has(2) ? 'animate left' : ''}
                         >
                         <DescripcionContainer className='right'>
-                            <h3>Estrategías de Marketing y analítica</h3>
+                            <h3>Estrategias de Marketing y analítica</h3>
                             <p>Convertimos datos en acción. Diseñamos estrategias basadas en analíticas precisas que optimizan tus campañas y maximizan resultados reales y medibles.</p>
                             <IconsContainer>
                                 <FaGoogle />

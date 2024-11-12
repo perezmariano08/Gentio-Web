@@ -52,6 +52,11 @@ export const NosotrosText = styled(WrapperStyled)`
         }
     }
 
+    span {
+        font-weight: 500;
+        color: var(--orange-200);
+    }
+
     @media (max-width: 768px) {
         padding: 30px 25px;
     }

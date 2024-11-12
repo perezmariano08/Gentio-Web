@@ -32,6 +32,7 @@ const Crecimiento = () => {
     }, []);
 
     // Efecto de conteo cuando el componente es visible
+    // Efecto de conteo cuando el componente es visible
     useEffect(() => {
         if (isVisible) {
             let count1 = 0, count2 = 0, count3 = 0;
@@ -49,14 +50,21 @@ const Crecimiento = () => {
                 setCount2_6M(count2);
             }, 5); // Ajuste de velocidad para un conteo más lento
 
+            const interval3 = setInterval(() => {
+                count3 += 1;
+                if (count3 >= 46) clearInterval(interval3);
+                setCount15M(count3); // Actualiza el estado del tercer contador
+            }, 50); // Ajuste de velocidad para el tercer contador (cada 50ms)
+
             // Limpiar intervalos cuando el componente se desmonta o no es visible
             return () => {
                 clearInterval(interval1);
                 clearInterval(interval2);
-                // clearInterval(interval3);
+                clearInterval(interval3);
             };
         }
     }, [isVisible]);
+
 
     const handleWhatsAppClick = () => {
         const phoneNumber = "+5493516528777";
@@ -99,8 +107,8 @@ const Crecimiento = () => {
                             <p>Impresiones mensuales entre todas nuestras marcas.</p>
                         </CrecimientoItem>
                         <CrecimientoItem>
-                            <h5>${count15}M</h5>
-                            <p>Invertidos en publicidad mensualmente.</p>
+                            <h5>{count15M}%</h5>
+                            <p>Aumento promedio de ventas en nuestras marcas.</p>
                         </CrecimientoItem>
                     </CrecimientoItemColumn>
                 </CrecimientoItemsWrapper>
