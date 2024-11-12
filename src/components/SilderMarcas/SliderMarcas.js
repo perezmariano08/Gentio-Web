@@ -35,6 +35,10 @@ export const MarcasSliderDescripcion = styled.div`
         width: 100px;
     }
 
+    .secretos {
+        width: 80px;
+    }
+
     @media (max-width: 768px) {
         width: 100%;
     }

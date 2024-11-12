@@ -2,44 +2,44 @@ import React from 'react';
 import { Carousel } from 'primereact/carousel';
 import Button from '../Button/Button';
 import LogoTijuca from '../Logos/LogoTijuca';
+import LogoSecretos from '../Logos/LogoSecretos';
 import LogoLuco from '../Logos/Svgs/LogoLucoSvg';
 import LogoElectro from '../Logos/Svgs/LogoElectroSvg';
 import LogoDonNunez from '../Logos/Svgs/LogoDonNunezSvg';
 import { MarcasSliderDescripcion, MarcasSliderTitulo } from './SliderMarcas';
 import Flecha from '../Logos/Flecha';
-import LogoSecretosSvg from '../Logos/Svgs/LogoSecretosSvg';
 
 const marcas = [
     {
-        img: LogoLuco,
+        img: './imgs/marcas/luco.png',
         nombre: 'Luco Gourmet',
         descripcion: 'Luco Gourmet logró su primera franquicia y experimentó un crecimiento del 62,41% en seguidores. Además tiene más de 1 millón de impresiones mensuales.',
         pdf: '/pdf/pdf-luco.pdf',
         bk: '/imgs/backgrounds/bk-luco.jpg'
     },
     {
-        img: LogoElectro,
+        img: './imgs/marcas/electro.png',
         nombre: 'Electro Manantiales',
         descripcion: 'En solo dos meses, los seguidores crecieron un 72,68%, las visitas al perfil un +906,96% y los ingresos al sitio web para ver los productos un +755,56% Además, en este mismo periodo logramos más de 100K de impresiones.',
         pdf: '/pdf/pdf-electro.pdf',
         bk: '/imgs/backgrounds/bk-electro.jpg'
     },
     {
-        img: LogoDonNunez,
+        img: './imgs/marcas/don-nunez.png',
         nombre: 'Don Nuñez',
         descripcion: 'Don Nuñez superó los 5.600 seguidores en menos de 20 días de creada su cuenta de Instagram.',
         pdf: '/pdf/pdf-don-nunez.pdf',
         bk: '/imgs/backgrounds/bk-don-nunez.jpg'
     },
     {
-        img: LogoTijuca,
+        img: './imgs/marcas/tijuca.png',
         nombre: 'Tijuca',
         descripcion: 'Gracias a nuestras estrategias de comunicación, Tijuca ha logrado aumentar su base de seguidores y sus ventas a través de canales digitales y en su oficina de manera presencial.',
         pdf: '/pdf/pdf-tijuca.pdf',
         bk: '/imgs/backgrounds/bk-tijuca.jpg'
     },
     {
-        img: LogoSecretosSvg,
+        img: './imgs/marcas/Secretos.png',
         nombre: 'Secretos de Campo',
         descripcion: 'Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses.',
         pdf: '/pdf/pdf-secretos.pdf',
@@ -48,9 +48,11 @@ const marcas = [
 ];
 
 const SliderMarcas = () => {
-
+    
     // Template para el carousel
     const itemTemplate = (marca) => {
+        const isSecretosDeCampo = marca.nombre === 'Secretos de Campo';
+
         return (
             <div className="carousel-item" style={{
                 backgroundImage: `url(${marca.bk})`,
@@ -90,7 +92,7 @@ const SliderMarcas = () => {
                     margin: '0 auto', // Centrar horizontalmente
                     padding: '20px', // Añadir un poco de espacio alrededor
                 }}>
-                    {React.createElement(marca.img)}
+                    <img src={marca.img} className={isSecretosDeCampo ? 'secretos' : ''} alt={marca.nombre} />
                     <p>{marca.descripcion}</p>
                     <Button onClick={() => window.open(marca.pdf, '_blank')} >
                         <span>Ver analíticas</span>
