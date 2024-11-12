@@ -44,7 +44,7 @@ export const MarcasWrapper = styled(WrapperStyled)`
     animation: scroll 30s linear infinite;
     align-items: center;
 
-    img {
+    img, svg {
         width: 120px; /* Ancho de cada imagen */
     }
 

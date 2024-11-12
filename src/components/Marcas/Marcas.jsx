@@ -29,7 +29,7 @@ const Marcas = () => {
                 <LogoBlackSheep />
                 <LogoCR />
                 <LogoCanovas />
-                <LogoSecretos />
+                <LogoSecretos slider/>
                 <LogoGioventi />
                 <LogoLaHilda />
                 <LogoColono />
@@ -45,7 +45,7 @@ const Marcas = () => {
                 <LogoBlackSheep />
                 <LogoCR />
                 <LogoCanovas />
-                <LogoSecretos />
+                <LogoSecretos slider/>
                 <LogoGioventi />
                 <LogoLaHilda />
                 <LogoColono />
@@ -60,7 +60,7 @@ const Marcas = () => {
                 <LogoBlackSheep />
                 <LogoCR />
                 <LogoCanovas />
-                <LogoSecretos />
+                <LogoSecretos slider/>
                 <LogoGioventi />
                 <LogoLaHilda />
                 <LogoColono />

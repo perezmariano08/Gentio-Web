@@ -2,12 +2,12 @@ import React from 'react';
 import { Carousel } from 'primereact/carousel';
 import Button from '../Button/Button';
 import LogoTijuca from '../Logos/LogoTijuca';
-import LogoSecretos from '../Logos/LogoSecretos';
 import LogoLuco from '../Logos/Svgs/LogoLucoSvg';
 import LogoElectro from '../Logos/Svgs/LogoElectroSvg';
 import LogoDonNunez from '../Logos/Svgs/LogoDonNunezSvg';
 import { MarcasSliderDescripcion, MarcasSliderTitulo } from './SliderMarcas';
 import Flecha from '../Logos/Flecha';
+import LogoSecretosSvg from '../Logos/Svgs/LogoSecretosSvg';
 
 const marcas = [
     {
@@ -39,7 +39,7 @@ const marcas = [
         bk: '/imgs/backgrounds/bk-tijuca.jpg'
     },
     {
-        img: LogoSecretos,
+        img: LogoSecretosSvg,
         nombre: 'Secretos de Campo',
         descripcion: 'Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses.',
         pdf: '/pdf/pdf-secretos.pdf',
