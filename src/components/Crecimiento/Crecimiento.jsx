@@ -67,8 +67,8 @@ const Crecimiento = () => {
 
 
     const handleWhatsAppClick = () => {
-        const phoneNumber = "+5493516528777";
-        const message = "Hola 👋🏻, estoy interesado en agendar una reunión para conocer más sobre sus servicios.";
+        const phoneNumber = "+5493512390278";
+        const message = "Hola, estoy interesado en agendar una reunión para conocer más sobre sus servicios.";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
@@ -85,7 +85,7 @@ const Crecimiento = () => {
                     </Button>
                 </CrecimientoText>
                 <CrecimientoItemsWrapper>
-                    <CrecimientoItem>
+                    <CrecimientoItem wrapEnabled={true}>
                         <h5>Servicios</h5>
                         <Servicios>
                             <ServicioItem>Comunicación institucional</ServicioItem>
@@ -98,15 +98,15 @@ const Crecimiento = () => {
                         </Servicios>
                     </CrecimientoItem>
                     <CrecimientoItemColumn ref={textRef} className={isVisible ? 'visible' : ''}>
-                        <CrecimientoItem>
+                        <CrecimientoItem wrapEnabled={false}>
                             <h5>{count15}</h5>
                             <p>Marcas confían en nosotros.</p>
                         </CrecimientoItem>
-                        <CrecimientoItem>
+                        <CrecimientoItem wrapEnabled={false}>
                             <h5>{(count2_6M / 1000000).toFixed(1)}M</h5>
                             <p>Impresiones mensuales entre todas nuestras marcas.</p>
                         </CrecimientoItem>
-                        <CrecimientoItem>
+                        <CrecimientoItem wrapEnabled={false}>
                             <h5>{count15M}%</h5>
                             <p>Aumento promedio de ventas en nuestras marcas.</p>
                         </CrecimientoItem>

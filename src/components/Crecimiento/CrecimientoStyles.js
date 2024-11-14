@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 import { fadeInLeft, floating, fadeInDown, fadeInUp, fadeInRight, fadeIn } from "../../styles/GlobalStyles";
 
@@ -112,8 +112,21 @@ export const CrecimientoItem = styled.div`
     }
 
     @media (max-width: 900px) {
-        flex-wrap: wrap;
+        ${({ wrapEnabled }) =>
+        wrapEnabled &&
+        css`
+            flex-wrap: wrap;
+        `}
+
+        h5 {
+            font-size: 10px;
+            font-weight: 500;
+            color: var(--bg);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
     }
+
 `;
 
 export const CrecimientoItemColumn = styled.div`
