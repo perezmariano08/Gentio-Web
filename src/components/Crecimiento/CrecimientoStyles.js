@@ -112,6 +112,7 @@ export const CrecimientoItem = styled.div`
     }
 
     @media (max-width: 900px) {
+        max-height: 800px;
         ${({ wrapEnabled }) =>
         wrapEnabled &&
         css`
@@ -119,11 +120,11 @@ export const CrecimientoItem = styled.div`
         `}
 
         h5 {
-            font-size: 10px;
+            font-size: 30px;
             font-weight: 500;
             color: var(--bg);
             text-transform: uppercase;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
     }
 
