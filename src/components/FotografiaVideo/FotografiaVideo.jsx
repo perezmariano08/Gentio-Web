@@ -41,8 +41,8 @@ const FotografiaVideo = () => {
                 bgUrl={'/imgs/bk_foto_1.jpg'}
                 />
                 <FotoTitle>Fotografia y Video</FotoTitle>
-                <Video>
-                  <video src={bgHero3} autoPlay muted loop playsInline />
+                <Video className="video-top-desktop">
+                    <video src={bgHero3} autoPlay muted loop playsInline />
                 </Video>
               </FotoContenedorColumna>
               <FotoContenedorColumna className='two-row'>

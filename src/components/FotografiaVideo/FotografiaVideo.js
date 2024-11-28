@@ -177,9 +177,9 @@ export const Video = styled.div`
     &.video-zc { 
         @media (max-width: 768px) {
             video {
-                width: 110%;
+                width: 120%;
+                height: 120%;
             }
-
         }
     }
 `;
