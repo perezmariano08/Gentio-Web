@@ -173,6 +173,15 @@ export const Video = styled.div`
         background: linear-gradient(to bottom, rgba(10, 3, 17, 0.1) 0%, rgba(10, 3, 17, 0.4) 40%, var(--bg) 100%); 
         z-index: 2; /* Asegura que el degradado esté encima del color sólido */
     }
+
+    &.video-zc { 
+        @media (max-width: 768px) {
+            video {
+                width: 110%;
+            }
+
+        }
+    }
 `;
 
 export const FotoTitle = styled.span`
