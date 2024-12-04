@@ -91,7 +91,30 @@ export const FooterLeft = styled.div`
         width: 20%;
     }
 
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 `
+export const SocialMediaContainer = styled.a`
+    display: flex;
+    align-items: center;
+    a {
+        color: var(--white);
+        opacity: .5;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    :hover {
+        opacity: 1;
+    }
+`;
+
 export const FooterRight = styled.span`
     display: flex;
     justify-content: end;

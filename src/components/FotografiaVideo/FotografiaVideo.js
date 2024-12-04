@@ -182,6 +182,20 @@ export const Video = styled.div`
             }
         }
     }
+
+    &.video-luco-hamburgesa {
+        display: none;
+        @media (max-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &.video-luco-gral {
+        display: flex;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 `;
 
 export const FotoTitle = styled.span`

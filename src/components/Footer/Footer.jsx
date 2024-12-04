@@ -1,8 +1,11 @@
 import React from 'react'
-import { Divider, FooterContainer, FooterLeft, FooterRight, FooterTop, FooterWrapper, FooterWrapperText, SocialContainer } from './FooterStyles'
+import { Divider, FooterContainer, FooterLeft, FooterRight, FooterTop, FooterWrapper, FooterWrapperText, SocialContainer, SocialMediaContainer } from './FooterStyles'
 import styled, { keyframes } from "styled-components";
 import Button from '../Button/Button';
 import Flecha from '../Logos/Flecha';
+import { FaInstagram } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
+
 
 // Define a floating animation
 const float = keyframes`
@@ -72,7 +75,11 @@ const Footer = () => {
                         <p>Humberto Primo 630, piso 3, Of. H32 (Capitalinas)</p>
                         <p>Córdoba, Argentina</p>
                         <p>+54 9 3512 39-0278</p>
-                        <p>info@gentiomkt.com</p>
+                        <SocialMediaContainer><a href="mailto:info@gentiomkt.com"><IoMailOutline />
+                        info@gentiomkt.com</a></SocialMediaContainer>
+                        <SocialMediaContainer>
+                            <a href="https://www.instagram.com/gentiomkt/" target='blank'>  <FaInstagram />@gentiomkt</a>
+                        </SocialMediaContainer>
                     </div>
                 </FooterLeft>
                 <FooterRight>

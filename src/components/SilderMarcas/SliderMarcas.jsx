@@ -22,7 +22,7 @@ const marcas = [
     {
         img: './imgs/marcas/don-nunez.png',
         nombre: 'Don Nuñez',
-        descripcion: 'Don Nuñez superó los 5.600 seguidores en menos de 20 días de creada su cuenta de Instagram.',
+        descripcion: 'Dun Nuñez superó los 7.400 seguidores y alcanzó 1 millón de impresiones en menos de dos meses',
         pdf: '/pdf/pdf-don-nunez.pdf',
         bk: '/imgs/backgrounds/bk-don-nunez.jpg'
     },

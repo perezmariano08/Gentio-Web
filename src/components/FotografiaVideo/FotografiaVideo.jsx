@@ -4,6 +4,7 @@ import SvgIcon from '../SvgIcon/SvgIcon'
 import bgHero from '/videos/bg_fotovideo_8.mp4';
 import bgHero2 from '/videos/bg_fotovideo_2.mp4';
 import bgHero3 from '/videos/bg_fotovideo_7.mp4';
+import bgHero4 from '/videos/bg_fotovideo_4.mp4';
 
 const FotografiaVideo = () => {
 
@@ -41,8 +42,11 @@ const FotografiaVideo = () => {
                 bgUrl={'/imgs/bk_foto_1.jpg'}
                 />
                 <FotoTitle>Fotografia y Video</FotoTitle>
-                <Video className="video-top-desktop">
+                <Video className='video-luco-hamburgesa'>
                     <video src={bgHero3} autoPlay muted loop playsInline />
+                </Video>
+                <Video className='video-luco-gral'>
+                    <video src={bgHero4} autoPlay muted loop playsInline />
                 </Video>
               </FotoContenedorColumna>
               <FotoContenedorColumna className='two-row'>
