@@ -39,6 +39,7 @@ export const NavbarWrapper = styled(WrapperStyled)`
 
 export const NavbarList = styled(motion.ul)`
     display: flex;
+    align-items: center;
     gap: 30px;
     li a {
         color: antiquewhite;

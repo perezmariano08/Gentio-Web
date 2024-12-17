@@ -3,6 +3,8 @@ import { NavbarContainer, NavbarItem, NavbarList, NavbarWrapper, SvgLogo } from 
 import { RiMenu3Fill } from "react-icons/ri";
 import ModalMenu from '../Modales/ModalMenu/ModalMenu';
 import { motion } from "framer-motion";
+import NavbarSelect from '../Input/NavbarSelect';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -65,11 +67,12 @@ const Navbar = () => {
         setOpenModalMenu(!openModalMenu);  // Alterna entre abrir y cerrar
     };
 
+    const [t] = useTranslation("global")
+
     return (
         <>
         <NavbarContainer className={scrollNav ? 'scrolled' : ''}>
             <NavbarWrapper>
-                {/* <img src={logoGentio} alt="" /> */}
                 <SvgLogo 
                 initial="hidden"
                 animate="visible"
@@ -87,10 +90,10 @@ const Navbar = () => {
                     animate="visible"
                     variants={navVariants}
                 >
-                    <NavbarItem><a href="#nosotros">nosotros</a></NavbarItem>
-                    <NavbarItem><a href="#servicios">servicios</a></NavbarItem>
-                    {/* <NavbarItem><a href="#staff">staff</a></NavbarItem> */}
-                    <NavbarItem><a href="#footer">contacto</a></NavbarItem>
+                    <NavbarItem><a href="#nosotros">{t('navbar.nosotros')}</a></NavbarItem>
+                    <NavbarItem><a href="#servicios">{t('navbar.servicios')}</a></NavbarItem>
+                    <NavbarItem><a href="#footer">{t('navbar.contacto')}</a></NavbarItem>
+                    <NavbarSelect/>
                 </NavbarList>
                 <motion.div
                     initial="hidden"
@@ -101,11 +104,8 @@ const Navbar = () => {
                 >
                     <RiMenu3Fill />
                 </motion.div>
-
-                
             </NavbarWrapper>
         </NavbarContainer>
-        {/* Modal Menu, se muestra solo si openModalMenu es true */}
         {openModalMenu && <ModalMenu closeModal={toggleModalMenu} isOpen={openModalMenu} />}        
         </>
     )

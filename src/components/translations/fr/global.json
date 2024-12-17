@@ -1,0 +1,108 @@
+{
+    "navbar": {
+        "nosotros": "qui sommes-nous",
+        "servicios": "services",
+        "contacto": "contact"
+    },
+    "hero": {
+        "tendencia": "soyez tendance",
+        "title": "votre __marque__ sur toutes les lèvres.",
+        "span": "marque"
+    },
+    "about": {
+        "titulo": "Qui sommes-nous ?",
+        "descripcion": "Chez __GENTÍO__, nous transformons les idées en conversations qui stimulent votre croissance. Nous sommes une __agence de communication et de marketing__ dédiée à renforcer votre __marque__ avec des stratégies basées sur des réussites avérées. Notre objectif : __augmenter votre chiffre d'affaires__ et faire ressortir votre entreprise."
+    },
+    "crecimiento": {
+        "titulo": "Nous stimulons la croissance de votre entreprise",
+        "descripcion": "Libérez le potentiel de votre marque avec notre expertise prouvée en marketing. De la stratégie à l'exécution, nous transformons chaque action en croissance réelle.",
+        "boton": "Planifiez une réunion",
+        "servicios": {
+            "titulo": "Services",
+            "lista": [
+                "Communication institutionnelle",
+                "Stratégies marketing et analytique",
+                "Design graphique",
+                "Gestion des réseaux sociaux",
+                "Publicité payante",
+                "Vidéo-photographie",
+                "SDR : Sales Development Representative"
+            ]
+        },
+        "estadisticas": {
+            "marcas": "Les marques nous font confiance.",
+            "impresiones": "Impressions mensuelles parmi toutes nos marques.",
+            "ventas": "Augmentation moyenne des ventes chez nos marques."
+        }
+    },
+    "slider": {
+        "luco": {
+            "descripcion": "Luco Gourmet a obtenu sa première franchise et a connu une croissance de 62,41% de ses abonnés. Il compte également plus de 1 million d'impressions mensuelles."
+        },
+        "electro": {
+            "descripcion": "En seulement deux mois, les abonnés ont augmenté de 72,68%, les visites de profil de +906,96% et le trafic vers le site web pour voir les produits de +755,56%. De plus, nous avons atteint plus de 100K impressions au cours de cette période."
+        },
+        "don-nunez": {
+            "descripcion": "Dun Nuñez a dépassé les 7 400 abonnés et atteint 1 million d'impressions en moins de deux mois."
+        },
+        "tijuca": {
+            "descripcion": "Grâce à nos stratégies de communication, Tijuca a augmenté sa base d'abonnés et ses ventes via des canaux numériques et en présentiel dans son bureau."
+        },
+        "secretos": {
+            "descripcion": "Secretos de Campo a connu une croissance de 99,69% de ses abonnés en seulement trois mois."
+        },
+        "titulo": "Découvrez l'",
+        "impacto": "impact",
+        "marca": "que",
+        "generamos": "nous générons",
+        "boton": "Voir les analyses"
+    },
+    "servicios": {
+        "titulo": "NOS",
+        "span": "SERVICES.",
+        "descripcion": "Faisons de la magie ensemble !",
+        "comunicacion": {
+            "titulo": "communication institutionnelle",
+            "descripcion": "Nous construisons des relations solides. Nous communiquons vos valeurs et renforçons le lien entre votre marque et son audience."
+        },
+        "marketing": {
+            "titulo": "stratégies marketing et analytique",
+            "descripcion": "Nous transformons les données en actions. Nous concevons des stratégies basées sur des analyses précises pour optimiser vos campagnes et maximiser des résultats réels et mesurables."
+        },
+        "grafico": {
+            "titulo": "design graphique",
+            "descripcion": "Des designs pour impacter. Des visuels qui communiquent et marquent les esprits."
+        },
+        "social": {
+            "titulo": "gestion des réseaux sociaux",
+            "descripcion": "Des stratégies qui convertissent. Nous gérons tout, de la planification à la publication, pour renforcer votre marque sur les réseaux sociaux."
+        },
+        "paid": {
+            "titulo": "publicité payante",
+            "descripcion": "Nous maximisons chaque investissement publicitaire. Nous créons des campagnes optimisées pour atteindre la bonne audience et générer un impact à chaque clic."
+        },
+        "web": {
+            "titulo": "développement web",
+            "descripcion": "Nous concevons des expériences web sur mesure. Des sites dynamiques, fonctionnels et visuellement attrayants qui transforment les visiteurs en clients."
+        },
+        "sdr": {
+            "titulo": "sdr : sales development representative",
+            "descripcion": "Des prospects qualifiés pour votre croissance. Nous connectons votre entreprise avec des clients idéaux."
+        }
+    },
+    "fotografia-video": {
+    "titulo": "la __qualité__ n'est pas négociable__.__",
+    "descripcion": "Boostez votre marque avec une qualité inégalée. De la stratégie à l'exécution, nous mettons notre expertise en marketing et communication au service de votre croissance, garantissant des résultats de premier ordre.",
+    "foto": "Photographie et Vidéo"
+    },
+    "footer": {
+    "titulo": "Commencez à créer l'histoire de votre marque",
+    "palabras": ["Rejoignez", "nous", "pour", "construire", "une", "narration", "puissante", "qui", "renforce", "votre", "marque"],
+    "realidad": "Réalisons votre vision.",
+    "listo": "Prêt à commencer ?",
+    "boton": "Planifiez une réunion",
+    "politicas": "Politique de confidentialité"
+}
+
+
+}

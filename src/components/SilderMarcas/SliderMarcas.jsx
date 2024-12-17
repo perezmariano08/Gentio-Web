@@ -3,46 +3,48 @@ import { Carousel } from 'primereact/carousel';
 import Button from '../Button/Button';
 import { MarcasSliderDescripcion, MarcasSliderTitulo } from './SliderMarcas';
 import Flecha from '../Logos/Flecha';
-
-const marcas = [
-    {
-        img: './imgs/marcas/luco.png',
-        nombre: 'Luco Gourmet',
-        descripcion: 'Luco Gourmet logró su primera franquicia y experimentó un crecimiento del 62,41% en seguidores. Además tiene más de 1 millón de impresiones mensuales.',
-        pdf: '/pdf/pdf-luco.pdf',
-        bk: '/imgs/backgrounds/bk-luco.jpg'
-    },
-    {
-        img: './imgs/marcas/electro.png',
-        nombre: 'Electro Manantiales',
-        descripcion: 'En solo dos meses, los seguidores crecieron un 72,68%, las visitas al perfil un +906,96% y los ingresos al sitio web para ver los productos un +755,56% Además, en este mismo periodo logramos más de 100K de impresiones.',
-        pdf: '/pdf/pdf-electro.pdf',
-        bk: '/imgs/backgrounds/bk-electro.jpg'
-    },
-    {
-        img: './imgs/marcas/don-nunez.png',
-        nombre: 'Don Nuñez',
-        descripcion: 'Dun Nuñez superó los 7.400 seguidores y alcanzó 1 millón de impresiones en menos de dos meses',
-        pdf: '/pdf/pdf-don-nunez.pdf',
-        bk: '/imgs/backgrounds/bk-don-nunez.jpg'
-    },
-    {
-        img: './imgs/marcas/tijuca.png',
-        nombre: 'Tijuca',
-        descripcion: 'Gracias a nuestras estrategias de comunicación, Tijuca ha logrado aumentar su base de seguidores y sus ventas a través de canales digitales y en su oficina de manera presencial.',
-        pdf: '/pdf/pdf-tijuca.pdf',
-        bk: '/imgs/backgrounds/bk-tijuca.jpg'
-    },
-    {
-        img: './imgs/marcas/secretos.png',
-        nombre: 'Secretos de Campo',
-        descripcion: 'Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses.',
-        pdf: '/pdf/pdf-secretos.pdf',
-        bk: '/imgs/backgrounds/bk-secretos.jpg'
-    },
-];
+import { useTranslation } from 'react-i18next';
 
 const SliderMarcas = () => {
+    const [t] = useTranslation("global")
+    
+    const marcas = [
+        {
+            img: './imgs/marcas/luco.png',
+            nombre: 'Luco Gourmet',
+            descripcion: t('slider.luco.descripcion'),
+            pdf: '/pdf/pdf-luco.pdf',
+            bk: '/imgs/backgrounds/bk-luco.jpg'
+        },
+        {
+            img: './imgs/marcas/electro.png',
+            nombre: 'Electro Manantiales',
+            descripcion: t('slider.electro.descripcion'),
+            pdf: '/pdf/pdf-electro.pdf',
+            bk: '/imgs/backgrounds/bk-electro.jpg'
+        },
+        {
+            img: './imgs/marcas/don-nunez.png',
+            nombre: 'Don Nuñez',
+            descripcion: t('slider.don-nunez.descripcion'),
+            pdf: '/pdf/pdf-don-nunez.pdf',
+            bk: '/imgs/backgrounds/bk-don-nunez.jpg'
+        },
+        {
+            img: './imgs/marcas/tijuca.png',
+            nombre: 'Tijuca',
+            descripcion: t('slider.tijuca.descripcion'),
+            pdf: '/pdf/pdf-tijuca.pdf',
+            bk: '/imgs/backgrounds/bk-tijuca.jpg'
+        },
+        {
+            img: './imgs/marcas/secretos.png',
+            nombre: 'Secretos de Campo',
+            descripcion: t('slider.secretos.descripcion'),
+            pdf: '/pdf/pdf-secretos.pdf',
+            bk: '/imgs/backgrounds/bk-secretos.jpg'
+        },
+    ];
     
     // Template para el carousel
     const itemTemplate = (marca) => {
@@ -75,9 +77,9 @@ const SliderMarcas = () => {
                     zIndex: 1
                 }}></div>
                 <MarcasSliderTitulo>
-                        <h2>Descubrí el</h2>
-                        <h2><span>Impacto</span> que</h2>
-                        <h2>generamos</h2>
+                        <h2>{t('slider.titulo')}</h2>
+                        <h2><span>{t('slider.impacto')}</span> {t('slider.marca')}</h2>
+                        <h2>{t('slider.generamos')}</h2>
                 </MarcasSliderTitulo>
 
                 {/* Contenido dentro del slider */}
@@ -96,7 +98,7 @@ const SliderMarcas = () => {
 
                     <p>{marca.descripcion}</p>
                     <Button onClick={() => window.open(marca.pdf, '_blank')} >
-                        <span>Ver analíticas</span>
+                        <span>{t('slider.boton')}</span>
                         <Flecha />
                     </Button>
                 </MarcasSliderDescripcion>

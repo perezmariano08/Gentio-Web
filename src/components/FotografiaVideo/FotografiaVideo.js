@@ -32,6 +32,7 @@ export const TitleContainer = styled.div`
     }
 
     h2 {
+        text-transform: uppercase;
         font-size: 80px;
         line-height: 80px;
         color: var(--white);

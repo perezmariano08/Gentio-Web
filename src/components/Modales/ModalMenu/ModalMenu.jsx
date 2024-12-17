@@ -2,8 +2,11 @@ import React from 'react'
 import { ModalMenuContainer, ModalMenuHeader, NavbarList } from './ModalMenuStyles'
 import { IoMdClose } from "react-icons/io";
 import { AnimatePresence } from 'framer-motion';
+import NavbarSelect from '../../Input/NavbarSelect';
+import { useTranslation } from 'react-i18next';
 
 const ModalMenu = ({ closeModal, isOpen }) => {
+    const [t] = useTranslation("global")
     return (
         <AnimatePresence
             onExitComplete={closeModal} // Ejecuta closeModal al completar la animación de salida
@@ -29,10 +32,11 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                             <IoMdClose onClick={closeModal} className='icon-close' />
                         </ModalMenuHeader>
                         <NavbarList>
-                            <li onClick={closeModal}><a href="#nosotros">nosotros</a></li>
-                            <li onClick={closeModal}><a href="#servicios">servicios</a></li>
+                            <NavbarSelect/>
+                            <li onClick={closeModal}><a href="#nosotros">{t('navbar.nosotros')}</a></li>
+                            <li onClick={closeModal}><a href="#servicios">{t('navbar.servicios')}</a></li>
+                            <li onClick={closeModal}><a href="#footer">{t('navbar.contacto')}</a></li>
                             {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}
-                            <li onClick={closeModal}><a href="#footer">contacto</a></li>
                         </NavbarList>
                     </ModalMenuContainer>
                 )

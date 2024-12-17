@@ -1,0 +1,106 @@
+{
+    "navbar": {
+        "nosotros": "nosotros",
+        "servicios": "servicios",
+        "contacto": "contacto"
+    },
+    "hero": {
+        "tendencia": "sé tendencia",
+        "title": "tu __marca__ en boca de todos.",
+        "span": "marca"
+    },
+    "about": {
+        "titulo": "¿Quiénes somos?",
+        "descripcion": "En __GENTÍO__, transformamos ideas en conversaciones que impulsan tu crecimiento. Somos una __agencia de comunicación y marketing__ dedicada a fortalecer tu __marca__ con estrategias respaldadas por experiencias de éxito comprobadas. Nuestro objetivo: __aumentar tu facturación__ y hacer que tu negocio se destaque."
+    },
+    "crecimiento": {
+        "titulo": "Impulsamos el crecimiento de tu negocio",
+        "descripcion": "Desatá el potencial de tu marca con nuestra experiencia comprobada en marketing. Desde la estrategia hasta la ejecución, transformamos cada acción en crecimiento real.",
+        "boton": "Agendá una reunion",
+        "servicios": {
+            "titulo": "Servicios",
+            "lista": [
+                "Comunicación institucional",
+                "Estrategias de marketing y analítica",
+                "Diseño gráfico",
+                "Manejo de redes sociales",
+                "Paid Ads",
+                "Video-fotografia",
+                "SDR: Sales Development Representative"
+            ]
+        },
+        "estadisticas": {
+            "marcas": "Marcas confían en nosotros.",
+            "impresiones": "Impresiones mensuales entre todas nuestras marcas.",
+            "ventas": "Aumento promedio de ventas en nuestras marcas."
+        }
+    },
+    "slider": {
+        "luco": {
+            "descripcion": "Luco Gourmet logró su primera franquicia y experimentó un crecimiento del 62,41% en seguidores. Además tiene más de 1 millón de impresiones mensuales."
+        },
+        "electro": {
+            "descripcion": "En solo dos meses, los seguidores crecieron un 72,68%, las visitas al perfil un +906,96% y los ingresos al sitio web para ver los productos un +755,56% Además, en este mismo periodo logramos más de 100K de impresiones."
+        },
+        "don-nunez": {
+            "descripcion": "Dun Nuñez superó los 7.400 seguidores y alcanzó 1 millón de impresiones en menos de dos meses"
+        },
+        "tijuca": {
+            "descripcion": "Gracias a nuestras estrategias de comunicación, Tijuca ha logrado aumentar su base de seguidores y sus ventas a través de canales digitales y en su oficina de manera presencial."
+        },
+        "secretos": {
+            "descripcion": "Secretos de Campo experimentó un crecimiento del 99.69% en seguidores en solo tres meses."
+        },
+        "titulo": "Descubrí el",
+        "impacto": "impacto",
+        "marca": "que",
+        "generamos": "generamos",
+        "boton": "Ver analíticas"
+    },
+    "servicios": {
+        "titulo": "NUESTROS",
+        "span": "SERVICIOS.",
+        "descripcion": "¡Hagamos magia juntos!",
+        "comunicacion": {
+            "titulo": "comunicacion institucional",
+            "descripcion": "Construimos relaciones sólidas. Comunicamos tus valores y fortalecemos la conexión entre tu marca y su audiencia."
+        },
+        "marketing": {
+            "titulo": "estrategias de marketing y analítica",
+            "descripcion": "Convertimos datos en acción. Diseñamos estrategias basadas en analíticas precisas que optimizan tus campañas y maximizan resultados reales y medibles."
+        },
+        "grafico": {
+            "titulo": "diseño gráfico",
+            "descripcion": "Diseñamos para impactar. Piezas visuales que comunican y dejan huella."
+        },
+        "social": {
+            "titulo": "manejo de redes sociales",
+            "descripcion": "Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales."
+        },
+        "paid": {
+            "titulo": "paid ads",
+            "descripcion": "Maximizamos cada inversión en Ads. Creamos campañas optimizadas para llegar a la audiencia correcta y generar el mayor impacto con cada clic."
+        },
+        "web": {
+            "titulo": "desarrollo web",
+            "descripcion": "Diseñamos experiencias web a medida. Sitios dinámicos, funcionales y visualmente atractivos que convierten visitantes en clientes."
+        },
+        "sdr": {
+            "titulo": "sdr: sales development representative",
+            "descripcion": "Prospectos calificados para tu crecimiento. Conectamos tu negocio con los clientes ideales"
+        }
+    },
+    "fotografia-video": {
+        "titulo": "la __calidad__ no se negocia__.__",
+        "descripcion": "Impulsá tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.",
+        "foto": "Fotografia y Video"
+    },
+    "footer": {
+        "titulo": "Comenzá a elaborar la historia de tu marca",
+        "palabras": ["Sumate", "a", "nosotros", "para", "construir", "una", "narrativa", "poderosa", "que", "potencie", "tu", "marca"],
+        "realidad": "Hagamos realidad tu visión.",
+        "listo": "¿Listo para empezar?",
+        "boton": "Agendá una reunion",
+        "politicas": "Politicas de Privacidad"
+    }
+}

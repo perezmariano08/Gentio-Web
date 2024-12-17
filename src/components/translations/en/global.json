@@ -1,0 +1,106 @@
+{
+    "navbar": {
+        "nosotros": "about us",
+        "servicios": "services",
+        "contacto": "contact"
+    },
+    "hero": {
+        "tendencia": "be trendy",
+        "title": "your __brand__ on everyone’s lips.",
+        "span": "brand"
+    },
+    "about": {
+        "titulo": "Who are we?",
+        "descripcion": "At __GENTÍO__, we transform ideas into conversations that drive your growth. We are a __communication and marketing agency__ dedicated to strengthening your __brand__ with strategies backed by proven success stories. Our goal: __increase your revenue__ and make your business stand out."
+    },
+    "crecimiento": {
+        "titulo": "We drive your business growth",
+        "descripcion": "Unleash the potential of your brand with our proven marketing expertise. From strategy to execution, we turn every action into real growth.",
+        "boton": "Schedule a meeting",
+        "servicios": {
+            "titulo": "Services",
+            "lista": [
+                "Institutional communication",
+                "Marketing strategies and analytics",
+                "Graphic design",
+                "Social media management",
+                "Paid Ads",
+                "Video-photography",
+                "SDR: Sales Development Representative"
+            ]
+        },
+        "estadisticas": {
+            "marcas": "Brands trust us.",
+            "impresiones": "Monthly impressions across all our brands.",
+            "ventas": "Average sales increase in our brands."
+        }
+    },
+    "slider": {
+        "luco": {
+            "descripcion": "Luco Gourmet achieved its first franchise and experienced a 62.41% growth in followers. It also has over 1 million monthly impressions."
+        },
+        "electro": {
+            "descripcion": "In just two months, followers grew by 72.68%, profile visits by +906.96%, and website traffic to view products by +755.56%. Additionally, during this period, we achieved over 100K impressions."
+        },
+        "don-nunez": {
+            "descripcion": "Dun Nuñez surpassed 7,400 followers and reached 1 million impressions in less than two months."
+        },
+        "tijuca": {
+            "descripcion": "Thanks to our communication strategies, Tijuca has increased its follower base and sales through digital channels and in their office."
+        },
+        "secretos": {
+            "descripcion": "Secretos de Campo experienced a 99.69% growth in followers in just three months."
+        },
+        "titulo": "Discover the",
+        "impacto": "impact",
+        "marca": "we",
+        "generamos": "generate",
+        "boton": "View analytics"
+    },
+    "servicios": {
+        "titulo": "OUR",
+        "span": "SERVICES.",
+        "descripcion": "Let’s make magic together!",
+        "comunicacion": {
+            "titulo": "institutional communication",
+            "descripcion": "We build solid relationships. We communicate your values and strengthen the connection between your brand and its audience."
+        },
+        "marketing": {
+            "titulo": "marketing strategies and analytics",
+            "descripcion": "We turn data into action. We design strategies based on precise analytics that optimize your campaigns and maximize measurable, real results."
+        },
+        "grafico": {
+            "titulo": "graphic design",
+            "descripcion": "Designing to impress. Visual pieces that communicate and leave a lasting impact."
+        },
+        "social": {
+            "titulo": "social media management",
+            "descripcion": "Strategies that convert. We handle everything from planning to posting to enhance your brand on social media."
+        },
+        "paid": {
+            "titulo": "paid ads",
+            "descripcion": "Maximizing every ad investment. We create optimized campaigns to reach the right audience and make every click impactful."
+        },
+        "web": {
+            "titulo": "web development",
+            "descripcion": "We design custom web experiences. Dynamic, functional, and visually appealing sites that turn visitors into clients."
+        },
+        "sdr": {
+            "titulo": "sdr: sales development representative",
+            "descripcion": "Qualified prospects for your growth. Connecting your business with ideal clients."
+        }
+    },
+    "fotografia-video": {
+    "titulo": "__quality__ is non-negotiable__.__",
+    "descripcion": "Boost your brand with unmatched quality. From strategy to execution, we bring our marketing and communication expertise to drive your growth, delivering top-tier results.",
+    "foto": "Photography and Video"
+    },
+    "footer": {
+    "titulo": "Start building your brand's story",
+    "palabras": ["Join", "us", "to", "build", "a", "powerful", "narrative", "that", "boosts", "your", "brand"],
+    "realidad": "Let's make your vision a reality.",
+    "listo": "Ready to get started?",
+    "boton": "Schedule a meeting",
+    "politicas": "Privacy Policy"
+}
+}

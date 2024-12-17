@@ -5,6 +5,7 @@ import bgHero from '/videos/bg_fotovideo_8.mp4';
 import bgHero2 from '/videos/bg_fotovideo_2.mp4';
 import bgHero3 from '/videos/bg_fotovideo_7.mp4';
 import bgHero4 from '/videos/bg_fotovideo_4.mp4';
+import { useTranslation } from 'react-i18next';
 
 const FotografiaVideo = () => {
 
@@ -28,12 +29,24 @@ const FotografiaVideo = () => {
       };
   }, []);
 
+  const [t] = useTranslation("global")
+
   return (
     <FotografiaVideoContainer>
         <FotografiaVideoWrapper>
             <TitleContainer ref={textRef} className={isVisible ? 'visible' : ''}>
-                <h2>LA <span>CALIDAD</span> NO SE NEGOCIA<span>.</span></h2>
-                <p>Impulsá tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.</p>
+            <h2>
+                {t('fotografia-video.titulo')
+                    .split(/__(.*?)__/)
+                    .map((part, index) =>
+                        part ? (
+                            <React.Fragment key={index}>
+                                {index % 2 === 1 ? <span>{part}</span> : part}
+                            </React.Fragment>
+                        ) : null
+                    )}
+            </h2>
+                <p>{t('fotografia-video.descripcion')}</p>
             </TitleContainer>
             <FotoVideoContainer>
               <FotoContenedorColumna className='first-row'>
@@ -41,7 +54,7 @@ const FotografiaVideo = () => {
                 <FotoVideoImg
                 bgUrl={'/imgs/bk_foto_1.jpg'}
                 />
-                <FotoTitle>Fotografia y Video</FotoTitle>
+                <FotoTitle>{t('fotografia-video.foto')}</FotoTitle>
                 <Video className='video-luco-hamburgesa'>
                     <video src={bgHero3} autoPlay muted loop playsInline />
                 </Video>

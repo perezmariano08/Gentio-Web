@@ -8,6 +8,7 @@ import { FaMeta } from "react-icons/fa6";
 import LogoMetricool from '../Logos/LogoMetricool';
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSalesforce } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 const Servicios = () => {
     const serviciosRef = useRef([]);
@@ -51,15 +52,16 @@ const Servicios = () => {
         };
     }, []);
 
+    const [t] = useTranslation("global")
+
     return (
         <ServiciosContainer id='servicios'>
             <ServiciosWrapper>
                 <TitleContainer ref={textRef} className={isVisible ? 'visible servicios' : 'servicios'}>
-                <h2>NUESTROS <span>SERVICIOS.</span></h2>
-                <p>¡Hagamos magia juntos!</p>
+                <h2>{t('servicios.titulo')} <span>{t('servicios.span')}</span></h2>
+                <p>{t('servicios.descripcion')}</p>
                 </TitleContainer>
                 
-                {/* Primer Servicio: Analíticas */}
                 <ServicioContainer>
                     <ServicioImg 
                         ref={el => serviciosRef.current[0] = el} 
@@ -71,21 +73,20 @@ const Servicios = () => {
                         className={animateIndices.has(1) ? 'animate right' : ''}
                         >
                         <DescripcionContainer>
-                            <h3>Comunicación Institucional</h3>
-                            <p>Construimos relaciones sólidas. Comunicamos tus valores y fortalecemos la conexión entre tu marca y su audiencia.</p>
+                            <h3>{t('servicios.comunicacion.titulo')}</h3>
+                            <p>{t('servicios.comunicacion.descripcion')}</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
 
-                {/* Segundo Servicio: Paid Ads */}
                 <ServicioContainer>
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[2] = el} 
                         className={animateIndices.has(2) ? 'animate left' : ''}
                         >
                         <DescripcionContainer className='right'>
-                            <h3>Estrategias de Marketing y analítica</h3>
-                            <p>Convertimos datos en acción. Diseñamos estrategias basadas en analíticas precisas que optimizan tus campañas y maximizan resultados reales y medibles.</p>
+                            <h3>{t('servicios.marketing.titulo')}</h3>
+                            <p>{t('servicios.marketing.descripcion')}</p>
                             <IconsContainer>
                                 <FaGoogle />
                                 <FaInstagram />
@@ -100,7 +101,6 @@ const Servicios = () => {
                     />
                 </ServicioContainer>
 
-                {/* Tercer Servicio: Diseño Gráfico */}
                 <ServicioContainer>
                     <ServicioImg 
                         ref={el => serviciosRef.current[4] = el} 
@@ -111,8 +111,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[5] = el} 
                         className={animateIndices.has(5) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>Diseño Gráfico</h3>
-                            <p>Diseñamos para impactar. Piezas visuales que comunican y dejan huella.</p>
+                            <h3>{t('servicios.grafico.titulo')}</h3>
+                            <p>{t('servicios.grafico.descripcion')}</p>
                             <IconsContainer>
                                 <SiAdobeillustrator />
                                 <SiAdobephotoshop />
@@ -121,14 +121,13 @@ const Servicios = () => {
                     </ServicioDescripcion>
                 </ServicioContainer>
                 
-                {/* Cuarto Servicio: Desarrollo Web */}
                 <ServicioContainer>
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[6] = el} 
                         className={animateIndices.has(6) ? 'animate left' : ''}>
                         <DescripcionContainer className='right'>
-                            <h3>Manejo de redes sociales</h3>
-                            <p>Estrategias que convierten. Nos encargamos de todo, desde la planificación hasta la publicación, para potenciar tu marca en redes sociales.</p>
+                            <h3>{t('servicios.social.titulo')}</h3>
+                            <p>{t('servicios.social.descripcion')}</p>
                             <IconsContainer>
                                 <LogoMetricool/>
                             </IconsContainer>
@@ -141,7 +140,6 @@ const Servicios = () => {
                     />
                 </ServicioContainer>
                 
-                {/* Quinto Servicio: SDR */}
                 <ServicioContainer>
                     <ServicioImg 
                         ref={el => serviciosRef.current[8] = el} 
@@ -152,8 +150,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[9] = el} 
                         className={animateIndices.has(9) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>Paid Ads</h3>
-                            <p>Maximizamos cada inversión en Ads. Creamos campañas optimizadas para llegar a la audiencia correcta y generar el mayor impacto con cada clic.</p>
+                        <h3>{t('servicios.paid.titulo')}</h3>
+                        <p>{t('servicios.paid.descripcion')}</p>
                             <IconsContainer>
                                 <FaMeta />
                                 <SiGoogleads />
@@ -162,14 +160,13 @@ const Servicios = () => {
                     </ServicioDescripcion>
                 </ServicioContainer>
 
-                {/* Sexto Servicio: Comunicación Institucional */}
                 <ServicioContainer>
                     <ServicioDescripcion 
                         ref={el => serviciosRef.current[10] = el} 
                         className={animateIndices.has(10) ? 'animate left' : ''}>
                         <DescripcionContainer className='right'>
-                            <h3>Desarrollo Web</h3>
-                            <p>Diseñamos experiencias web a medida. Sitios dinámicos, funcionales y visualmente atractivos que convierten visitantes en clientes.</p>
+                        <h3>{t('servicios.web.titulo')}</h3>
+                        <p>{t('servicios.web.descripcion')}</p>
                             <IconsContainer>
                                 <FaCode />
                             </IconsContainer>
@@ -192,8 +189,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[13] = el} 
                         className={animateIndices.has(13) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>SDR: Sales Development Representative</h3>
-                            <p>Prospectos calificados para tu crecimiento. Conectamos tu negocio con los clientes ideales</p>
+                        <h3>{t('servicios.sdr.titulo')}</h3>
+                        <p>{t('servicios.sdr.descripcion')}</p>
                             <IconsContainer>
                                 <FaSalesforce />
                                 <FaLinkedin />

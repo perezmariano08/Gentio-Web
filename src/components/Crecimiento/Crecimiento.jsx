@@ -3,6 +3,7 @@ import { CitaMarca, CrecimientoContainer, CrecimientoItem, CrecimientoItemColumn
 import Button from '../Button/Button';
 import { ImQuotesLeft } from "react-icons/im";
 import Flecha from '../Logos/Flecha';
+import { useTranslation } from 'react-i18next';
 
 const Crecimiento = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -73,42 +74,44 @@ const Crecimiento = () => {
         window.open(url, '_blank');
     };
 
+    const [t] = useTranslation("global");
+
     return (
         <CrecimientoContainer>
             <CrecimientoWrapper>
                 <CrecimientoText className={'visible'}>
-                    <h2>Impulsamos el crecimiento de tu negocio</h2>
-                    <p>Desatá el potencial de tu marca con nuestra experiencia comprobada en marketing. Desde la estrategia hasta la ejecución, transformamos cada acción en crecimiento real.</p>
+                    <h2>{t('crecimiento.titulo')}</h2>
+                    <p>{t('crecimiento.descripcion')}</p>
                     <Button onClick={handleWhatsAppClick}>
-                        <span>Agendá una reunion</span>
+                        <span>{t('crecimiento.boton')}</span>
                         <Flecha />
                     </Button>
                 </CrecimientoText>
                 <CrecimientoItemsWrapper>
                     <CrecimientoItem wrapEnabled={true}>
-                        <h5>Servicios</h5>
+                        <h5>{t('crecimiento.servicios.titulo')}</h5>
                         <Servicios>
-                            <ServicioItem>Comunicación institucional</ServicioItem>
-                            <ServicioItem className='filled'>Estrategias de marketing y analítica</ServicioItem>
-                            <ServicioItem>Diseño gráfico</ServicioItem>
-                            <ServicioItem>Manejo de redes sociales</ServicioItem>
-                            <ServicioItem className='filled'>Paid Ads</ServicioItem>
-                            <ServicioItem className='filled'>Video-fotografia</ServicioItem>
-                            <ServicioItem>SDR: Sales Development Representative</ServicioItem>
+                            <ServicioItem>{t('crecimiento.servicios.lista.0')}</ServicioItem>
+                            <ServicioItem className='filled'>{t('crecimiento.servicios.lista.1')}</ServicioItem>
+                            <ServicioItem>{t('crecimiento.servicios.lista.2')}</ServicioItem>
+                            <ServicioItem>{t('crecimiento.servicios.lista.3')}</ServicioItem>
+                            <ServicioItem className='filled'>{t('crecimiento.servicios.lista.4')}</ServicioItem>
+                            <ServicioItem className='filled'>{t('crecimiento.servicios.lista.5')}</ServicioItem>
+                            <ServicioItem>{t('crecimiento.servicios.lista.6')}</ServicioItem>
                         </Servicios>
                     </CrecimientoItem>
                     <CrecimientoItemColumn ref={textRef} className={isVisible ? 'visible' : ''}>
                         <CrecimientoItem wrapEnabled={false}>
                             <h5>{count15}</h5>
-                            <p>Marcas confían en nosotros.</p>
+                            <p>{t('crecimiento.estadisticas.marcas')}</p>
                         </CrecimientoItem>
                         <CrecimientoItem wrapEnabled={false}>
                             <h5>{(count2_6M / 1000000).toFixed(1)}M</h5>
-                            <p>Impresiones mensuales entre todas nuestras marcas.</p>
+                            <p>{t('crecimiento.estadisticas.impresiones')}</p>
                         </CrecimientoItem>
                         <CrecimientoItem wrapEnabled={false}>
                             <h5>{count15M}%</h5>
-                            <p>Aumento promedio de ventas en nuestras marcas.</p>
+                            <p>{t('crecimiento.estadisticas.ventas')}</p>
                         </CrecimientoItem>
                     </CrecimientoItemColumn>
                 </CrecimientoItemsWrapper>
