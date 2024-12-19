@@ -30,6 +30,7 @@ export const MarcasContainer = styled(ContainerStyled)`
     max-width: 1180px;
     overflow: hidden;
     margin: 0 auto; /* Centramos el contenedor */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
 
     @media (max-width: 768px) {
         padding-top: 50px;
@@ -41,11 +42,13 @@ export const MarcasWrapper = styled(WrapperStyled)`
     display: flex;
     gap: 30px; /* Espacio entre los logos */
     width: calc(150px * 42); /* 42 porque se duplican los logos (14 logos x 3 veces) */
-    animation: scroll 30s linear infinite;
+    animation: scroll 45s linear infinite;
     align-items: center;
 
     img, svg {
         width: 120px; /* Ancho de cada imagen */
+        margin: 0 20px;
+        opacity: 0.7;
     }
 
 
