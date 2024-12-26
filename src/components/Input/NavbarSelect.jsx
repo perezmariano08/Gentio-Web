@@ -83,7 +83,8 @@ const FlagIcon = styled.img`
 `;
 
 const NavbarSelect = () => {
-  const [language, setLanguage] = useState("es");
+  const languageStorage = localStorage.getItem("language");
+  const [language, setLanguage] = useState(languageStorage || "es");
   const [t, i18n] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -91,6 +92,7 @@ const NavbarSelect = () => {
 
   const handleChange = (lang) => {
     setLanguage(lang);
+    localStorage.setItem("language", lang);
     i18n.changeLanguage(lang);
     setIsOpen(false);
   };
