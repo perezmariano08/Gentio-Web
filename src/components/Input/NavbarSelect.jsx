@@ -5,7 +5,7 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 
 // Imágenes de banderas
 const flagImages = {
-  es: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+  es: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png",
   en: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
   fr: "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
 };

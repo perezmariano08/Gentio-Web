@@ -119,8 +119,14 @@ export const HeroText = styled.div`
         span {
             font-weight: 700;
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
             width: 100%;
+            font-size: 110px;
+        }
+
+        @media (max-width: 778px) {
+            width: 100%;
+            font-size: 80px;
         }
     }
 `

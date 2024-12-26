@@ -6,12 +6,12 @@
     },
     "hero": {
         "tendencia": "be trendy",
-        "title": "your __brand__ on everyone’s lips.",
+        "title": "your __brand__ on everyone’s minds",
         "span": "brand"
     },
     "about": {
         "titulo": "Who are we?",
-        "descripcion": "At __GENTÍO__, we transform ideas into conversations that drive your growth. We are a __communication and marketing agency__ dedicated to strengthening your __brand__ with strategies backed by proven success stories. Our goal: __increase your revenue__ and make your business stand out."
+        "descripcion": "At __GENTÍO__, we transform ideas into conversations that drive your growth. We are a __communication and marketing agency__ dedicated to strengthening your __brand__ with strategies backed by proven success stories. Our goal: __to increase your revenue__ and make your business stand out."
     },
     "crecimiento": {
         "titulo": "We drive your business growth",
@@ -60,7 +60,7 @@
     "servicios": {
         "titulo": "OUR",
         "span": "SERVICES.",
-        "descripcion": "Let’s make magic together!",
+        "descripcion": "Let’s grow together!",
         "comunicacion": {
             "titulo": "institutional communication",
             "descripcion": "We build solid relationships. We communicate your values and strengthen the connection between your brand and its audience."

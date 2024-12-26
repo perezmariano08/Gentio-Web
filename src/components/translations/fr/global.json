@@ -6,7 +6,7 @@
     },
     "hero": {
         "tendencia": "soyez tendance",
-        "title": "votre __marque__ sur toutes les lèvres.",
+        "title": "faites en sorte que votre __marque__ fasse le buzz.",
         "span": "marque"
     },
     "about": {
@@ -30,7 +30,7 @@
             ]
         },
         "estadisticas": {
-            "marcas": "Les marques nous font confiance.",
+            "marcas": "Les marques qui nous font confiance.",
             "impresiones": "Impressions mensuelles parmi toutes nos marques.",
             "ventas": "Augmentation moyenne des ventes chez nos marques."
         }
@@ -51,8 +51,8 @@
         "secretos": {
             "descripcion": "Secretos de Campo a connu une croissance de 99,69% de ses abonnés en seulement trois mois."
         },
-        "titulo": "Découvrez l'",
-        "impacto": "impact",
+        "titulo": "Découvrez ",
+        "impacto": "l'impact",
         "marca": "que",
         "generamos": "nous générons",
         "boton": "Voir les analyses"
