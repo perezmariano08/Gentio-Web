@@ -66,15 +66,14 @@ const Crecimiento = () => {
         }
     }, [isVisible]);
 
+    const [t] = useTranslation("global");
 
     const handleWhatsAppClick = () => {
         const phoneNumber = "+5493512390278";
-        const message = "Hola, estoy interesado en agendar una reunión para conocer más sobre sus servicios.";
+        const message = t('mensaje-whp.mensaje');
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
-
-    const [t] = useTranslation("global");
 
     return (
         <CrecimientoContainer>

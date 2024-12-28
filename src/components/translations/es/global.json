@@ -102,5 +102,8 @@
         "listo": "¿Listo para empezar?",
         "boton": "Agendá una reunion",
         "politicas": "Politicas de Privacidad"
+    },
+    "mensaje-whp": { 
+        "mensaje": "Hola, estoy interesado en agendar una reunión para conocer más sobre sus servicios."
     }
 }

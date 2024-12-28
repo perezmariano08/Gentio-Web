@@ -102,5 +102,8 @@
     "listo": "Ready to get started?",
     "boton": "Schedule a meeting",
     "politicas": "Privacy Policy"
+},
+"mensaje-whp": { 
+    "mensaje": "Hello, I am interested in scheduling a meeting to learn more about your services."
 }
 }

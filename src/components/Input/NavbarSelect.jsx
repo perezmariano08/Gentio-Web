@@ -1,7 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { LiaAngleDownSolid } from "react-icons/lia";
+import { useLocation } from "react-router-dom";
 
 // Imágenes de banderas
 const flagImages = {
@@ -12,27 +13,24 @@ const flagImages = {
 
 // Contenedor principal del select
 const SelectWrapper = styled.div`
-    
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 `;
 
 // Estilo del botón que simula el select actual
 const SelectButton = styled.div`
-    display: flex;
-    gap: 10px;
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #f4e5d4;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #f4e5d4;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:focus {
     border-color: #f4e5d4;
@@ -48,16 +46,16 @@ const ArrowIcon = styled(LiaAngleDownSolid)`
 
 // Lista desplegable
 const Dropdown = styled.ul`
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    border-radius: 5px;
-    list-style: none;
-    padding: 0;
-    margin: 5px 0 0;
-    z-index: 1000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 1000;
 `;
 
 // Elemento de la lista (opción)
@@ -83,18 +81,35 @@ const FlagIcon = styled.img`
 `;
 
 const NavbarSelect = () => {
-  const languageStorage = localStorage.getItem("language");
-  const [language, setLanguage] = useState(languageStorage || "es");
+  const location = useLocation(); // Detecta la URL actual
+  const [language, setLanguage] = useState("es"); // Estado inicial
   const [t, i18n] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
 
+  // Sincroniza el idioma con la URL cada vez que cambia
+  useEffect(() => {
+    const supportedLanguages = ["es", "en", "fr"];
+    const lang = location.pathname.split("/")[1]; // Obtiene el idioma desde la URL
+
+    if (supportedLanguages.includes(lang)) {
+      setLanguage(lang); // Actualiza el estado del dropdown
+      i18n.changeLanguage(lang); // Cambia el idioma en i18n
+      localStorage.setItem("language", lang); // Guarda en localStorage
+    }
+  }, [location, i18n]);
+
+  // Abre o cierra el dropdown
   const toggleDropdown = () => setIsOpen(!isOpen);
 
+  // Cambia el idioma seleccionado
   const handleChange = (lang) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
     i18n.changeLanguage(lang);
     setIsOpen(false);
+
+    // Redirige a la URL correspondiente
+    window.location.pathname = `/${lang}`;
   };
 
   return (
