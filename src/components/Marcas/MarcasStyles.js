@@ -41,7 +41,7 @@ export const MarcasContainer = styled(ContainerStyled)`
 export const MarcasWrapper = styled(WrapperStyled)`
     display: flex;
     gap: 30px; /* Espacio entre los logos */
-    width: calc(150px * 42); /* 42 porque se duplican los logos (14 logos x 3 veces) */
+    width: calc(150px * 48); /* 42 porque se duplican los logos (14 logos x 3 veces) */
     animation: scroll 45s linear infinite;
     align-items: center;
 
@@ -51,13 +51,12 @@ export const MarcasWrapper = styled(WrapperStyled)`
         opacity: 0.7;
     }
 
-
     /* Inserta la animación en el archivo de estilos */
     ${slider}
 
     @media (max-width: 768px) {
         gap: 20px; /* Reducir el gap en pantallas pequeñas */
-        width: calc(80px * 42); /* 42 porque se duplican los logos (14 logos x 3 veces) */
+        width: calc(80px * 48); /* 42 porque se duplican los logos (14 logos x 3 veces) */
         animation: scroll 20s linear infinite;
         img {
             width: 80px;

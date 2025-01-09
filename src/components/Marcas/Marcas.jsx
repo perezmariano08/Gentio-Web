@@ -15,6 +15,9 @@ import LogoZCSeguridad from '../Logos/LogoZCSeguridad';
 import LogoOdonto from '../Logos/LogoOdonto';
 import LogoZCIng from '../Logos/LogoZCIng';
 import LogoLaHilda from '../Logos/LogoLaHilda';
+import LogoAluminica from '../Logos/LogoAluminica';
+import LogoRisus from '../Logos/LogoRisus';
+import LogoStesel from '../Logos/LogoStesel';
 
 const Marcas = () => {
     return (
@@ -30,11 +33,14 @@ const Marcas = () => {
                 <LogoCR />
                 <LogoCanovas />
                 <LogoSecretos/>
-                <LogoGioventi />
+                {/* <LogoGioventi /> */}
                 <LogoLaHilda />
                 <LogoColono />
                 <LogoOdonto />
                 <LogoLaTeca />
+                <LogoAluminica/>
+                <LogoRisus />
+                <LogoStesel/>
 
                 {/* Duplicado para efecto de scroll continuo */}
                 <LogoZCSeguridad />
@@ -46,12 +52,15 @@ const Marcas = () => {
                 <LogoCR />
                 <LogoCanovas />
                 <LogoSecretos/>
-                <LogoGioventi />
+                {/* <LogoGioventi /> */}
                 <LogoLaHilda />
                 <LogoColono />
                 <LogoOdonto />
                 <LogoLaTeca />
-
+                <LogoAluminica/>
+                <LogoRisus />
+                <LogoStesel/>
+                
                 <LogoZCIng />
                 <LogoLuco />
                 <LogoTijuca />
@@ -61,11 +70,14 @@ const Marcas = () => {
                 <LogoCR />
                 <LogoCanovas />
                 <LogoSecretos/>
-                <LogoGioventi />
+                {/* <LogoGioventi /> */}
                 <LogoLaHilda />
                 <LogoColono />
                 <LogoOdonto />
                 <LogoLaTeca />
+                <LogoAluminica/>
+                <LogoRisus />
+                <LogoStesel/>
                 
             </MarcasWrapper>
         </MarcasContainer>
