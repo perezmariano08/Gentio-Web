@@ -95,6 +95,37 @@
         "descripcion": "Impulsá tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.",
         "foto": "Fotografia y Video"
     },
+    "equipo": {
+        "titulo": {
+            "tu": "TU",
+            "exito": "ÉXITO",
+            "nuestra": "NUESTRA",
+            "mision": "MISIÓN"
+        },
+        "descripcion": "Somos profesionales dedicados al marketing y la creatividad. Ofrecemos soluciones innovadoras, siempre enfocados en resultados que superen expectativas.",
+        "titulos": {
+            "comunicacion_h": "Licenciado en Comunicación Social",
+            "comunicacion_m": "Licenciada en Comunicación Social",
+            "magister_periodismo": "Magister en Periodismo",
+            "adm_empresas": "Licenciada en Administración de Empresas",
+            "diseño": "Diseñador gráfico",
+            "content_creator": "Content Creator",
+            "abogada": "Abogada y escribana",
+            "contadora": "Contadora"
+        },
+        "puesto": {
+            "director": "Director General",
+            "gentio_BIT": "Directora Gentío BIT",
+            "operaciones": "Directora de Operaciones",
+            "social_media": "Social Media Manager",
+            "diseño": "Diseñador gráfico",
+            "analista_marca": "Analista de marcas",
+            "fotografa": "Fotógrafa",
+            "contenido": "Contenido creativo",
+            "legal": "Asuntos legales",
+            "sdr": "Sales Development Representative"
+        }
+    },
     "footer": {
         "titulo": "Comenzá a elaborar la historia de tu marca",
         "palabras": ["Sumate", "a", "nosotros", "para", "construir", "una", "narrativa", "poderosa", "que", "potencie", "tu", "marca"],

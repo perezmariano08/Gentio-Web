@@ -21,6 +21,7 @@ export const EquipoWrapper = styled(WrapperStyled)`
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: end;
     width: 100%;
     gap: 20px;
     z-index: 2;
@@ -63,13 +64,19 @@ export const TitleContainer = styled.div`
             animation: ${fadeInRight} 1s ease-in-out; /* Aplica la animación de fade */
         }
     }
+
+    p {
+        width: 60%;
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    }
 `
 
 export const ServicioContainer = styled.section`
     display: flex;
     width: 100%;
     padding: 20px;
-    height: 400px;
     background-image: url(/imgs/bg_hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +100,6 @@ export const CardEquipo = styled.div`
     border-radius: 20px;
     padding: 40px 30px;
     height: 100%;
-    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -131,5 +137,69 @@ export const CardText = styled.span`
             font-size: 22px;
             line-height: 22px;
         }
+    }
+`
+export const TeamContainer = styled.div`
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center; /* Opcional: Centra el grid horizontalmente */
+    border-radius: 20px;
+`
+
+export const TeamCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    border-radius: 20px;
+    padding: 15px 15px 20px 15px;
+    background-color: var(--white);
+    text-align: center;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--violet);
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 4px;
+        height: 40px;
+        width: 90%;
+    }
+
+    span {
+        margin-top: 20px;
+        color: var(--orange-500);
+        font-weight: 500;
+    }
+`;
+
+export const TeamCardImagen = styled.div`
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+        object-position: top; /* Fija la posición de la imagen desde la parte superior */
     }
 `

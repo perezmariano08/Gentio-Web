@@ -105,5 +105,36 @@
 },
 "mensaje-whp": { 
     "mensaje": "Hello, I am interested in scheduling a meeting to learn more about your services."
+},
+"equipo": {
+    "titulo": {
+        "tu": "YOUR",
+        "exito": "SUCCESS",
+        "nuestra": "OUR",
+        "mision": "MISSION"
+    },
+    "descripcion": "We are professionals dedicated to marketing and creativity. We offer innovative solutions, always focused on delivering results that exceed expectations.",
+    "titulos": {
+        "comunicacion_h": "Bachelor in Social Communication",
+        "comunicacion_m": "Bachelor in Social Communication",
+        "magister_periodismo": "Master in Journalism",
+        "adm_empresas": "Bachelor in Business Administration",
+        "diseño": "Graphic Designer",
+        "content_creator": "Content Creator",
+        "abogada": "Lawyer and Notary",
+        "contadora": "Accountant"
+    },
+    "puesto": {
+        "director": "General Director",
+        "gentio_BIT": "Director of Gentío BIT",
+        "operaciones": "Operations Director",
+        "social_media": "Social Media Manager",
+        "diseño": "Graphic Designer",
+        "analista_marca": "Brand Analyst",
+        "fotografa": "Photographer",
+        "contenido": "Creative Content",
+        "legal": "Legal Affairs",
+        "sdr": "Sales Development Representative"
+    }
 }
 }

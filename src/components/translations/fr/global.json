@@ -105,5 +105,36 @@
 },
 "mensaje-whp": { 
     "mensaje": "Bonjour, je suis intéressé à planifier une réunion pour en savoir plus sur vos services."
+},
+"equipo": {
+    "titulo": {
+        "tu": "VOTRE",
+        "exito": "SUCCÈS",
+        "nuestra": "NOTRE",
+        "mision": "MISSION"
+    },
+    "descripcion": "Nous sommes des professionnels dédiés au marketing et à la créativité. Nous proposons des solutions innovantes, toujours axées sur des résultats qui dépassent les attentes.",
+    "titulos": {
+        "comunicacion_h": "Licence en Communication Sociale",
+        "comunicacion_m": "Licence en Communication Sociale",
+        "magister_periodismo": "Master en Journalisme",
+        "adm_empresas": "Licence en Administration des Affaires",
+        "diseño": "Designer Graphique",
+        "content_creator": "Créateur de Contenu",
+        "abogada": "Avocate et Notaire",
+        "contadora": "Comptable"
+    },
+    "puesto": {
+        "director": "Directeur Général",
+        "gentio_BIT": "Directrice de Gentío BIT",
+        "operaciones": "Directrice des Opérations",
+        "social_media": "Responsable des Médias Sociaux",
+        "diseño": "Designer Graphique",
+        "analista_marca": "Analyste de Marque",
+        "fotografa": "Photographe",
+        "contenido": "Contenu Créatif",
+        "legal": "Affaires Juridiques",
+        "sdr": "Représentant du Développement des Ventes"
+    }
 }
 }
