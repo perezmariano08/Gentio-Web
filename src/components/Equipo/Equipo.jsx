@@ -12,10 +12,8 @@ import { useTranslation } from 'react-i18next';
 
 const Equipo = () => {
     const { t } = useTranslation('global');
-
     const [visibleRows, setVisibleRows] = useState([]);
     const containerRef = useRef(null);
-
     const teamMembers = [
         { name: 'Agustín Sator', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.director'), img: 'sator_agustin.jpg' },
         { name: 'Giuliana Piantoni', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.gentio_BIT'), img: 'piantoni_giuliana.JPG' },
@@ -40,12 +38,10 @@ const Equipo = () => {
                     const { top, bottom } = row.getBoundingClientRect();
                     const isInViewport = top < window.innerHeight && bottom >= 0;
 
-                    // Si el elemento entra al viewport, lo agregamos a visibleRows
                     if (isInViewport && !visibleRows.includes(index)) {
                         setVisibleRows((prev) => [...prev, index]);
                     }
 
-                    // Si el elemento sale del viewport, lo eliminamos de visibleRows
                     if (!isInViewport && visibleRows.includes(index)) {
                         setVisibleRows((prev) => prev.filter((i) => i !== index));
                     }
@@ -54,7 +50,7 @@ const Equipo = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Llamada inicial para verificar elementos al cargar la página
+        handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -74,14 +70,16 @@ const Equipo = () => {
                 </TitleContainer>
                 <TeamContainer ref={containerRef}>
                     {teamMembers.map(({ name, title, role, img }, index) => {
-                        const delay = Math.min(index * 0.1, 0.5); // Limita el delay para evitar que sea muy largo
+                        // Usamos un retraso constante para todas las tarjetas
+                        const delay = `0.2s`;
+
                         return (
                             <div
                                 key={index}
                                 className={visibleRows.includes(index) ? 'visible' : 'hidden'}
                                 style={{
                                     opacity: visibleRows.includes(index) ? 1 : 0,
-                                    transition: `opacity 1s ease ${delay}s`,
+                                    transition: `opacity 1s ease ${delay}`,
                                 }}
                             >
                                 <TeamCard>
