@@ -1,174 +1,108 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { CardEquipo, CardText, EquipoContainer, EquipoWrapper, ServicioContainer, TeamCard, TeamCardImagen, TeamCardTitlesContainer, TeamContainer, TitleContainer } from './EquipoStyles'
+import React, { useEffect, useRef, useState } from 'react';
+import {
+    EquipoContainer,
+    EquipoWrapper,
+    TitleContainer,
+    TeamContainer,
+    TeamCard,
+    TeamCardImagen,
+    TeamCardTitlesContainer,
+} from './EquipoStyles';
 import { useTranslation } from 'react-i18next';
 
 const Equipo = () => {
-    const { t } = useTranslation("global");
+    const { t } = useTranslation('global');
 
-    const [isVisible, setIsVisible] = useState(false);
-    const textRef = useRef(null);
+    const [visibleRows, setVisibleRows] = useState([]);
+    const containerRef = useRef(null);
 
-    const checkVisibility = () => {
-        if (textRef.current) {
-            const { top, bottom } = textRef.current.getBoundingClientRect();
-            const isInViewport = top < window.innerHeight && bottom >= 0;
-            setIsVisible(isInViewport);
-        }
-    };
+    const teamMembers = [
+        { name: 'Agustín Sator', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.director'), img: 'sator_agustin.jpg' },
+        { name: 'Giuliana Piantoni', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.gentio_BIT'), img: 'piantoni_giuliana.JPG' },
+        { name: 'Carola Cinto', title: [t('equipo.titulos.magister_periodismo'), t('equipo.titulos.relaciones')], role: t('equipo.puesto.operaciones'), img: 'cinto_carola.jpg' },
+        { name: 'Sophia Schaub', title: t('equipo.titulos.content_creator'), role: t('equipo.puesto.contenido'), img: 'schaub_sophia.JPG' },
+        { name: 'Joaquín Pozzo', title: [t('equipo.titulos.sistemas'), t('equipo.titulos.diseño')], role: t('equipo.puesto.desarrollo'), img: 'joaquin_pozzo.jpg' },
+        { name: 'Inés Accastello', title: t('equipo.titulos.diseñadora'), role: t('equipo.puesto.diseñadora'), img: 'ines_accastello.jpg' },
+        { name: 'Romina Scavuzzo', title: t('equipo.titulos.adm_empresas'), role: t('equipo.puesto.social_media'), img: 'scavuzzo_romina.jpg' },
+        { name: 'Francisco Vidal', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.analista_marca'), img: 'vidal_francisco.jpg' },
+        { name: 'Agostina Anna', title: t('equipo.titulos.abogada'), role: t('equipo.puesto.legal'), img: 'anna_agostina.jpg' },
+        { name: 'Agustina Scolaro', title: t('equipo.titulos.contadora'), role: t('equipo.puesto.sdr'), img: 'scolaro_agustina.jpg' },
+        { name: 'Gonzalo Scavuzzo', title: t('equipo.titulos.diseño'), role: t('equipo.puesto.diseño'), img: 'scavuzzo_gonzalo.jpg' },
+        { name: 'Giuliana Musso', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.fotografa'), img: 'musso_giuliana.jpg' },
+        { name: 'Matías Conterno', title: t('equipo.titulos.filmmaker'), role: t('equipo.puesto.filmmaker'), img: 'matias_conterno.jpg' },
+    ];
 
     useEffect(() => {
-        window.addEventListener('scroll', checkVisibility);
-        checkVisibility();
+        const handleScroll = () => {
+            if (containerRef.current) {
+                const rows = Array.from(containerRef.current.children);
+                rows.forEach((row, index) => {
+                    const { top, bottom } = row.getBoundingClientRect();
+                    const isInViewport = top < window.innerHeight && bottom >= 0;
+
+                    // Si el elemento entra al viewport, lo agregamos a visibleRows
+                    if (isInViewport && !visibleRows.includes(index)) {
+                        setVisibleRows((prev) => [...prev, index]);
+                    }
+
+                    // Si el elemento sale del viewport, lo eliminamos de visibleRows
+                    if (!isInViewport && visibleRows.includes(index)) {
+                        setVisibleRows((prev) => prev.filter((i) => i !== index));
+                    }
+                });
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Llamada inicial para verificar elementos al cargar la página
 
         return () => {
-            window.removeEventListener('scroll', checkVisibility);
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [visibleRows]);
 
     return (
-        <EquipoContainer id='staff'>
+        <EquipoContainer id="staff">
             <EquipoWrapper>
-                <TitleContainer ref={textRef} className={isVisible ? 'visible' : ''}>
-                    <h2>{t('equipo.titulo.tu')} <span>{t('equipo.titulo.exito')}</span>, {t('equipo.titulo.nuestra')} {t('equipo.titulo.mision')}<span>.</span></h2>
+                <TitleContainer className={visibleRows.length > 0 ? 'visible' : ''}>
+                    <h2>
+                        {t('equipo.titulo.tu')} <span>{t('equipo.titulo.exito')}</span>, {t('equipo.titulo.nuestra')}{' '}
+                        {t('equipo.titulo.mision')}
+                        <span>.</span>
+                    </h2>
                     <p style={{ textAlign: 'end' }}>{t('equipo.descripcion')}</p>
                 </TitleContainer>
-                <TeamContainer>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/sator_agustin.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Agustín Sator</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.comunicacion_h')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.director')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/piantoni_giuliana.JPG" alt="" />
-                        </TeamCardImagen>
-                        <h5>Giuliana Piantoni</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.comunicacion_m')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.gentio_BIT')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/cinto_carola.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Carola Cinto</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.magister_periodismo')}</p>
-                            <p>{t('equipo.titulos.comunicacion_m')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.operaciones')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/scavuzzo_romina.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Romina Scavuzzo</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.adm_empresas')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.social_media')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/scavuzzo_gonzalo.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Gonzalo Scavuzzo</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.diseño')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.diseño')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/vidal_francisco.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Francisco Vidal</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.comunicacion_h')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.analista_marca')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/musso_giuliana.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Giuliana Musso</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.comunicacion_m')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.fotografa')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/schaub_sophia.JPG" alt="" />
-                        </TeamCardImagen>
-                        <h5>Sophia Schaub</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.content_creator')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.contenido')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/anna_agostina.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Agostina Anna</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.abogada')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.legal')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/scolaro_agustina.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Agustina Scolaro</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.contadora')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.sdr')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/joaquin_pozzo.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Joaquín Pozzo</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.sistemas')}</p>
-                            <p>{t('equipo.titulos.diseño')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.desarrollo')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/ines_accastello.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Inés Accastello</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.diseñadora')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.diseñadora')}</span>
-                    </TeamCard>
-                    <TeamCard>
-                        <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/matias_conterno.jpg" alt="" />
-                        </TeamCardImagen>
-                        <h5>Matías Conterno</h5>
-                        <TeamCardTitlesContainer>
-                            <p>{t('equipo.titulos.filmmaker')}</p>
-                        </TeamCardTitlesContainer>
-                        <span>{t('equipo.puesto.filmmaker')}</span>
-                    </TeamCard>
+                <TeamContainer ref={containerRef}>
+                    {teamMembers.map(({ name, title, role, img }, index) => {
+                        const delay = Math.min(index * 0.1, 0.5); // Limita el delay para evitar que sea muy largo
+                        return (
+                            <div
+                                key={index}
+                                className={visibleRows.includes(index) ? 'visible' : 'hidden'}
+                                style={{
+                                    opacity: visibleRows.includes(index) ? 1 : 0,
+                                    transition: `opacity 1s ease ${delay}s`,
+                                }}
+                            >
+                                <TeamCard>
+                                    <TeamCardImagen>
+                                        <img src={`https://gentiomkt.com/imgs/team/${img}`} alt={name} />
+                                    </TeamCardImagen>
+                                    <h5>{name}</h5>
+                                    <TeamCardTitlesContainer>
+                                        {Array.isArray(title)
+                                            ? title.map((t, i) => <p key={i}>{t}</p>)
+                                            : <p>{title}</p>}
+                                    </TeamCardTitlesContainer>
+                                    <span>{role}</span>
+                                </TeamCard>
+                            </div>
+                        );
+                    })}
                 </TeamContainer>
             </EquipoWrapper>
         </EquipoContainer>
-    )
-}
+    );
+};
 
-export default Equipo
+export default Equipo;

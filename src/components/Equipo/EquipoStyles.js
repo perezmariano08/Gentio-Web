@@ -1,6 +1,28 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 import { fadeInRight, floating } from "../../styles/GlobalStyles";
+
+const slideInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const slideInRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const EquipoContainer = styled(ContainerStyled)`
     scroll-margin-top: 100px;
@@ -158,7 +180,9 @@ export const TeamCard = styled.div`
     background-color: var(--white);
     text-align: center;
     align-items: center;
-
+    /* opacity: 0; */
+    transform: translateX(0); /* Reseteo inicial */
+    
     img {
         object-fit: cover;
         width: 120px;
@@ -184,6 +208,12 @@ export const TeamCard = styled.div`
         color: var(--orange-500);
         font-weight: 500;
     }
+
+    &.animate {
+    opacity: 1;
+    animation: ${({ index }) =>
+      index % 2 === 0 ? slideInLeft : slideInRight} 0.8s forwards;
+  }
 `;
 
 export const TeamCardImagen = styled.div`

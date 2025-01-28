@@ -2,7 +2,7 @@
 import styled, { keyframes } from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
-const slideInLeft = keyframes`
+export const slideInLeft = keyframes`
     0% {
         transform: translateX(-100%);
         opacity: 0;
@@ -13,7 +13,7 @@ const slideInLeft = keyframes`
     }
 `;
 
-const slideInRight = keyframes`
+export const slideInRight = keyframes`
     0% {
         transform: translateX(100%);
         opacity: 0;
