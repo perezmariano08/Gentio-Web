@@ -2,7 +2,8 @@
     "navbar": {
         "nosotros": "nosotros",
         "servicios": "servicios",
-        "contacto": "contacto"
+        "contacto": "contacto",
+        "equipo": "equipo"
     },
     "hero": {
         "tendencia": "sé tendencia",
@@ -109,9 +110,12 @@
             "magister_periodismo": "Magister en Periodismo",
             "adm_empresas": "Licenciada en Administración de Empresas",
             "diseño": "Diseñador gráfico",
+            "diseñadora": "Diseñadora gráfica",
             "content_creator": "Content Creator",
             "abogada": "Abogada y escribana",
-            "contadora": "Contadora"
+            "contadora": "Contadora",
+            "sistemas": "Analista en sistemas",
+            "filmmaker": "Grabación y edición"
         },
         "puesto": {
             "director": "Director General",
@@ -119,11 +123,14 @@
             "operaciones": "Directora de Operaciones",
             "social_media": "Social Media Manager",
             "diseño": "Diseñador gráfico",
+            "diseñadora": "Diseñadora gráfica",
             "analista_marca": "Analista de marcas",
             "fotografa": "Fotógrafa",
             "contenido": "Contenido creativo",
             "legal": "Asuntos legales",
-            "sdr": "Sales Development Representative"
+            "sdr": "Sales Development Representative",
+            "desarrollo": "Desarrollador web",
+            "filmmaker": "Filmmaker"
         }
     },
     "footer": {

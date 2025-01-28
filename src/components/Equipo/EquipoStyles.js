@@ -174,8 +174,8 @@ export const TeamCard = styled.div`
 
     p {
         font-size: 14px;
-        margin-top: 4px;
-        height: 40px;
+        /* margin-top: 4px; */
+        /* height: 40px; */
         width: 90%;
     }
 
@@ -202,4 +202,13 @@ export const TeamCardImagen = styled.div`
         object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
         object-position: top; /* Fija la posición de la imagen desde la parte superior */
     }
+`
+
+export const TeamCardTitlesContainer = styled.div`
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
 `

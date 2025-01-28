@@ -2,7 +2,8 @@
     "navbar": {
         "nosotros": "qui sommes-nous",
         "servicios": "services",
-        "contacto": "contact"
+        "contacto": "contact",
+        "equipo": "équipe"
     },
     "hero": {
         "tendencia": "soyez tendance",
@@ -91,50 +92,68 @@
         }
     },
     "fotografia-video": {
-    "titulo": "la __qualité__ n'est pas négociable__.__",
-    "descripcion": "Boostez votre marque avec une qualité inégalée. De la stratégie à l'exécution, nous mettons notre expertise en marketing et communication au service de votre croissance, garantissant des résultats de premier ordre.",
-    "foto": "Photographie et Vidéo"
+        "titulo": "la __qualité__ n'est pas négociable__.__",
+        "descripcion": "Boostez votre marque avec une qualité inégalée. De la stratégie à l'exécution, nous mettons notre expertise en marketing et communication au service de votre croissance, garantissant des résultats de premier ordre.",
+        "foto": "Photographie et Vidéo"
     },
     "footer": {
-    "titulo": "Commencez à créer l'histoire de votre marque",
-    "palabras": ["Rejoignez", "nous", "pour", "construire", "une", "narration", "puissante", "qui", "renforce", "votre", "marque"],
-    "realidad": "Réalisons votre vision.",
-    "listo": "Prêt à commencer ?",
-    "boton": "Planifiez une réunion",
-    "politicas": "Politique de confidentialité"
-},
-"mensaje-whp": { 
-    "mensaje": "Bonjour, je suis intéressé à planifier une réunion pour en savoir plus sur vos services."
-},
-"equipo": {
-    "titulo": {
-        "tu": "VOTRE",
-        "exito": "SUCCÈS",
-        "nuestra": "NOTRE",
-        "mision": "MISSION"
+        "titulo": "Commencez à créer l'histoire de votre marque",
+        "palabras": [
+            "Rejoignez",
+            "nous",
+            "pour",
+            "construire",
+            "une",
+            "narration",
+            "puissante",
+            "qui",
+            "renforce",
+            "votre",
+            "marque"
+        ],
+        "realidad": "Réalisons votre vision.",
+        "listo": "Prêt à commencer ?",
+        "boton": "Planifiez une réunion",
+        "politicas": "Politique de confidentialité"
     },
-    "descripcion": "Nous sommes des professionnels dédiés au marketing et à la créativité. Nous proposons des solutions innovantes, toujours axées sur des résultats qui dépassent les attentes.",
-    "titulos": {
-        "comunicacion_h": "Licence en Communication Sociale",
-        "comunicacion_m": "Licence en Communication Sociale",
-        "magister_periodismo": "Master en Journalisme",
-        "adm_empresas": "Licence en Administration des Affaires",
-        "diseño": "Designer Graphique",
-        "content_creator": "Créateur de Contenu",
-        "abogada": "Avocate et Notaire",
-        "contadora": "Comptable"
+    "mensaje-whp": {
+        "mensaje": "Bonjour, je suis intéressé à planifier une réunion pour en savoir plus sur vos services."
     },
-    "puesto": {
-        "director": "Directeur Général",
-        "gentio_BIT": "Directrice de Gentío BIT",
-        "operaciones": "Directrice des Opérations",
-        "social_media": "Responsable des Médias Sociaux",
-        "diseño": "Designer Graphique",
-        "analista_marca": "Analyste de Marque",
-        "fotografa": "Photographe",
-        "contenido": "Contenu Créatif",
-        "legal": "Affaires Juridiques",
-        "sdr": "Représentant du Développement des Ventes"
+    "equipo": {
+        "titulo": {
+            "tu": "VOTRE",
+            "exito": "SUCCÈS",
+            "nuestra": "NOTRE",
+            "mision": "MISSION"
+        },
+        "descripcion": "Nous sommes des professionnels dédiés au marketing et à la créativité. Nous proposons des solutions innovantes, toujours axées sur des résultats qui dépassent les attentes.",
+        "titulos": {
+            "comunicacion_h": "Licence en Communication Sociale",
+            "comunicacion_m": "Licence en Communication Sociale",
+            "magister_periodismo": "Master en Journalisme",
+            "adm_empresas": "Licence en Administration des Affaires",
+            "diseño": "Designer Graphique",
+            "diseñadora": "Designer Graphique",
+            "content_creator": "Créateur de Contenu",
+            "abogada": "Avocate et Notaire",
+            "contadora": "Comptable",
+            "sistemas": "Analyste en Systèmes",
+            "filmmaker": "Enregistrement et Montage"
+        },
+        "puesto": {
+            "director": "Directeur Général",
+            "gentio_BIT": "Directrice de Gentío BIT",
+            "operaciones": "Directrice des Opérations",
+            "social_media": "Responsable des Réseaux Sociaux",
+            "diseño": "Designer Graphique",
+            "diseñadora": "Designer Graphique",
+            "analista_marca": "Analyste de Marques",
+            "fotografa": "Photographe",
+            "contenido": "Contenu Créatif",
+            "legal": "Affaires Juridiques",
+            "sdr": "Représentant du Développement des Ventes",
+            "desarrollo": "Développeur Web",
+            "filmmaker": "Réalisateur"
+        }
     }
-}
 }

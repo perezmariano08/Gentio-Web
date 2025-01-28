@@ -2,7 +2,8 @@
     "navbar": {
         "nosotros": "about us",
         "servicios": "services",
-        "contacto": "contact"
+        "contacto": "contact",
+        "equipo": "staff"
     },
     "hero": {
         "tendencia": "be trendy",
@@ -91,50 +92,68 @@
         }
     },
     "fotografia-video": {
-    "titulo": "__quality__ is non-negotiable__.__",
-    "descripcion": "Boost your brand with unmatched quality. From strategy to execution, we bring our marketing and communication expertise to drive your growth, delivering top-tier results.",
-    "foto": "Photography and Video"
+        "titulo": "__quality__ is non-negotiable__.__",
+        "descripcion": "Boost your brand with unmatched quality. From strategy to execution, we bring our marketing and communication expertise to drive your growth, delivering top-tier results.",
+        "foto": "Photography and Video"
     },
     "footer": {
-    "titulo": "Start building your brand's story",
-    "palabras": ["Join", "us", "to", "build", "a", "powerful", "narrative", "that", "boosts", "your", "brand"],
-    "realidad": "Let's make your vision a reality.",
-    "listo": "Ready to get started?",
-    "boton": "Schedule a meeting",
-    "politicas": "Privacy Policy"
-},
-"mensaje-whp": { 
-    "mensaje": "Hello, I am interested in scheduling a meeting to learn more about your services."
-},
-"equipo": {
-    "titulo": {
-        "tu": "YOUR",
-        "exito": "SUCCESS",
-        "nuestra": "OUR",
-        "mision": "MISSION"
+        "titulo": "Start building your brand's story",
+        "palabras": [
+            "Join",
+            "us",
+            "to",
+            "build",
+            "a",
+            "powerful",
+            "narrative",
+            "that",
+            "boosts",
+            "your",
+            "brand"
+        ],
+        "realidad": "Let's make your vision a reality.",
+        "listo": "Ready to get started?",
+        "boton": "Schedule a meeting",
+        "politicas": "Privacy Policy"
     },
-    "descripcion": "We are professionals dedicated to marketing and creativity. We offer innovative solutions, always focused on delivering results that exceed expectations.",
-    "titulos": {
-        "comunicacion_h": "Bachelor in Social Communication",
-        "comunicacion_m": "Bachelor in Social Communication",
-        "magister_periodismo": "Master in Journalism",
-        "adm_empresas": "Bachelor in Business Administration",
-        "diseño": "Graphic Designer",
-        "content_creator": "Content Creator",
-        "abogada": "Lawyer and Notary",
-        "contadora": "Accountant"
+    "mensaje-whp": {
+        "mensaje": "Hello, I am interested in scheduling a meeting to learn more about your services."
     },
-    "puesto": {
-        "director": "General Director",
-        "gentio_BIT": "Director of Gentío BIT",
-        "operaciones": "Operations Director",
-        "social_media": "Social Media Manager",
-        "diseño": "Graphic Designer",
-        "analista_marca": "Brand Analyst",
-        "fotografa": "Photographer",
-        "contenido": "Creative Content",
-        "legal": "Legal Affairs",
-        "sdr": "Sales Development Representative"
+    "equipo": {
+        "titulo": {
+            "tu": "YOUR",
+            "exito": "SUCCESS",
+            "nuestra": "OUR",
+            "mision": "MISSION"
+        },
+        "descripcion": "We are professionals dedicated to marketing and creativity. We offer innovative solutions, always focused on delivering results that exceed expectations.",
+        "titulos": {
+            "comunicacion_h": "Bachelor in Social Communication",
+            "comunicacion_m": "Bachelor in Social Communication",
+            "magister_periodismo": "Master in Journalism",
+            "adm_empresas": "Bachelor in Business Administration",
+            "diseño": "Graphic Designer",
+            "diseñadora": "Graphic Designer",
+            "content_creator": "Content Creator",
+            "abogada": "Lawyer and Notary",
+            "contadora": "Accountant",
+            "sistemas": "Systems Analyst",
+            "filmmaker": "Recording and Editing"
+        },
+        "puesto": {
+            "director": "General Director",
+            "gentio_BIT": "Director of Gentío BIT",
+            "operaciones": "Operations Director",
+            "social_media": "Social Media Manager",
+            "diseño": "Graphic Designer",
+            "diseñadora": "Graphic Designer",
+            "analista_marca": "Brand Analyst",
+            "fotografa": "Photographer",
+            "contenido": "Creative Content",
+            "legal": "Legal Affairs",
+            "sdr": "Sales Development Representative",
+            "desarrollo": "Web Developer",
+            "filmmaker": "Filmmaker"
+        }
     }
-}
 }
