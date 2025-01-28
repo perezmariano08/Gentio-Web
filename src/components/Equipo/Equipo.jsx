@@ -45,7 +45,7 @@ const Equipo = () => {
                     </TeamCard>
                     <TeamCard>
                         <TeamCardImagen>
-                            <img src="https://gentiomkt.com/imgs/team/piantoni_giuliana.jpg" alt="" />
+                            <img src="https://gentiomkt.com/imgs/team/piantoni_giuliana.JPG" alt="" />
                         </TeamCardImagen>
                         <h5>Giuliana Piantoni</h5>
                         <TeamCardTitlesContainer>
