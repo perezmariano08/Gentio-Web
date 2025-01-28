@@ -35,6 +35,7 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                             <NavbarSelect/>
                             <li onClick={closeModal}><a href="#nosotros">{t('navbar.nosotros')}</a></li>
                             <li onClick={closeModal}><a href="#servicios">{t('navbar.servicios')}</a></li>
+                            <li onClick={closeModal}><a href="#staff">{t('navbar.equipo')}</a></li>
                             <li onClick={closeModal}><a href="#footer">{t('navbar.contacto')}</a></li>
                             {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}
                         </NavbarList>
