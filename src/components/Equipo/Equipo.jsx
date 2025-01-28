@@ -69,34 +69,29 @@ const Equipo = () => {
                     <p style={{ textAlign: 'end' }}>{t('equipo.descripcion')}</p>
                 </TitleContainer>
                 <TeamContainer ref={containerRef}>
-                    {teamMembers.map(({ name, title, role, img }, index) => {
-                        // Usamos un retraso constante para todas las tarjetas
-                        const delay = `0.2s`;
-
-                        return (
-                            <div
-                                key={index}
-                                className={visibleRows.includes(index) ? 'visible' : 'hidden'}
-                                style={{
-                                    opacity: visibleRows.includes(index) ? 1 : 0,
-                                    transition: `opacity 1s ease ${delay}`,
-                                }}
-                            >
-                                <TeamCard>
-                                    <TeamCardImagen>
-                                        <img src={`https://gentiomkt.com/imgs/team/${img}`} alt={name} />
-                                    </TeamCardImagen>
-                                    <h5>{name}</h5>
-                                    <TeamCardTitlesContainer>
-                                        {Array.isArray(title)
-                                            ? title.map((t, i) => <p key={i}>{t}</p>)
-                                            : <p>{title}</p>}
-                                    </TeamCardTitlesContainer>
-                                    <span>{role}</span>
-                                </TeamCard>
-                            </div>
-                        );
-                    })}
+                    {teamMembers.map(({ name, title, role, img }, index) => (
+                        <div
+                            key={index}
+                            className={visibleRows.includes(index) ? 'visible' : 'hidden'}
+                            style={{
+                                opacity: visibleRows.includes(index) ? 1 : 0,
+                                transition: `opacity 1s ease`,
+                            }}
+                        >
+                            <TeamCard>
+                                <TeamCardImagen>
+                                    <img src={`https://gentiomkt.com/imgs/team/${img}`} alt={name} />
+                                </TeamCardImagen>
+                                <h5>{name}</h5>
+                                <TeamCardTitlesContainer>
+                                    {Array.isArray(title)
+                                        ? title.map((t, i) => <p key={i}>{t}</p>)
+                                        : <p>{title}</p>}
+                                </TeamCardTitlesContainer>
+                                <span>{role}</span>
+                            </TeamCard>
+                        </div>
+                    ))}
                 </TeamContainer>
             </EquipoWrapper>
         </EquipoContainer>
