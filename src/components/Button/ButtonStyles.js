@@ -21,4 +21,14 @@ export const ButtonWrapper = styled.button`
         opacity: .5;
         transition: opacity 0.5s ease;
     }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 12px;
+        padding: 4px;
+    }
 `

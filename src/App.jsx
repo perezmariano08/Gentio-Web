@@ -12,6 +12,8 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import { MenuProvider } from "./components/Context/MenuContext.jsx"
 import SliderMarcas from "./components/SilderMarcas/SliderMarcas.jsx"
+import Trabaja from "./components/Trabaja/Trabaja.jsx"
+import Trabajos from "./components/Trabajos/Trabajos.jsx"
 
 function App() {
    return (
@@ -24,7 +26,9 @@ function App() {
          <Crecimiento/>
          {/* <MarcasSlider/> */}
          <SliderMarcas/>
+         <Trabajos/>
          <Servicios/>
+         <Trabaja/>
          <FotografiaVideo/>
          <Equipo/> 
          <Footer/>
