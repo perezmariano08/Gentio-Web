@@ -204,9 +204,22 @@ export const TeamCard = styled.div`
     }
 
     span {
-        margin-top: 20px;
+        margin-top: 10px;
         color: var(--orange-500);
         font-weight: 500;
+    }
+
+    div {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        svg {
+            font-size: 30px;
+            color: var(--violet);
+        }
     }
 
     &.animate {

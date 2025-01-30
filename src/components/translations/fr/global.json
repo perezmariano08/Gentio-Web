@@ -33,7 +33,7 @@
         "estadisticas": {
             "marcas": "Les marques qui nous font confiance.",
             "impresiones": "Impressions mensuelles parmi toutes nos marques.",
-            "ventas": "Augmentation moyenne des ventes chez nos marques."
+            "profesionales": "professionnels travaillant ensemble"
         }
     },
     "slider": {
@@ -156,5 +156,14 @@
             "desarrollo": "Développeur Web",
             "filmmaker": "Réalisateur"
         }
+    },
+    "trabaja": {
+        "title": "Avez-vous une __entreprise__ ou une __PME__?",
+        "description": "Demandez un __rapport__ de marque __gratuit__",
+        "button": "Je veux un rapport"
+    },
+    "trabajo": {
+        "title": "Découvrez nos principaux travaux",
+        "button": "Voir les travaux"
     }
 }

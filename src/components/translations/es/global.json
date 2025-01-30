@@ -33,7 +33,8 @@
         "estadisticas": {
             "marcas": "Marcas confían en nosotros.",
             "impresiones": "Impresiones mensuales entre todas nuestras marcas.",
-            "ventas": "Aumento promedio de ventas en nuestras marcas."
+            "ventas": "Aumento promedio de ventas en nuestras marcas.",
+            "profesionales": "profesionales trabajando en conjunto"
         }
     },
     "slider": {
@@ -144,5 +145,14 @@
     },
     "mensaje-whp": { 
         "mensaje": "Hola, estoy interesado en agendar una reunión para conocer más sobre sus servicios."
+    },
+    "trabaja": {
+        "title": "Tenés una __empresa__ o una __pyme__?",
+        "description": "Solicitá un informe de marca __gratis__",
+        "button": "Quiero un informe"
+    },
+    "trabajo": {
+        "title": "Mirá nuestros principales trabajos",
+        "button": "Ver trabajos"
     }
 }

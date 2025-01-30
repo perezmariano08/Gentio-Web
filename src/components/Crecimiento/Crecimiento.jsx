@@ -38,26 +38,24 @@ const Crecimiento = () => {
         if (isVisible) {
             let count1 = 0, count2 = 0, count3 = 0;
 
-            // Iniciar intervalos de conteo para cada número con un intervalo mayor
             const interval1 = setInterval(() => {
                 count1 += 1;
-                if (count1 >= 15) clearInterval(interval1);
+                if (count1 >= 21) clearInterval(interval1);
                 setCount15(count1);
-            }, 100); // Ajuste de la velocidad para contar más lentamente (cada 100ms)
+            }, 100);
 
             const interval2 = setInterval(() => {
-                count2 += 5000; // Aumento más lento en el conteo
-                if (count2 >= 2600000) clearInterval(interval2);
+                count2 += 8000; // Aumento más lento en el conteo
+                if (count2 >= 5100000) clearInterval(interval2);
                 setCount2_6M(count2);
-            }, 5); // Ajuste de velocidad para un conteo más lento
+            }, 2);
 
             const interval3 = setInterval(() => {
                 count3 += 1;
-                if (count3 >= 46) clearInterval(interval3);
-                setCount15M(count3); // Actualiza el estado del tercer contador
-            }, 50); // Ajuste de velocidad para el tercer contador (cada 50ms)
+                if (count3 >= 13) clearInterval(interval3);
+                setCount15M(count3);
+            }, 200);
 
-            // Limpiar intervalos cuando el componente se desmonta o no es visible
             return () => {
                 clearInterval(interval1);
                 clearInterval(interval2);
@@ -109,8 +107,8 @@ const Crecimiento = () => {
                             <p>{t('crecimiento.estadisticas.impresiones')}</p>
                         </CrecimientoItem>
                         <CrecimientoItem wrapEnabled={false}>
-                            <h5>{count15M}%</h5>
-                            <p>{t('crecimiento.estadisticas.ventas')}</p>
+                            <h5>{count15M}</h5>
+                            <p>{t('crecimiento.estadisticas.profesionales')}</p>
                         </CrecimientoItem>
                     </CrecimientoItemColumn>
                 </CrecimientoItemsWrapper>

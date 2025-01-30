@@ -18,6 +18,10 @@ import LogoLaHilda from '../Logos/LogoLaHilda';
 import LogoAluminica from '../Logos/LogoAluminica';
 import LogoRisus from '../Logos/LogoRisus';
 import LogoStesel from '../Logos/LogoStesel';
+import LogoLucoMercato from '../Logos/LogoLucoMercato';
+import LogoSommier from '../Logos/LogoSommier';
+import LogoBakeria from '../Logos/LogoBakeria';
+import LogoPsp from '../Logos/LogoPsp';
 
 const Marcas = () => {
     return (
@@ -41,6 +45,10 @@ const Marcas = () => {
                 <LogoAluminica/>
                 <LogoRisus />
                 <LogoStesel/>
+                <LogoLucoMercato/>
+                <LogoSommier/>
+                <LogoBakeria/>
+                <LogoPsp/>
 
                 {/* Duplicado para efecto de scroll continuo */}
                 <LogoZCSeguridad />
@@ -60,7 +68,12 @@ const Marcas = () => {
                 <LogoAluminica/>
                 <LogoRisus />
                 <LogoStesel/>
-                
+                <LogoLucoMercato/>
+                <LogoSommier/>
+                <LogoBakeria/>
+                <LogoPsp/>
+
+                {/* TERCER SCROLL */}
                 <LogoZCIng />
                 <LogoLuco />
                 <LogoTijuca />
@@ -78,6 +91,10 @@ const Marcas = () => {
                 <LogoAluminica/>
                 <LogoRisus />
                 <LogoStesel/>
+                <LogoLucoMercato/>
+                <LogoSommier/>
+                <LogoBakeria/>
+                <LogoPsp/>
                 
             </MarcasWrapper>
         </MarcasContainer>

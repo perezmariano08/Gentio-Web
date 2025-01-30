@@ -33,7 +33,8 @@
         "estadisticas": {
             "marcas": "Brands trust us.",
             "impresiones": "Monthly impressions across all our brands.",
-            "ventas": "Average sales increase in our brands."
+            "ventas": "Average sales increase in our brands.",
+            "profesionales": "professionals working together"
         }
     },
     "slider": {
@@ -156,5 +157,14 @@
             "desarrollo": "Web Developer",
             "filmmaker": "Filmmaker"
         }
+    },
+    "trabaja": {
+        "title": "Do you have a __company__ or a __SME__?",
+        "description": "Request a __free__ brand report",
+        "button": "I want a report"
+    },
+    "trabajo": {
+        "title": "Check out our main works",
+        "button": "See works"
     }
 }
