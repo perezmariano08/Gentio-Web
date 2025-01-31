@@ -13,6 +13,8 @@ export const ButtonWrapper = styled.button`
     background-color: var(--orange-500);
     border: none;
     cursor: pointer;
+    color: var(--bg);
+    /* font-weight: 400; */
     
     span {
         padding-left: 8px;
