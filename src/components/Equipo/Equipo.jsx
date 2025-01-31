@@ -16,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 const Equipo = () => {
     const { t } = useTranslation('global');
     const [visibleRows, setVisibleRows] = useState([]);
-    const containerRef = useRef(null);
+    const containerRef = useRef(null);    
 
     // Actualizado para tener linkedin e instagram como claves separadas
     const teamMembers = [
@@ -29,7 +29,7 @@ const Equipo = () => {
         { name: 'Romina Scavuzzo', title: t('equipo.titulos.adm_empresas'), role: t('equipo.puesto.social_media'), img: 'scavuzzo_romina.jpg', linkedin: 'https://www.linkedin.com/in/rominascavuzzo/' },
         { name: 'Francisco Vidal', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.analista_marca'), img: 'vidal_francisco.jpg', linkedin: 'https://www.linkedin.com/in/francisco-vidal-9ab42b200/' },
         { name: 'Agostina Anna', title: t('equipo.titulos.abogada'), role: t('equipo.puesto.legal'), img: 'anna_agostina.jpg', linkedin: 'https://www.linkedin.com/in/mar%C3%ADa-agostina-anna-/' },
-        { name: 'Agustina Scolaro', title: t('equipo.titulos.contadora'), role: t('equipo.puesto.sdr'), img: 'scolaro_agustina.jpg'},
+        { name: 'Agustina Scolaro', title: t('equipo.titulos.contadora'), role: t('equipo.puesto.sdr'), img: 'scolaro_agustina.jpg', linkedin: 'https://www.linkedin.com/in/agustina-scolaro?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'},
         { name: 'Gonzalo Scavuzzo', title: t('equipo.titulos.diseño'), role: t('equipo.puesto.diseño'), img: 'scavuzzo_gonzalo.jpg', linkedin: 'https://www.linkedin.com/in/gonzalo-scavuzzo-9762a0217/' },
         { name: 'Giuliana Musso', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.fotografa'), img: 'musso_giuliana.jpg', instagram: 'https://www.instagram.com/giuli.musso/' },
         { name: 'Matías Conterno', title: t('equipo.titulos.filmmaker'), role: t('equipo.puesto.filmmaker'), img: 'matias_conterno.jpg', instagram: 'https://www.instagram.com/maticonterno/' },

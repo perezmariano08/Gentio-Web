@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.button`
+    all: unset; /* Elimina todos los estilos por defecto */
     display: flex;
     align-items: center;
     padding: 8px;
@@ -12,9 +13,11 @@ export const ButtonWrapper = styled.button`
     background-color: var(--orange-500);
     border: none;
     cursor: pointer;
+    
     span {
         padding-left: 8px;
         color: var(--bg);
+        width: 100%;
     }
 
     &:hover {

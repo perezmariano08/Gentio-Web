@@ -166,5 +166,9 @@
     "trabajo": {
         "title": "Check out our main works",
         "button": "See works"
+    },
+    "gentioteam": {
+        "title": "Join our team",
+        "button": "Upload your profile"
     }
 }

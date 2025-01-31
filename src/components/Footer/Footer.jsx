@@ -42,7 +42,8 @@ const Footer = () => {
 
     const { t } = useTranslation("global");
 
-    
+    const LINK = 'https://docs.google.com/forms/d/e/1FAIpQLSeV2N0Pb7-ZytuAsW5xQC64WRjrJWFxRqBUFcqAFSR8ravoaQ/viewform';
+
     return (
         <FooterContainer id='footer'>
             <FooterWrapper>
@@ -50,12 +51,12 @@ const Footer = () => {
                     <FooterTop>
                         <p><span>{t('footer.titulo')}</span></p>
                         <h3>
-    {t('footer.palabras', { returnObjects: true }).map((word, index) => (
-        <FloatingWord key={index} index={index} style={{ color: 'var(--white)' }}>
-            {word}
-        </FloatingWord>
-    ))}
-</h3>
+                            {t('footer.palabras', { returnObjects: true }).map((word, index) => (
+                                <FloatingWord key={index} index={index} style={{ color: 'var(--white)' }}>
+                                    {word}
+                                </FloatingWord>
+                            ))}
+                        </h3>
                         <p>{t('footer.realidad')}
                             <br />
                             {t('footer.listo')}</p>
@@ -75,6 +76,11 @@ const Footer = () => {
                                 <path d="M260.2 20H274.09L260.73 34.32H249.19L260.19 20H260.2ZM250.26 41.05H261.16V95.55H250.26V41.05Z" fill="#F4E5D4" />
                                 <path d="M278.74 93.09C274.29 90.6 270.8 87.18 268.27 82.83C265.74 78.49 264.48 73.64 264.48 68.3C264.48 62.96 265.74 58.11 268.27 53.77C270.8 49.43 274.29 46.01 278.74 43.51C283.19 41.02 288.12 39.77 293.54 39.77C298.96 39.77 303.99 41.02 308.45 43.51C312.9 46 316.39 49.42 318.92 53.77C321.45 58.12 322.71 62.96 322.71 68.3C322.71 73.64 321.44 78.49 318.92 82.83C316.39 87.18 312.9 90.6 308.45 93.09C304 95.58 299.03 96.83 293.54 96.83C288.05 96.83 283.19 95.58 278.74 93.09ZM302.67 83.9C305.41 82.33 307.57 80.18 309.13 77.44C310.7 74.7 311.48 71.65 311.48 68.3C311.48 64.95 310.69 61.91 309.13 59.16C307.56 56.42 305.42 54.26 302.72 52.7C300.01 51.13 296.95 50.35 293.53 50.35C290.11 50.35 287.15 51.13 284.45 52.7C281.74 54.27 279.61 56.42 278.04 59.16C276.47 61.9 275.69 64.95 275.69 68.3C275.69 71.65 276.47 74.69 278.04 77.44C279.61 80.18 281.74 82.34 284.45 83.9C287.16 85.47 290.18 86.25 293.53 86.25C296.88 86.25 299.92 85.47 302.67 83.9Z" fill="#F4E5D4" />
                             </svg>
+                            <h3>{t('gentioteam.title')}</h3>
+                            <Button className='footer-button' onClick={() => window.open(LINK, '_blank')}>
+                                <span>{t('gentioteam.button')}</span>
+                                <Flecha />
+                            </Button>
                             <div>
                                 <p>Humberto Primo 630, piso 3, Of. H32 (Capitalinas)</p>
                                 <p>Córdoba, Argentina</p>

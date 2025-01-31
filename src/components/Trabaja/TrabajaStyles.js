@@ -8,13 +8,14 @@ export const TrabajaWrapper = styled(WrapperStyled)`
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 20px;
 `;
 
 export const TrabajaItems = styled.div`
     position: relative;
     width: 100%;
     background-color: var(--white);
-    height: 250px;
+    height: 450px;
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;
@@ -22,7 +23,7 @@ export const TrabajaItems = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     &::before {
         content: "";
         position: absolute;
@@ -36,11 +37,14 @@ export const TrabajaItems = styled.div`
 
     /* Responsive: Reduce height for smaller screens */
     @media (max-width: 768px) {
-        height: 200px;
+        height: 300px;
+        &.informe { 
+        display: none;
+    }
     }
 
     @media (max-width: 480px) {
-        height: 150px;
+        height: 250px;
     }
 `;
 
@@ -59,21 +63,28 @@ export const TrabajaTextContainer = styled.div`
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 20px;
     padding: 20px;
     text-align: center;
+    width: 100%;
 
     h3 {
+        text-align: start;
         font-weight: 500;
         color: var(--white);
         text-transform: uppercase;
         font-size: 40px;
         word-wrap: break-word;
         margin: 0 15px;
+
+        &.informe { 
+            text-align: end;
+        }
     }
 
     p {
+        text-align: start;
         font-weight: 400;
         color: var(--white);
         text-transform: uppercase;
@@ -92,11 +103,16 @@ export const TrabajaTextContainer = styled.div`
         }
     }
 
+    img {
+        width: 150px;
+        margin-right: 20px;
+    }
+
     /* Responsive: Adjust font sizes for smaller screens */
     @media (max-width: 768px) {
         gap: 10px;
         h3 {
-            font-size: 30px;
+            font-size: 40px;
         }
 
         p {
@@ -107,7 +123,7 @@ export const TrabajaTextContainer = styled.div`
     @media (max-width: 480px) {
         gap: 10px;
         h3 {
-            font-size: 23px;
+            font-size: 30px;
             width: 100%;
         }
 
@@ -115,5 +131,28 @@ export const TrabajaTextContainer = styled.div`
             font-size: 14px;
             width: 100%;
         }
+    }
+
+    &.informe { 
+        align-items: end;
+    }
+`;
+
+export const TrabajaVideo = styled.video`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+`;
+
+export const ButtonContainer = styled.div`
+    margin-left: 12px;
+
+    &.informe { 
+        margin-left: 0;
+        margin-right: 12px;
     }
 `;
