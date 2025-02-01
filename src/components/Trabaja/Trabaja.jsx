@@ -14,7 +14,7 @@ const Trabaja = () => {
             <TrabajaWrapper>
                 <TrabajaItems>
                     <TrabajaVideo autoPlay loop muted playsInline>
-                        <source src='/videos/bg-video-trabaja.mp4' type='video/mp4' />
+                        <source src='/videos/bg-video-informe-2.mp4' type='video/mp4' />
                         Your browser does not support the video tag.
                     </TrabajaVideo>
                     <TrabajaTextContainer>

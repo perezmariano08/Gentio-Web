@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FotoContenedorColumna, FotografiaVideoContainer, FotografiaVideoWrapper, FotoTitle, FotoVideoContainer, FotoVideoImg, TitleContainer, Video } from './FotografiaVideo'
 import SvgIcon from '../SvgIcon/SvgIcon'
-import bgHero from '/videos/bg_fotovideo_8.mp4';
+import bgHero from '/videos/bg-video-reemplazo-2.mp4';
 import bgHero2 from '/videos/bg_fotovideo_2.mp4';
 import bgHero3 from '/videos/bg_fotovideo_7.mp4';
 import bgHero4 from '/videos/bg_fotovideo_4.mp4';
