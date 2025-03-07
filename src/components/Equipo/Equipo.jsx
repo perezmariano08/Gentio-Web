@@ -34,6 +34,7 @@ const Equipo = () => {
         { name: 'Giuliana Musso', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.fotografa'), img: 'musso_giuliana.jpg', instagram: 'https://www.instagram.com/giuli.musso/' },
         { name: 'Matías Conterno', title: t('equipo.titulos.filmmaker'), role: t('equipo.puesto.filmmaker'), img: 'matias_conterno.jpg', instagram: 'https://www.instagram.com/maticonterno/' },
     ];
+    
 
     useEffect(() => {
         const handleScroll = () => {
