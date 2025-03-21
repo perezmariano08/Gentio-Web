@@ -22,6 +22,12 @@ import LogoLucoMercato from '../Logos/LogoLucoMercato';
 import LogoSommier from '../Logos/LogoSommier';
 import LogoBakeria from '../Logos/LogoBakeria';
 import LogoPsp from '../Logos/LogoPsp';
+import LogoBocconi from '../Logos/LogoBocconi';
+import LogoGrupoHabitat from '../Logos/LogoGrupoHabitat';
+import LogoCarioca from '../Logos/LogoCarioca';
+import LogoAlvarez from '../Logos/LogoAlvarez';
+import LogoMentura from '../Logos/LogoMentura';
+import LogoAcav from '../Logos/LogoAcav';
 
 const Marcas = () => {
     return (
@@ -49,6 +55,12 @@ const Marcas = () => {
                 <LogoSommier/>
                 <LogoBakeria/>
                 <LogoPsp/>
+                <LogoBocconi/>
+                <LogoGrupoHabitat/>
+                <LogoCarioca/>
+                <LogoAlvarez/>
+                {/* <LogoMentura/>
+                <LogoAcav/> */}
 
                 {/* Duplicado para efecto de scroll continuo */}
                 <LogoZCSeguridad />
@@ -72,6 +84,12 @@ const Marcas = () => {
                 <LogoSommier/>
                 <LogoBakeria/>
                 <LogoPsp/>
+                <LogoBocconi/>
+                <LogoGrupoHabitat/>
+                <LogoCarioca/>
+                <LogoAlvarez/>
+                {/* <LogoMentura/>
+                <LogoAcav/> */}
 
                 {/* TERCER SCROLL */}
                 <LogoZCIng />
@@ -95,6 +113,12 @@ const Marcas = () => {
                 <LogoSommier/>
                 <LogoBakeria/>
                 <LogoPsp/>
+                <LogoBocconi/>
+                <LogoGrupoHabitat/>
+                <LogoCarioca/>
+                <LogoAlvarez/>
+                {/* <LogoMentura/>
+                <LogoAcav/> */}
                 
             </MarcasWrapper>
         </MarcasContainer>

@@ -117,7 +117,9 @@
             "contadora": "Contadora",
             "sistemas": "Analista en Sistemas",
             "filmmaker": "Grabación y Edición",
-            "relaciones": "Licenciada en Relaciones Internacionales"
+            "relaciones": "Licenciada en Relaciones Internacionales",
+            "project": "Project Manager",
+            "rrhh": "Licenciada en Recursos Humanos"
         },
         "puesto": {
             "director": "Director General",
@@ -132,7 +134,9 @@
             "legal": "Asuntos Legales",
             "sdr": "Sales Development Representative",
             "desarrollo": "Desarrollador Web",
-            "filmmaker": "Filmmaker"
+            "filmmaker": "Filmmaker",
+            "project": "Project Manager",
+            "coordinadora": "Coordinadora de Talento y Cultura"
         }
     },
     "footer": {

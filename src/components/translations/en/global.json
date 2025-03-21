@@ -140,7 +140,9 @@
             "contadora": "Accountant",
             "sistemas": "Systems Analyst",
             "filmmaker": "Recording and Editing",
-            "relaciones": "Bachelor in International Relations"
+            "relaciones": "Bachelor in International Relations",
+            "project": "Project Manager",
+            "rrhh": "Bachelor in Human Resources"
         },
         "puesto": {
             "director": "General Director",
@@ -155,7 +157,9 @@
             "legal": "Legal Affairs",
             "sdr": "Sales Development Representative",
             "desarrollo": "Web Developer",
-            "filmmaker": "Filmmaker"
+            "filmmaker": "Filmmaker",
+            "project": "Project Manager",
+            "coordinadora": "Talent and Culture Coordinator"
         }
     },
     "trabaja": {

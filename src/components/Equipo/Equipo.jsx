@@ -16,25 +16,26 @@ import { useTranslation } from 'react-i18next';
 const Equipo = () => {
     const { t } = useTranslation('global');
     const [visibleRows, setVisibleRows] = useState([]);
-    const containerRef = useRef(null);    
+    const containerRef = useRef(null);
 
     // Actualizado para tener linkedin e instagram como claves separadas
     const teamMembers = [
         { name: 'Agustín Sator', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.director'), img: 'sator_agustin.jpg', linkedin: 'https://www.linkedin.com/in/agustinsator/' },
         { name: 'Giuliana Piantoni', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.gentio_BIT'), img: 'piantoni_giuliana.JPG', linkedin: 'https://www.linkedin.com/in/giuliana-piantoni/' },
         { name: 'Carola Cinto', title: [t('equipo.titulos.magister_periodismo'), t('equipo.titulos.relaciones')], role: t('equipo.puesto.operaciones'), img: 'cinto_carola.jpg', linkedin: 'https://www.linkedin.com/in/carola-cinto/' },
-        { name: 'Sophia Schaub', title: t('equipo.titulos.content_creator'), role: t('equipo.puesto.contenido'), img: 'schaub_sophia.JPG', instagram: 'https://www.instagram.com/sophi.schaub/' },
+        { name: 'Sophia Schaub', title: t('equipo.titulos.project'), role: t('equipo.puesto.project'), img: 'schaub_sophia.JPG', instagram: 'https://www.instagram.com/sophi.schaub/' },
         { name: 'Joaquín Pozzo', title: [t('equipo.titulos.sistemas'), t('equipo.titulos.diseño')], role: t('equipo.puesto.desarrollo'), img: 'joaquin_pozzo.jpg', linkedin: 'https://www.linkedin.com/in/joaquin-pozzo-49b31a262/' },
         { name: 'Inés Accastello', title: t('equipo.titulos.diseñadora'), role: t('equipo.puesto.diseñadora'), img: 'ines_accastello.jpg', instagram: 'https://www.instagram.com/ineaccastello/' },
         { name: 'Romina Scavuzzo', title: t('equipo.titulos.adm_empresas'), role: t('equipo.puesto.social_media'), img: 'scavuzzo_romina.jpg', linkedin: 'https://www.linkedin.com/in/rominascavuzzo/' },
-        { name: 'Francisco Vidal', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.analista_marca'), img: 'vidal_francisco.jpg', linkedin: 'https://www.linkedin.com/in/francisco-vidal-9ab42b200/' },
+        { name: 'Rocio Arbelo', title: t('equipo.titulos.diseñadora'), role: t('equipo.puesto.diseñadora'), img: 'rocio_arbelo.jpg', instagram: 'https://www.instagram.com/rociarbelo' },
         { name: 'Agostina Anna', title: t('equipo.titulos.abogada'), role: t('equipo.puesto.legal'), img: 'anna_agostina.jpg', linkedin: 'https://www.linkedin.com/in/mar%C3%ADa-agostina-anna-/' },
-        { name: 'Agustina Scolaro', title: t('equipo.titulos.contadora'), role: t('equipo.puesto.sdr'), img: 'scolaro_agustina.jpg', linkedin: 'https://www.linkedin.com/in/agustina-scolaro?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'},
+        { name: 'Agustina Scolaro', title: t('equipo.titulos.contadora'), role: t('equipo.puesto.sdr'), img: 'scolaro_agustina.jpg', linkedin: 'https://www.linkedin.com/in/agustina-scolaro?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
         { name: 'Gonzalo Scavuzzo', title: t('equipo.titulos.diseño'), role: t('equipo.puesto.diseño'), img: 'scavuzzo_gonzalo.jpg', linkedin: 'https://www.linkedin.com/in/gonzalo-scavuzzo-9762a0217/' },
-        { name: 'Giuliana Musso', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.fotografa'), img: 'musso_giuliana.jpg', instagram: 'https://www.instagram.com/giuli.musso/' },
+        { name: 'Giuliana Musso', title: t('equipo.titulos.comunicacion_m'), role: [t('equipo.puesto.fotografa'), t('equipo.puesto.filmmaker')], img: 'musso_giuliana.jpg', instagram: 'https://www.instagram.com/giuli.musso/' },
         { name: 'Matías Conterno', title: t('equipo.titulos.filmmaker'), role: t('equipo.puesto.filmmaker'), img: 'matias_conterno.jpg', instagram: 'https://www.instagram.com/maticonterno/' },
+        { name: 'Belén Belgrado Kauffmann', title: t('equipo.titulos.rrhh'), role: t('equipo.puesto.coordinadora'), img: 'belen_belgrado.jpg', linkedin: 'https://www.linkedin.com/in/bel%C3%A9n-belgrado-37013713b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
+        { name: 'Francisco Vidal', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.analista_marca'), img: 'vidal_francisco.jpg', linkedin: 'https://www.linkedin.com/in/francisco-vidal-9ab42b200/' },
     ];
-    
 
     useEffect(() => {
         const handleScroll = () => {
@@ -94,7 +95,10 @@ const Equipo = () => {
                                         ? title.map((t, i) => <p key={i}>{t}</p>)
                                         : <p>{title}</p>}
                                 </TeamCardTitlesContainer>
-                                <span>{role}</span>
+                                <span>
+                                    {Array.isArray(role) ? role.join(" y ") : role}
+                                </span>
+
                                 <div>
                                     {linkedin && (
                                         <a href={linkedin} target="_blank" rel="noopener noreferrer">

@@ -32,29 +32,27 @@ const Crecimiento = () => {
         };
     }, []);
 
-    // Efecto de conteo cuando el componente es visible
-    // Efecto de conteo cuando el componente es visible
     useEffect(() => {
         if (isVisible) {
             let count1 = 0, count2 = 0, count3 = 0;
 
             const interval1 = setInterval(() => {
                 count1 += 1;
-                if (count1 >= 21) clearInterval(interval1);
+                if (count1 >= 26) clearInterval(interval1);
                 setCount15(count1);
-            }, 100);
+            }, 90);
 
             const interval2 = setInterval(() => {
-                count2 += 8000; // Aumento más lento en el conteo
-                if (count2 >= 5100000) clearInterval(interval2);
+                count2 += 30000;
+                if (count2 >= 15200000) clearInterval(interval2);
                 setCount2_6M(count2);
-            }, 2);
+            }, 0.1);
 
             const interval3 = setInterval(() => {
                 count3 += 1;
                 if (count3 >= 13) clearInterval(interval3);
                 setCount15M(count3);
-            }, 200);
+            }, 170);
 
             return () => {
                 clearInterval(interval1);

@@ -139,7 +139,9 @@
             "contadora": "Comptable",
             "sistemas": "Analyste en Systèmes",
             "filmmaker": "Enregistrement et Montage",
-            "relaciones": "Licence en Relations Internationales"
+            "relaciones": "Licence en Relations Internationales",
+            "project": "Gestionnaire de projet",
+            "rrhh": "Licenciée en Ressources Humaines"
         },
         "puesto": {
             "director": "Directeur Général",
@@ -154,7 +156,9 @@
             "legal": "Affaires Juridiques",
             "sdr": "Représentant du Développement des Ventes",
             "desarrollo": "Développeur Web",
-            "filmmaker": "Réalisateur"
+            "filmmaker": "Réalisateur",
+            "project": "Gestionnaire de projet",
+            "coordinadora": "Coordinatrice du Talent et de la Culture"
         }
     },
     "trabaja": {
