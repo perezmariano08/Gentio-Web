@@ -30,7 +30,7 @@ function App() {
          <Servicios/>
          <Trabaja/>
          <FotografiaVideo/>
-         <Equipo/> 
+         {/* <Equipo/>  */}
          <Footer/>
       </MenuProvider>
       </>

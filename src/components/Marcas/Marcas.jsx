@@ -28,6 +28,9 @@ import LogoCarioca from '../Logos/LogoCarioca';
 import LogoAlvarez from '../Logos/LogoAlvarez';
 import LogoMentura from '../Logos/LogoMentura';
 import LogoAcav from '../Logos/LogoAcav';
+import LogoChez from '../Logos/LogoChez';
+import LogoAlCuadrado from '../Logos/LogoAlCuadrado';
+import LogoSo from '../Logos/LogoSo';
 
 const Marcas = () => {
     return (
@@ -42,25 +45,28 @@ const Marcas = () => {
                 <LogoBlackSheep />
                 <LogoCR />
                 <LogoCanovas />
-                <LogoSecretos/>
+                <LogoSecretos />
                 {/* <LogoGioventi /> */}
                 <LogoLaHilda />
                 <LogoColono />
                 <LogoOdonto />
                 <LogoLaTeca />
-                <LogoAluminica/>
-                <LogoRisus />
-                <LogoStesel/>
-                <LogoLucoMercato/>
-                <LogoSommier/>
-                <LogoBakeria/>
-                <LogoPsp/>
-                <LogoBocconi/>
-                <LogoGrupoHabitat/>
-                <LogoCarioca/>
-                <LogoAlvarez/>
+                <LogoAluminica />
+                {/* <LogoRisus /> */}
+                <LogoStesel />
+                <LogoLucoMercato />
+                <LogoSommier />
+                <LogoBakeria />
+                <LogoPsp />
+                {/* <LogoBocconi/> */}
+                <LogoGrupoHabitat />
+                <LogoCarioca />
+                <LogoAlvarez />
                 {/* <LogoMentura/>
                 <LogoAcav/> */}
+                <LogoChez />
+                <LogoAlCuadrado />
+                <LogoSo />
 
                 {/* Duplicado para efecto de scroll continuo */}
                 <LogoZCSeguridad />
@@ -71,25 +77,28 @@ const Marcas = () => {
                 <LogoBlackSheep />
                 <LogoCR />
                 <LogoCanovas />
-                <LogoSecretos/>
+                <LogoSecretos />
                 {/* <LogoGioventi /> */}
                 <LogoLaHilda />
                 <LogoColono />
                 <LogoOdonto />
                 <LogoLaTeca />
-                <LogoAluminica/>
-                <LogoRisus />
-                <LogoStesel/>
-                <LogoLucoMercato/>
-                <LogoSommier/>
-                <LogoBakeria/>
-                <LogoPsp/>
-                <LogoBocconi/>
-                <LogoGrupoHabitat/>
-                <LogoCarioca/>
-                <LogoAlvarez/>
+                <LogoAluminica />
+                {/* <LogoRisus /> */}
+                <LogoStesel />
+                <LogoLucoMercato />
+                <LogoSommier />
+                <LogoBakeria />
+                <LogoPsp />
+                {/* <LogoBocconi/> */}
+                <LogoGrupoHabitat />
+                <LogoCarioca />
+                <LogoAlvarez />
                 {/* <LogoMentura/>
                 <LogoAcav/> */}
+                <LogoChez />
+                <LogoAlCuadrado />
+                <LogoSo />
 
                 {/* TERCER SCROLL */}
                 <LogoZCIng />
@@ -100,26 +109,29 @@ const Marcas = () => {
                 <LogoBlackSheep />
                 <LogoCR />
                 <LogoCanovas />
-                <LogoSecretos/>
+                <LogoSecretos />
                 {/* <LogoGioventi /> */}
                 <LogoLaHilda />
                 <LogoColono />
                 <LogoOdonto />
                 <LogoLaTeca />
-                <LogoAluminica/>
-                <LogoRisus />
-                <LogoStesel/>
-                <LogoLucoMercato/>
-                <LogoSommier/>
-                <LogoBakeria/>
-                <LogoPsp/>
-                <LogoBocconi/>
-                <LogoGrupoHabitat/>
-                <LogoCarioca/>
-                <LogoAlvarez/>
+                <LogoAluminica />
+                {/* <LogoRisus /> */}
+                <LogoStesel />
+                <LogoLucoMercato />
+                <LogoSommier />
+                <LogoBakeria />
+                <LogoPsp />
+                {/* <LogoBocconi/> */}
+                <LogoGrupoHabitat />
+                <LogoCarioca />
+                <LogoAlvarez />
                 {/* <LogoMentura/>
                 <LogoAcav/> */}
-                
+                <LogoChez />
+                <LogoAlCuadrado />
+                <LogoSo />
+
             </MarcasWrapper>
         </MarcasContainer>
     );

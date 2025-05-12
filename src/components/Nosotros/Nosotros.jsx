@@ -16,7 +16,7 @@ const Nosotros = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', checkVisibility);
-        checkVisibility(); // Verifica la visibilidad al cargar el componente
+        checkVisibility();
 
         return () => {
             window.removeEventListener('scroll', checkVisibility);

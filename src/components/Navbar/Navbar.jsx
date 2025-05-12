@@ -94,7 +94,7 @@ const Navbar = () => {
                 >
                     <NavbarItem><a href="#nosotros">{t('navbar.nosotros')}</a></NavbarItem>
                     <NavbarItem><a href="#servicios">{t('navbar.servicios')}</a></NavbarItem>
-                    <NavbarItem><a href="#staff">{t('navbar.equipo')}</a></NavbarItem>
+                    {/* <NavbarItem><a href="#staff">{t('navbar.equipo')}</a></NavbarItem> */}
                     <NavbarItem><a href="#footer">{t('navbar.contacto')}</a></NavbarItem>
                     <NavbarSelect/>
                 </NavbarList>
