@@ -11,8 +11,8 @@
         "span": "marque"
     },
     "about": {
-        "titulo": "Qui sommes-nous ?",
-        "descripcion": "Chez __GENTÍO__, nous transformons les idées en conversations qui stimulent votre croissance. Nous sommes une __agence de communication et de marketing__ dédiée à renforcer votre __marque__ avec des stratégies basées sur des réussites avérées. Notre objectif : __augmenter votre chiffre d'affaires__ et faire ressortir votre entreprise."
+        "titulo": "Qui sommes-nous?",
+        "descripcion": "__Gentío__ est une __agence de marketing digital et de communication à Córdoba__ créée pour aider les marques à croître en __chiffre d’affaires__, __présence en ligne__ et __réputation__.\n\nNous sommes spécialisés en __Meta Ads, Google Ads, branding, design graphique, gestion des réseaux sociaux, production audiovisuelle et développement web__, en intégrant créativité et données pour que chaque action ait un véritable impact sur votre entreprise.\n\nNous travaillons avec des PME et des entreprises qui cherchent à __se positionner__, __gagner en visibilité sur les réseaux sociaux__ et __transformer leurs abonnés en clients__."
     },
     "crecimiento": {
         "titulo": "Nous stimulons la croissance de votre entreprise",
@@ -58,6 +58,13 @@
         "generamos": "nous générons",
         "boton": "Voir les analyses"
     },
+    "calidad": {
+        "titulo": "LA __QUALITÉ__ N'EST PAS NÉGOCIABLE",
+        "parrafo1": "Nous pouvons ajuster la quantité de livrables selon chaque projet, mais la __qualité n'est jamais mise en discussion__.",
+        "parrafo2": "Chaque marque qui nous fait confiance reflète aussi qui nous sommes en tant qu'agence, c'est pourquoi nous garantissons un niveau d'excellence constant dans chaque pièce : de la stratégie à l'exécution.",
+        "parrafo3": "Notre engagement est simple : si cela __porte le sceau de Gentío, cela doit être à la hauteur des meilleurs__.",
+        "video_fallback": "Votre navigateur ne supporte pas les vidéos HTML5."
+    },
     "servicios": {
         "titulo": "NOS",
         "span": "SERVICES.",
@@ -92,9 +99,9 @@
         }
     },
     "fotografia-video": {
-        "titulo": "la __qualité__ n'est pas négociable__.__",
-        "descripcion": "Boostez votre marque avec une qualité inégalée. De la stratégie à l'exécution, nous mettons notre expertise en marketing et communication au service de votre croissance, garantissant des résultats de premier ordre.",
-        "foto": "Photographie et Vidéo"
+        "titulo": "nosso __trabalho__ fala por __nós__.",
+        "descripcion": "Mostramos em cada produção o padrão de excelência com que conduzimos a comunicação e o marketing de cada marca.",
+        "foto": "Fotografia e Vídeo"
     },
     "footer": {
         "titulo": "Commencez à créer l'histoire de votre marque",

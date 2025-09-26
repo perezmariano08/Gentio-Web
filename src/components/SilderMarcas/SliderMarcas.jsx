@@ -1,4 +1,3 @@
-import React from 'react';
 import { Carousel } from 'primereact/carousel';
 import Button from '../Button/Button';
 import { MarcasSliderDescripcion, MarcasSliderTitulo } from './SliderMarcas';

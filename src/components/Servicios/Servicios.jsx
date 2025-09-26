@@ -73,8 +73,8 @@ const Servicios = () => {
                         className={animateIndices.has(1) ? 'animate right' : ''}
                         >
                         <DescripcionContainer>
-                            <h3>{t('servicios.comunicacion.titulo')}</h3>
-                            <p>{t('servicios.comunicacion.descripcion')}</p>
+                            <h3>Comunicación institucional</h3>
+                            <p>Comunicación institucional en Córdoba para empresas y PyMEs. Creamos mensajes claros, transmitimos tus valores y fortalecemos la confianza con tu audiencia.</p>
                         </DescripcionContainer>
                     </ServicioDescripcion>
                 </ServicioContainer>
@@ -85,8 +85,8 @@ const Servicios = () => {
                         className={animateIndices.has(2) ? 'animate left' : ''}
                         >
                         <DescripcionContainer className='right'>
-                            <h3>{t('servicios.marketing.titulo')}</h3>
-                            <p>{t('servicios.marketing.descripcion')}</p>
+                            <h3>Estrategias de marketing y analítica</h3>
+                            <p>Diseñamos estrategias de marketing digital basadas en analítica de datos. Optimizamos campañas en Córdoba para generar resultados medibles y aumentar tu rentabilidad.</p>
                             <IconsContainer>
                                 <FaGoogle />
                                 <FaInstagram />
@@ -111,8 +111,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[5] = el} 
                         className={animateIndices.has(5) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                            <h3>{t('servicios.grafico.titulo')}</h3>
-                            <p>{t('servicios.grafico.descripcion')}</p>
+                            <h3>Diseño gráfico</h3>
+                            <p>Diseño gráfico y branding profesional en Córdoba. Creamos identidades visuales, piezas digitales y material corporativo que diferencian a tu marca.</p>
                             <IconsContainer>
                                 <SiAdobeillustrator />
                                 <SiAdobephotoshop />
@@ -126,8 +126,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[6] = el} 
                         className={animateIndices.has(6) ? 'animate left' : ''}>
                         <DescripcionContainer className='right'>
-                            <h3>{t('servicios.social.titulo')}</h3>
-                            <p>{t('servicios.social.descripcion')}</p>
+                            <h3>Manejo de redes sociales</h3>
+                            <p>Gestión de redes sociales en Córdoba. Planificamos, creamos y publicamos contenido en Instagram, Facebook y TikTok para atraer seguidores y convertirlos en clientes.</p>
                             <IconsContainer>
                                 <LogoMetricool/>
                             </IconsContainer>
@@ -150,8 +150,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[9] = el} 
                         className={animateIndices.has(9) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                        <h3>{t('servicios.paid.titulo')}</h3>
-                        <p>{t('servicios.paid.descripcion')}</p>
+                        <h3>Paid Ads</h3>
+                        <p>Publicidad en Meta Ads y Google Ads en Córdoba. Segmentamos audiencias, optimizamos presupuestos y logramos que cada clic sume ventas.</p>
                             <IconsContainer>
                                 <FaMeta />
                                 <SiGoogleads />
@@ -165,8 +165,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[10] = el} 
                         className={animateIndices.has(10) ? 'animate left' : ''}>
                         <DescripcionContainer className='right'>
-                        <h3>{t('servicios.web.titulo')}</h3>
-                        <p>{t('servicios.web.descripcion')}</p>
+                        <h3>Desarrollo web</h3>
+                        <p>Desarrollo web en Córdoba. Creamos sitios rápidos, atractivos y optimizados para SEO que convierten visitas en clientes.</p>
                             <IconsContainer>
                                 <FaCode />
                             </IconsContainer>
@@ -189,8 +189,8 @@ const Servicios = () => {
                         ref={el => serviciosRef.current[13] = el} 
                         className={animateIndices.has(13) ? 'animate right' : ''}>
                         <DescripcionContainer>
-                        <h3>{t('servicios.sdr.titulo')}</h3>
-                        <p>{t('servicios.sdr.descripcion')}</p>
+                        <h3>SDR: Sales Development Representative</h3>
+                        <p>Generación de prospectos calificados en Córdoba con nuestro servicio de SDR (Sales Development Representative). Conectamos tu negocio con clientes ideales listos para comprar.</p>
                             <IconsContainer>
                                 <FaSalesforce />
                                 <FaLinkedin />

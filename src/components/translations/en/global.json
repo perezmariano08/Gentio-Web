@@ -12,7 +12,7 @@
     },
     "about": {
         "titulo": "Who are we?",
-        "descripcion": "At __GENTÍO__, we transform ideas into conversations that drive your growth. We are a __communication and marketing agency__ dedicated to strengthening your __brand__ with strategies backed by proven success stories. Our goal: __to increase your revenue__ and make your business stand out."
+        "descripcion": "__Gentío__ is a __digital marketing and communication agency in Córdoba__ created to help brands grow in __revenue__, __online presence__, and __reputation__.\n\nWe specialize in __Meta Ads, Google Ads, branding, graphic design, social media management, audiovisual production, and web development__, integrating creativity and data so that every action has a real impact on your business.\n\nWe work with SMEs and companies that seek to __position themselves__, __gain visibility on social media__, and __turn followers into clients__."
     },
     "crecimiento": {
         "titulo": "We drive your business growth",
@@ -59,6 +59,13 @@
         "generamos": "generate",
         "boton": "View analytics"
     },
+    "calidad": {
+        "titulo": "__QUALITY__ IS NON-NEGOTIABLE",
+        "parrafo1": "We can adjust the quantity of deliverables according to each project, but __quality is never up for discussion__.",
+        "parrafo2": "Every brand that trusts us also reflects who we are as an agency, which is why we guarantee a constant level of excellence in every piece: from strategy to execution.",
+        "parrafo3": "Our commitment is simple: if it __bears the Gentío seal, it has to be up to the standards of the best__.",
+        "video_fallback": "Your browser does not support HTML5 videos."
+    },
     "servicios": {
         "titulo": "OUR",
         "span": "SERVICES.",
@@ -93,8 +100,8 @@
         }
     },
     "fotografia-video": {
-        "titulo": "__quality__ is non-negotiable__.__",
-        "descripcion": "Boost your brand with unmatched quality. From strategy to execution, we bring our marketing and communication expertise to drive your growth, delivering top-tier results.",
+        "titulo": "our __work__ speaks for __itself__.",
+        "descripcion": "We showcase in every production the standard of excellence with which we carry out the communication and marketing of each brand.",
         "foto": "Photography and Video"
     },
     "footer": {

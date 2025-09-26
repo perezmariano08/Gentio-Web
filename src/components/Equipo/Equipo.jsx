@@ -21,10 +21,10 @@ const Equipo = () => {
     // Actualizado para tener linkedin e instagram como claves separadas
     const teamMembers = [
         { name: 'Agustín Sator', title: t('equipo.titulos.comunicacion_h'), role: t('equipo.puesto.director'), img: 'sator_agustin.jpg', linkedin: 'https://www.linkedin.com/in/agustinsator/' },
-        { name: 'Giuliana Piantoni', title: t('equipo.titulos.comunicacion_m'), role: t('equipo.puesto.gentio_BIT'), img: 'piantoni_giuliana.jpg', linkedin: 'https://www.linkedin.com/in/giuliana-piantoni/' },
         { name: 'Carola Cinto', title: [t('equipo.titulos.magister_periodismo'), t('equipo.titulos.relaciones')], role: t('equipo.puesto.operaciones'), img: 'cinto_carola.jpg', linkedin: 'https://www.linkedin.com/in/carola-cinto/' },
         { name: 'Sophia Schaub', title: t('equipo.titulos.project'), role: t('equipo.puesto.project'), img: 'schaub_sophia.jpg', instagram: 'https://www.instagram.com/sophi.schaub/' },
         { name: 'Joaquín Pozzo', title: [t('equipo.titulos.sistemas'), t('equipo.titulos.diseño')], role: t('equipo.puesto.desarrollo'), img: 'joaquin_pozzo.jpg', linkedin: 'https://www.linkedin.com/in/joaquin-pozzo-49b31a262/' },
+        { name: 'Marcelo Cáceres', title: t('equipo.titulos.filmmaker'), role: t('equipo.puesto.filmmaker'), img: 'matias_caceres.jpg', instagram: 'https://www.instagram.com/marce_yapur/' },
         { name: 'Inés Accastello', title: t('equipo.titulos.diseñadora'), role: t('equipo.puesto.diseñadora'), img: 'ines_accastello.jpg', instagram: 'https://www.instagram.com/ineaccastello/' },
         { name: 'Romina Scavuzzo', title: t('equipo.titulos.adm_empresas'), role: t('equipo.puesto.social_media'), img: 'scavuzzo_romina.jpg', linkedin: 'https://www.linkedin.com/in/rominascavuzzo/' },
         { name: 'Rocio Arbelo', title: t('equipo.titulos.diseñadora'), role: t('equipo.puesto.diseñadora'), img: 'rocio_arbelo.jpg', instagram: 'https://www.instagram.com/rociarbelo' },

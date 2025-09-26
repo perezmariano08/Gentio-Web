@@ -43,7 +43,7 @@ const Footer = () => {
     const { t } = useTranslation("global");
 
     const LINK = 'https://docs.google.com/forms/d/e/1FAIpQLSeV2N0Pb7-ZytuAsW5xQC64WRjrJWFxRqBUFcqAFSR8ravoaQ/viewform';
-
+    const year = new Date().getFullYear();
     return (
         <FooterContainer id='footer'>
             <FooterWrapper>
@@ -94,7 +94,7 @@ const Footer = () => {
                         </FooterLeft>
                         <FooterRight>
                             <p>{t('footer.politicas')}</p>
-                            <p>Gentío © 2024 </p>
+                            <p>Gentío © {year}</p>
                         </FooterRight>
                     </SocialContainer>
                 </FooterWrapperText>

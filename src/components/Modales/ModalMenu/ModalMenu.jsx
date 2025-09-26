@@ -9,7 +9,7 @@ const ModalMenu = ({ closeModal, isOpen }) => {
     const [t] = useTranslation("global")
     return (
         <AnimatePresence
-            onExitComplete={closeModal} // Ejecuta closeModal al completar la animación de salida
+            onExitComplete={closeModal}
         >
             {
                 isOpen && (
@@ -35,7 +35,7 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                             <NavbarSelect/>
                             <li onClick={closeModal}><a href="#nosotros">{t('navbar.nosotros')}</a></li>
                             <li onClick={closeModal}><a href="#servicios">{t('navbar.servicios')}</a></li>
-                            {/* <li onClick={closeModal}><a href="#staff">{t('navbar.equipo')}</a></li> */}
+                            <li onClick={closeModal}><a href="#staff">{t('navbar.equipo')}</a></li>
                             <li onClick={closeModal}><a href="#footer">{t('navbar.contacto')}</a></li>
                             {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}
                         </NavbarList>

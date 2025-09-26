@@ -65,14 +65,18 @@ export const TitleContainer = styled.div`
         }
     }
 `;
+
 export const FotoVideoContainer = styled.div`
     display: flex;
     width: 100%;
     gap: 20px;
+    
     @media (max-width: 768px) {
         flex-direction: column;
+        gap: 0; /* Sin gap para que se vean mejor en mobile */
     }
 `
+
 export const FotoContenedorColumna = styled.div`
     position: relative;
     display: flex;
@@ -80,6 +84,18 @@ export const FotoContenedorColumna = styled.div`
     gap: 20px;
     width: 33%;
     height: 800px;
+
+    /* Estilos para las columnas de reels */
+    &.reel-column {
+        width: 33.333%;
+        height: 800px;
+        
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 20px;
+        }
+    }
 
     @media (max-width: 768px) {
         &.first-row {
@@ -102,6 +118,7 @@ export const FotoContenedorColumna = styled.div`
         }
     }
 `
+
 export const FotoVideoImg = styled.div`
     position: relative;
     width: 100%;
@@ -150,7 +167,27 @@ export const Video = styled.div`
         height: 100%;
         object-fit: cover;
         z-index: 0;
-        animation: ${fadeIn} 2s ease-in-out; /* Aplica la animación de fade */
+        animation: ${fadeIn} 2s ease-in-out;
+    }
+
+    /* Estilos específicos para videos reel */
+    &.video-reel {
+        width: 100%;
+        height: 100%;
+        
+        video {
+            object-fit: cover;
+            /* Para videos verticales, asegurar que se vean bien */
+            object-position: center;
+        }
+        
+        @media (max-width: 768px) {
+            height: 100%;
+            
+            video {
+                object-fit: cover;
+            }
+        }
     }
 
     &::before {
@@ -160,8 +197,8 @@ export const Video = styled.div`
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(10, 3, 17, 0.3); /* Ajustamos la opacidad a 20% para hacerlo más suave */
-        z-index: 1; /* Asegura que esté encima de la imagen */
+        background-color: rgba(10, 3, 17, 0.3);
+        z-index: 1;
     }
 
     &::after {
@@ -172,7 +209,7 @@ export const Video = styled.div`
         height: 100%;
         width: 100%;
         background: linear-gradient(to bottom, rgba(10, 3, 17, 0.1) 0%, rgba(10, 3, 17, 0.4) 40%, var(--bg) 100%); 
-        z-index: 2; /* Asegura que el degradado esté encima del color sólido */
+        z-index: 2;
     }
 
     &.video-zc { 
@@ -209,10 +246,13 @@ export const FotoTitle = styled.span`
     font-size: 30px;
     width: 40%;
     z-index: 3;
+    /* Agregar sombra para mejor legibilidad */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 
     @media (max-width: 768px) {
         top: 20px;
         left: 20px;
         font-size: 20px;
+        width: 60%;
     }
 `

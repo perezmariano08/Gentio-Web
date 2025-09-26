@@ -12,7 +12,7 @@
     },
     "about": {
         "titulo": "¿Quiénes somos?",
-        "descripcion": "En __GENTÍO__, transformamos ideas en conversaciones que impulsan tu crecimiento. Somos una __agencia de comunicación y marketing__ dedicada a fortalecer tu __marca__ con estrategias respaldadas por experiencias de éxito comprobadas. Nuestro objetivo: __aumentar tu facturación__ y hacer que tu negocio se destaque."
+        "descripcion": "__Gentío__ es una __agencia de marketing digital y comunicación en Córdoba__ creada para que las marcas crezcan en __facturación__, __presencia online__ y __reputación__.\n\nNos especializamos en __Meta Ads, Google Ads, branding, diseño gráfico, gestión de redes sociales, producción audiovisual y desarrollo web__, integrando creatividad y datos para que cada acción tenga impacto real en tu negocio.\n\nTrabajamos con PyMEs y empresas que buscan __posicionarse__, __ganar visibilidad en redes sociales__ y __convertir seguidores en clientes__."
     },
     "crecimiento": {
         "titulo": "Impulsamos el crecimiento de tu negocio",
@@ -59,6 +59,13 @@
         "generamos": "generamos",
         "boton": "Ver analíticas"
     },
+    "calidad": {
+        "titulo": "LA __CALIDAD__ NO SE NEGOCIA",
+        "parrafo1": "Podemos ajustar la cantidad de entregables según cada proyecto, pero la __calidad nunca se pone en discusión__.",
+        "parrafo2": "Cada marca que confía en nosotros refleja también quiénes somos como agencia, y por eso garantizamos un nivel de excelencia constante en cada pieza: desde la estrategia hasta la ejecución.",
+        "parrafo3": "Nuestro compromiso es simple: si __lleva el sello de Gentío, tiene que estar a la altura de los mejores__.",
+        "video_fallback": "Tu navegador no soporta videos HTML5."
+    },
     "servicios": {
         "titulo": "NUESTROS",
         "span": "SERVICIOS.",
@@ -93,8 +100,8 @@
         }
     },
     "fotografia-video": {
-        "titulo": "la __calidad__ no se negocia__.__",
-        "descripcion": "Impulsá tu marca con una calidad inigualable. Desde la estrategia hasta la ejecución, ponemos nuestra experiencia en marketing y comunicación al servicio de tu crecimiento, asegurando resultados de primer nivel.",
+        "titulo": "nuestro __trabajo__ habla por __nosotros__.",
+        "descripcion": "Mostramos en cada producción el estándar de excelencia con el que llevamos adelante la comunicación y el marketing de cada marca.",
         "foto": "Fotografia y Video"
     },
     "equipo": {
@@ -141,13 +148,26 @@
     },
     "footer": {
         "titulo": "Comenzá a elaborar la historia de tu marca",
-        "palabras": ["Sumate", "a", "nosotros", "para", "construir", "una", "narrativa", "poderosa", "que", "potencie", "tu", "marca"],
+        "palabras": [
+            "Sumate",
+            "a",
+            "nosotros",
+            "para",
+            "construir",
+            "una",
+            "narrativa",
+            "poderosa",
+            "que",
+            "potencie",
+            "tu",
+            "marca"
+        ],
         "realidad": "Hagamos realidad tu visión.",
         "listo": "¿Listo para empezar?",
         "boton": "Agendá una reunion",
         "politicas": "Politicas de Privacidad"
     },
-    "mensaje-whp": { 
+    "mensaje-whp": {
         "mensaje": "Hola, estoy interesado en agendar una reunión para conocer más sobre sus servicios."
     },
     "trabaja": {

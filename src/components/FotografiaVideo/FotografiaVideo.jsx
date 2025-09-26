@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FotoContenedorColumna, FotografiaVideoContainer, FotografiaVideoWrapper, FotoTitle, FotoVideoContainer, FotoVideoImg, TitleContainer, Video } from './FotografiaVideo'
 import SvgIcon from '../SvgIcon/SvgIcon'
-import bgHero from '/videos/bg-video-reemplazo-2.mp4';
-import bgHero2 from '/videos/bg_fotovideo_2.mp4';
-import bgHero3 from '/videos/bg_fotovideo_7.mp4';
-import bgHero4 from '/videos/bg_fotovideo_4.mp4';
+// Importamos los 3 videos reel del 1 al 3
+import reelVideo1 from '/videos/1.mp4';
+import reelVideo2 from '/videos/2.mp4';
+import reelVideo3 from '/videos/3.mp4';
 import { useTranslation } from 'react-i18next';
 
 const FotografiaVideo = () => {
@@ -15,14 +15,14 @@ const FotografiaVideo = () => {
   const checkVisibility = () => {
       if (textRef.current) {
           const { top, bottom } = textRef.current.getBoundingClientRect();
-          const isInViewport = top < window.innerHeight && bottom >= 0; // Comprueba si el elemento está en el viewport
+          const isInViewport = top < window.innerHeight && bottom >= 0;
           setIsVisible(isInViewport);
       }
   };
 
   useEffect(() => {
       window.addEventListener('scroll', checkVisibility);
-      checkVisibility(); // Verifica la visibilidad al cargar el componente
+      checkVisibility();
 
       return () => {
           window.removeEventListener('scroll', checkVisibility);
@@ -35,45 +35,43 @@ const FotografiaVideo = () => {
     <FotografiaVideoContainer>
         <FotografiaVideoWrapper>
             <TitleContainer ref={textRef} className={isVisible ? 'visible' : ''}>
-            <h2>
-                {t('fotografia-video.titulo')
-                    .split(/__(.*?)__/)
-                    .map((part, index) =>
-                        part ? (
-                            <React.Fragment key={index}>
-                                {index % 2 === 1 ? <span>{part}</span> : part}
-                            </React.Fragment>
-                        ) : null
-                    )}
-            </h2>
+                <h2>
+                    {t('fotografia-video.titulo')
+                        .split(/__(.*?)__/)
+                        .map((part, index) =>
+                            part ? (
+                                <React.Fragment key={index}>
+                                    {index % 2 === 1 ? <span>{part}</span> : part}
+                                </React.Fragment>
+                            ) : null
+                        )}
+                </h2>
                 <p>{t('fotografia-video.descripcion')}</p>
             </TitleContainer>
+            
             <FotoVideoContainer>
-              <FotoContenedorColumna className='first-row'>
-                <SvgIcon/>
-                <FotoVideoImg
-                bgUrl={'/imgs/bk_foto_1.jpg'}
-                />
-                <FotoTitle>{t('fotografia-video.foto')}</FotoTitle>
-                <Video className='video-luco-hamburgesa'>
-                    <video src={bgHero3} autoPlay muted loop playsInline />
-                </Video>
-                <Video className='video-luco-gral'>
-                    <video src={bgHero4} autoPlay muted loop playsInline />
+              {/* Primera columna - Reel 1 */}
+              <FotoContenedorColumna className='reel-column'>
+                <Video className='video-reel'>
+                    <video src={reelVideo1} autoPlay muted loop playsInline />
+                    {/* <FotoTitle>Reel 1</FotoTitle> */}
                 </Video>
               </FotoContenedorColumna>
-              <FotoContenedorColumna className='two-row'>
-                <Video className='video-zc'>
-                  <video src={bgHero} autoPlay muted loop playsInline />
+              
+              {/* Segunda columna - Reel 2 */}
+              <FotoContenedorColumna className='reel-column'>
+                <Video className='video-reel'>
+                    <video src={reelVideo2} autoPlay muted loop playsInline />
+                    {/* <FotoTitle>Reel 2</FotoTitle> */}
                 </Video>
               </FotoContenedorColumna>
-              <FotoContenedorColumna className='three-row'>
-                <Video>
-                  <video src={bgHero2} autoPlay muted loop playsInline />
+              
+              {/* Tercera columna - Reel 3 */}
+              <FotoContenedorColumna className='reel-column'>
+                <Video className='video-reel'>
+                    <video src={reelVideo3} autoPlay muted loop playsInline />
+                    {/* <FotoTitle>Reel 3</FotoTitle> */}
                 </Video>
-                <FotoVideoImg
-                bgUrl={'/imgs/bk_foto_2.jpg'}
-                />
               </FotoContenedorColumna>
             </FotoVideoContainer>
         </FotografiaVideoWrapper>

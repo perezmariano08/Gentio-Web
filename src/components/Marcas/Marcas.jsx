@@ -31,107 +31,90 @@ import LogoAcav from '../Logos/LogoAcav';
 import LogoChez from '../Logos/LogoChez';
 import LogoAlCuadrado from '../Logos/LogoAlCuadrado';
 import LogoSo from '../Logos/LogoSo';
+import LogoDucco from '../Logos/LogoDucco';
+import LogoMaderasColon from '../Logos/LogoMaderasColon';
+import LogoLoopin from '../Logos/LogoLoopin';
+import LogoLenjes from '../Logos/LogoLenjes';
+import LogoCarWash from '../Logos/LogoCarWash';
+import LogoDogCat from '../Logos/LogoDogCat';
+import LogoRennella from '../Logos/LogoRennella';
+import LogoComtur from '../Logos/LogoComtur';
+import LogoMaxShop from '../Logos/LogoMaxShop';
+import LogoQuantiva from '../Logos/LogoQuantiva';
+import LogoRuzzi from '../Logos/LogoRuzzi';
 
 const Marcas = () => {
     return (
         <MarcasContainer>
             <MarcasWrapper>
-                {/* Duplicar las marcas para el efecto de desplazamiento continuo */}
-                <LogoZCSeguridad />
-                <LogoLuco />
-                <LogoTijuca />
                 <LogoElectro />
-                <LogoDonNunez />
-                <LogoBlackSheep />
-                <LogoCR />
-                <LogoCanovas />
-                <LogoSecretos />
-                {/* <LogoGioventi /> */}
-                <LogoLaHilda />
-                <LogoColono />
-                <LogoOdonto />
-                <LogoLaTeca />
-                <LogoAluminica />
-                {/* <LogoRisus /> */}
-                <LogoStesel />
-                <LogoLucoMercato />
-                <LogoSommier />
-                <LogoBakeria />
-                <LogoPsp />
-                {/* <LogoBocconi/> */}
-                <LogoGrupoHabitat />
-                <LogoCarioca />
-                <LogoAlvarez />
-                {/* <LogoMentura/>
-                <LogoAcav/> */}
-                <LogoChez />
-                <LogoAlCuadrado />
-                <LogoSo />
-
-                {/* Duplicado para efecto de scroll continuo */}
-                <LogoZCSeguridad />
+                <LogoRuzzi/>
+                <LogoDucco />
                 <LogoLuco />
-                <LogoTijuca />
-                <LogoElectro />
-                <LogoDonNunez />
-                <LogoBlackSheep />
-                <LogoCR />
-                <LogoCanovas />
-                <LogoSecretos />
-                {/* <LogoGioventi /> */}
-                <LogoLaHilda />
-                <LogoColono />
-                <LogoOdonto />
-                <LogoLaTeca />
-                <LogoAluminica />
-                {/* <LogoRisus /> */}
-                <LogoStesel />
-                <LogoLucoMercato />
-                <LogoSommier />
-                <LogoBakeria />
-                <LogoPsp />
-                {/* <LogoBocconi/> */}
-                <LogoGrupoHabitat />
-                <LogoCarioca />
-                <LogoAlvarez />
-                {/* <LogoMentura/>
-                <LogoAcav/> */}
                 <LogoChez />
-                <LogoAlCuadrado />
-                <LogoSo />
-
-                {/* TERCER SCROLL */}
                 <LogoZCIng />
-                <LogoLuco />
-                <LogoTijuca />
-                <LogoElectro />
-                <LogoDonNunez />
-                <LogoBlackSheep />
-                <LogoCR />
-                <LogoCanovas />
-                <LogoSecretos />
-                {/* <LogoGioventi /> */}
-                <LogoLaHilda />
-                <LogoColono />
-                <LogoOdonto />
-                <LogoLaTeca />
-                <LogoAluminica />
-                {/* <LogoRisus /> */}
-                <LogoStesel />
-                <LogoLucoMercato />
+                <LogoMaderasColon />
+                <LogoLoopin />
+                <LogoLenjes />
+                <LogoCarWash />
+                <LogoDogCat />
                 <LogoSommier />
-                <LogoBakeria />
-                <LogoPsp />
-                {/* <LogoBocconi/> */}
-                <LogoGrupoHabitat />
+                {/* Delicias */}
+                <LogoRennella />
+                <LogoCR />
+                <LogoComtur />
+                <LogoLaHilda />
                 <LogoCarioca />
-                <LogoAlvarez />
-                {/* <LogoMentura/>
-                <LogoAcav/> */}
-                <LogoChez />
+                <LogoMaxShop />
                 <LogoAlCuadrado />
-                <LogoSo />
+                <LogoOdonto />
+                <LogoQuantiva />
 
+                <LogoElectro />
+                {/* Ruzzi */}
+                <LogoDucco />
+                <LogoLuco />
+                <LogoChez />
+                <LogoZCIng />
+                <LogoMaderasColon />
+                <LogoLoopin />
+                <LogoLenjes />
+                <LogoCarWash />
+                <LogoDogCat />
+                <LogoSommier />
+                {/* Delicias */}
+                <LogoRennella />
+                <LogoCR />
+                <LogoComtur />
+                <LogoLaHilda />
+                <LogoCarioca />
+                <LogoMaxShop />
+                <LogoAlCuadrado />
+                <LogoOdonto />
+                <LogoQuantiva />
+
+                <LogoElectro />
+                {/* Ruzzi */}
+                <LogoDucco />
+                <LogoLuco />
+                <LogoChez />
+                <LogoZCIng />
+                <LogoMaderasColon />
+                <LogoLoopin />
+                <LogoLenjes />
+                <LogoCarWash />
+                <LogoDogCat />
+                <LogoSommier />
+                {/* Delicias */}
+                <LogoRennella />
+                <LogoCR />
+                <LogoComtur />
+                <LogoLaHilda />
+                <LogoCarioca />
+                <LogoMaxShop />
+                <LogoAlCuadrado />
+                <LogoOdonto />
+                <LogoQuantiva />
             </MarcasWrapper>
         </MarcasContainer>
     );

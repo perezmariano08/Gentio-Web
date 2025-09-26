@@ -14,6 +14,8 @@ import { MenuProvider } from "./components/Context/MenuContext.jsx"
 import SliderMarcas from "./components/SilderMarcas/SliderMarcas.jsx"
 import Trabaja from "./components/Trabaja/Trabaja.jsx"
 import Trabajos from "./components/Trabajos/Trabajos.jsx"
+import SeccionCalidad from "./components/SilderMarcas/SeccionCalidad.jsx"
+import LoopinSection from "./components/Loopin/LoopinSection.jsx"
 
 function App() {
    return (
@@ -25,12 +27,14 @@ function App() {
          <Marcas/>
          <Crecimiento/>
          {/* <MarcasSlider/> */}
-         <SliderMarcas/>
+         {/* <SliderMarcas/> */}
+         <SeccionCalidad/>
          <Trabajos/>
          <Servicios/>
          <Trabaja/>
+         <LoopinSection/>
          <FotografiaVideo/>
-         {/* <Equipo/>  */}
+         <Equipo/> 
          <Footer/>
       </MenuProvider>
       </>

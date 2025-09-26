@@ -11,7 +11,7 @@ const Crecimiento = () => {
 
     // Estados para los valores que se animarán
     const [count15, setCount15] = useState(0);
-    const [count2_6M, setCount2_6M] = useState(0);
+    const [countUGC, setCountUGC] = useState(0);
     const [count15M, setCount15M] = useState(0);
 
     // Función para verificar si el componente está en el viewport
@@ -38,19 +38,19 @@ const Crecimiento = () => {
 
             const interval1 = setInterval(() => {
                 count1 += 1;
-                if (count1 >= 26) clearInterval(interval1);
+                if (count1 >= 24) clearInterval(interval1);
                 setCount15(count1);
             }, 90);
 
             const interval2 = setInterval(() => {
-                count2 += 30000;
-                if (count2 >= 15200000) clearInterval(interval2);
-                setCount2_6M(count2);
-            }, 0.1);
+                count2 += 1;
+                if (count2 >= 50) clearInterval(interval2);
+                setCountUGC(count2);
+            }, 80);
 
             const interval3 = setInterval(() => {
                 count3 += 1;
-                if (count3 >= 13) clearInterval(interval3);
+                if (count3 >= 15) clearInterval(interval3);
                 setCount15M(count3);
             }, 170);
 
@@ -101,8 +101,8 @@ const Crecimiento = () => {
                             <p>{t('crecimiento.estadisticas.marcas')}</p>
                         </CrecimientoItem>
                         <CrecimientoItem wrapEnabled={false}>
-                            <h5>{(count2_6M / 1000000).toFixed(1)}M</h5>
-                            <p>{t('crecimiento.estadisticas.impresiones')}</p>
+                            <h5>+{countUGC}</h5>
+                            <p>Creadores de contenido UGC</p>
                         </CrecimientoItem>
                         <CrecimientoItem wrapEnabled={false}>
                             <h5>{count15M}</h5>
