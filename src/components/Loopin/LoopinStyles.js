@@ -45,7 +45,7 @@ export const gradientShift = keyframes`
 export const LoopinContainer = styled(ContainerStyled)`
   background: linear-gradient(135deg, #ff6b81 0%, #7b61ff 100%);
   padding: 20px 0;
-  min-height: 500px;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   margin: 60px 0;
@@ -130,6 +130,12 @@ export const TextContainer = styled.div`
     @media (max-width: 768px) {
       font-size: 1rem;
     }
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 150px;
+    margin-bottom: 20px;
   }
 `;
 

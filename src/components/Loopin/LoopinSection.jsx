@@ -11,6 +11,7 @@ const LoopinSection = () => {
             <FloatingElements />
             <LoopinWrapper>
                 <TextContainer>
+                    <img src="./imgs/marcas/loopin.svg" alt="Loopin App Mockup"/>
                     <h2>
                         Creamos una <span>app</span> para comercios en Córdoba
                     </h2>
