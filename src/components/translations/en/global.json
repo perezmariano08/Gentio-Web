@@ -149,7 +149,9 @@
             "filmmaker": "Recording and Editing",
             "relaciones": "Bachelor in International Relations",
             "project": "Project Manager",
-            "rrhh": "Bachelor in Human Resources"
+            "rrhh": "Bachelor in Human Resources",
+            "periodista": "Journalist",
+            "locutora": "Announcer"
         },
         "puesto": {
             "director": "General Director",

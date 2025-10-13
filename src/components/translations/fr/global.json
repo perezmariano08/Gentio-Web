@@ -165,7 +165,9 @@
             "desarrollo": "Développeur Web",
             "filmmaker": "Réalisateur",
             "project": "Gestionnaire de projet",
-            "coordinadora": "Coordinatrice du Talent et de la Culture"
+            "coordinadora": "Coordinatrice du Talent et de la Culture",
+            "periodista": "Journaliste",
+            "locutora": "Animatrice"
         }
     },
     "trabaja": {

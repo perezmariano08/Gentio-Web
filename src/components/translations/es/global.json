@@ -126,7 +126,9 @@
             "filmmaker": "Grabación y Edición",
             "relaciones": "Licenciada en Relaciones Internacionales",
             "project": "Project Manager",
-            "rrhh": "Licenciada en Recursos Humanos"
+            "rrhh": "Licenciada en Recursos Humanos",
+            "periodista": "Periodista",
+            "locutora": "Locutora"
         },
         "puesto": {
             "director": "Director General",
@@ -143,7 +145,9 @@
             "desarrollo": "Desarrollador Web",
             "filmmaker": "Filmmaker",
             "project": "Project Manager",
-            "coordinadora": "Coordinadora de Talento y Cultura"
+            "coordinadora": "Coordinadora de Talento y Cultura",
+            "periodista": "Periodista",
+            "locutora": "Locutora"
         }
     },
     "footer": {

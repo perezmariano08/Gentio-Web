@@ -3,19 +3,20 @@ import { motion, useAnimation } from 'framer-motion';
 import { HeroContainer, HeroEstadistica, HeroEstadisticaNumero, HeroEstadisticasWrapper, HeroText, HeroWrapper } from './HeroStyles';
 import { RiArrowRightUpLine } from "react-icons/ri";
 import bgHero from '/videos/bg_hero_2.mp4';
+import bgHeroMobile from '/videos/bg_hero_mobile.mp4';
 import { useTranslation } from 'react-i18next';
 
 const Counter = ({ end }) => {
     const controls = useAnimation();
     const [count, setCount] = useState(0);
-    
+
     useEffect(() => {
         controls.start({ count: end, transition: { duration: 3, ease: "easeOut" } });
     }, [controls, end]);
-    
+
     return (
         <motion.span
-        animate={controls}
+            animate={controls}
             initial={{ count: 0 }}
             onUpdate={(latest) => setCount(latest.count.toFixed(0))}
             style={{
@@ -37,7 +38,7 @@ const Hero = () => {
 
     return (
         <HeroContainer>
-            <video src={bgHero} autoPlay muted loop playsInline />
+            <video src={window.innerWidth <= 768 ? bgHeroMobile : bgHero} autoPlay muted loop playsInline />
             <HeroWrapper>
                 {/* <HeroEstadisticasWrapper>
                     <HeroEstadistica>
@@ -68,15 +69,15 @@ const Hero = () => {
                         <RiArrowRightUpLine />
                     </a>
                     <h1>
-                    {t('hero.title')
-                        .split(/__(.*?)__/)
-                        .map((part, index) =>
-                            part === t('hero.span') ? (
-                                <span key={index}>{part}</span>
-                            ) : (
-                                <React.Fragment key={index}>{part}</React.Fragment>
-                            )
-                        )}
+                        {t('hero.title')
+                            .split(/__(.*?)__/)
+                            .map((part, index) =>
+                                part === t('hero.span') ? (
+                                    <span key={index}>{part}</span>
+                                ) : (
+                                    <React.Fragment key={index}>{part}</React.Fragment>
+                                )
+                            )}
                     </h1>
                 </HeroText>
             </HeroWrapper>
