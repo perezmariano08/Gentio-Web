@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import {
   ContainerStyled,
   WrapperStyled,
@@ -20,13 +21,22 @@ export const WebPageOuter = styled.div`
 export const WebHero = styled(ContainerStyled)`
   padding: 48px 0 32px;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 `;
 
 export const WebHeroInner = styled(WrapperStyled)`
   ${layoutCentered}
   flex-direction: column;
   gap: 28px;
+`;
+
+/** Misma separación vertical entre título, subtítulo y CTA (simetría). */
+export const WebHeroMotionStack = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  width: 100%;
 `;
 
 export const WebTitle = styled.h1`
@@ -38,7 +48,7 @@ export const WebTitle = styled.h1`
     color: var(--white);
     letter-spacing: 0.02em;
     text-transform: none;
-    margin: 0 0 18px;
+    margin: 0;
   }
 `;
 
@@ -51,6 +61,21 @@ export const WebSubtitle = styled.p`
     line-height: 1.6;
     margin: 0;
   }
+`;
+
+/** CTA hero: alineado a la izquierda con título y bajada. */
+export const WebHeroCtaRow = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+`;
+
+/** CTA bajo cada categoría — mismo comportamiento en mobile y desktop. */
+export const SectionCtaRow = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 22px;
+  width: 100%;
 `;
 
 export const FilterWrap = styled.div`

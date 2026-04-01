@@ -6,6 +6,7 @@ import Flecha from '../Logos/Flecha';
 import { FaInstagram } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { useTranslation } from 'react-i18next';
+import { useWhatsApp } from '../../hooks/useWhatsApp';
 
 
 // Define a floating animation
@@ -33,14 +34,12 @@ export const FloatingWord = styled.span`
 
 const Footer = () => {
 
-    const handleWhatsAppClick = () => {
-        const phoneNumber = "+5493512390278";
-        const message = "Hola, estoy interesado en agendar una reunión para conocer más sobre sus servicios.";
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
-    };
-
     const { t } = useTranslation("global");
+    const openWhatsApp = useWhatsApp();
+
+    const handleWhatsAppClick = () => {
+        openWhatsApp(t('mensaje-whp.mensaje'));
+    };
 
     const LINK = 'https://docs.google.com/forms/d/e/1FAIpQLSeV2N0Pb7-ZytuAsW5xQC64WRjrJWFxRqBUFcqAFSR8ravoaQ/viewform';
     const year = new Date().getFullYear();

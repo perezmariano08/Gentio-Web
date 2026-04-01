@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import { ImQuotesLeft } from "react-icons/im";
 import Flecha from '../Logos/Flecha';
 import { useTranslation } from 'react-i18next';
+import { useWhatsApp } from '../../hooks/useWhatsApp';
 
 const Crecimiento = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -63,12 +64,10 @@ const Crecimiento = () => {
     }, [isVisible]);
 
     const [t] = useTranslation("global");
+    const openWa = useWhatsApp();
 
     const handleWhatsAppClick = () => {
-        const phoneNumber = "+5493512390278";
-        const message = t('mensaje-whp.mensaje');
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
+        openWa(t('mensaje-whp.mensaje'));
     };
 
     return (

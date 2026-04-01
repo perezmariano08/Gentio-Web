@@ -7,6 +7,7 @@ import {
 } from "./WebProjectsStyles";
 import { ProjectCard } from "./ProjectCard";
 import { ScrollReveal } from "./ScrollReveal";
+import { WebCategorySectionCta } from "./WebCategorySectionCta";
 
 export function ProjectsCategorySection({ categoryKey, items, staggerBase = 0 }) {
   const [t] = useTranslation("global");
@@ -27,6 +28,7 @@ export function ProjectsCategorySection({ categoryKey, items, staggerBase = 0 })
             />
           ))}
         </ProjectsGrid>
+        <WebCategorySectionCta categoryKey={categoryKey} />
       </WebSectionWrap>
     </CategoryBlock>
   );

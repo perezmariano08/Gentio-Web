@@ -190,6 +190,22 @@
         "visit": "Voir le site",
         "filterAll": "Tous",
         "filterAria": "Filtrer les projets par type",
+        "cta": {
+            "cotizarLabel": "Je veux un devis pour mon site",
+            "cotizarMessage": "Bonjour, je souhaite un devis pour un site ou un projet web avec Gentío. Pouvez-vous m’orienter ?",
+            "consultaLabel": "Parlons de ma marque",
+            "consultaMessage": "Bonjour, je souhaite échanger sur la présence web et la communication digitale pour ma marque.",
+            "afterSection": {
+                "appsLabel": "En savoir plus sur une app",
+                "appsMessage": "Bonjour, je souhaite plus d’informations sur les applications et plateformes web avec Gentío.",
+                "ecommerceLabel": "En savoir plus sur un e-commerce",
+                "ecommerceMessage": "Bonjour, je souhaite plus d’informations sur les boutiques en ligne et l’e-commerce avec Gentío.",
+                "corporativosLabel": "En savoir plus sur un site institutionnel",
+                "corporativosMessage": "Bonjour, je souhaite plus d’informations sur les sites institutionnels ou corporatifs avec Gentío.",
+                "landingLabel": "En savoir plus sur une landing",
+                "landingMessage": "Bonjour, je souhaite plus d’informations sur les landings et sites one-page avec Gentío."
+            }
+        },
         "categories": {
             "apps": "Applications et plateformes",
             "ecommerce": "E-commerce",

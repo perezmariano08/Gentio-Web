@@ -191,6 +191,22 @@
         "visit": "Visit site",
         "filterAll": "All",
         "filterAria": "Filter projects by type",
+        "cta": {
+            "cotizarLabel": "I want a quote for my website",
+            "cotizarMessage": "Hi, I’d like a quote for a website or web project with Gentío. Can you guide me?",
+            "consultaLabel": "Let’s talk about my brand",
+            "consultaMessage": "Hi, I’d like to talk about web presence and digital communication for my brand.",
+            "afterSection": {
+                "appsLabel": "I want to know more about an app",
+                "appsMessage": "Hi, I’d like more information about web apps and platforms with Gentío.",
+                "ecommerceLabel": "I want to know more about e-commerce",
+                "ecommerceMessage": "Hi, I’d like more information about online stores and e-commerce with Gentío.",
+                "corporativosLabel": "I want to know more about a corporate site",
+                "corporativosMessage": "Hi, I’d like more information about corporate or institutional websites with Gentío.",
+                "landingLabel": "I want to know more about a landing page",
+                "landingMessage": "Hi, I’d like more information about landing pages and one-page sites with Gentío."
+            }
+        },
         "categories": {
             "apps": "Apps and platforms",
             "ecommerce": "E-commerce",

@@ -194,6 +194,22 @@
         "visit": "Visitar sitio",
         "filterAll": "Todos",
         "filterAria": "Filtrar proyectos por tipo",
+        "cta": {
+            "cotizarLabel": "Quiero cotizar mi web",
+            "cotizarMessage": "Hola, quiero cotizar un sitio o proyecto web con Gentío. ¿Me podés orientar?",
+            "consultaLabel": "Hablemos de mi marca",
+            "consultaMessage": "Hola, quiero conversar sobre presencia web y comunicación digital para mi marca.",
+            "afterSection": {
+                "appsLabel": "Quiero saber más sobre una app",
+                "appsMessage": "Hola, quiero más información sobre desarrollo de aplicaciones o plataformas web con Gentío.",
+                "ecommerceLabel": "Quiero saber más sobre un ecommerce",
+                "ecommerceMessage": "Hola, quiero más información sobre tiendas online y ecommerce con Gentío.",
+                "corporativosLabel": "Quiero saber más sobre un sitio corporativo",
+                "corporativosMessage": "Hola, quiero más información sobre sitios corporativos o institucionales con Gentío.",
+                "landingLabel": "Quiero saber más sobre una landing",
+                "landingMessage": "Hola, quiero más información sobre landings y sitios de una página con Gentío."
+            }
+        },
         "categories": {
             "apps": "Aplicaciones y plataformas",
             "ecommerce": "Ecommerce",

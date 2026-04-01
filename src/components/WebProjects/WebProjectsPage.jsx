@@ -4,16 +4,37 @@ import { useTranslation } from "react-i18next";
 import { getProjectsByCategory } from "../../data/projects";
 import { ProjectsCategorySection } from "./ProjectsCategorySection";
 import { ProjectsFilter } from "./ProjectsFilter";
+import WebHeroCtas from "./WebHeroCtas";
 import {
   WebPageOuter,
   WebHero,
   WebHeroInner,
+  WebHeroMotionStack,
   WebTitle,
   WebSubtitle,
   FilterWrap,
 } from "./WebProjectsStyles";
 
-const heroTransition = { duration: 0.65, ease: [0.25, 0.1, 0.25, 1] };
+const ease = [0.25, 0.1, 0.25, 1];
+
+const heroContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.14,
+      delayChildren: 0.06,
+    },
+  },
+};
+
+const heroItem = {
+  hidden: { opacity: 0, y: 22 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.58, ease },
+  },
+};
 
 function buildSectionList(sections) {
   let acc = 0.12;
@@ -51,14 +72,21 @@ export default function WebProjectsPage() {
     <WebPageOuter>
       <WebHero>
         <WebHeroInner>
-          <motion.div
-            initial={{ opacity: 0, y: -16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={heroTransition}
+          <WebHeroMotionStack
+            variants={heroContainer}
+            initial="hidden"
+            animate="visible"
           >
-            <WebTitle>{t("web.title")}</WebTitle>
-            <WebSubtitle>{t("web.subtitle")}</WebSubtitle>
-          </motion.div>
+            <motion.div variants={heroItem}>
+              <WebTitle>{t("web.title")}</WebTitle>
+            </motion.div>
+            <motion.div variants={heroItem}>
+              <WebSubtitle>{t("web.subtitle")}</WebSubtitle>
+            </motion.div>
+            <motion.div variants={heroItem}>
+              <WebHeroCtas />
+            </motion.div>
+          </WebHeroMotionStack>
           <FilterWrap>
             <ProjectsFilter
               active={activeFilter}
