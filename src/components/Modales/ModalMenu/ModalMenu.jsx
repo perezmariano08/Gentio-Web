@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom'
 import { ModalMenuContainer, ModalMenuHeader, NavbarList } from './ModalMenuStyles'
 import { IoMdClose } from "react-icons/io";
 import { AnimatePresence } from 'framer-motion';
@@ -7,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const ModalMenu = ({ closeModal, isOpen }) => {
     const [t] = useTranslation("global")
+    const { lang = 'es' } = useParams()
     return (
         <AnimatePresence
             onExitComplete={closeModal}
@@ -33,10 +35,11 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                         </ModalMenuHeader>
                         <NavbarList>
                             <NavbarSelect/>
-                            <li onClick={closeModal}><a href="#nosotros">{t('navbar.nosotros')}</a></li>
-                            <li onClick={closeModal}><a href="#servicios">{t('navbar.servicios')}</a></li>
-                            <li onClick={closeModal}><a href="#staff">{t('navbar.equipo')}</a></li>
-                            <li onClick={closeModal}><a href="#footer">{t('navbar.contacto')}</a></li>
+                            <li onClick={closeModal}><Link to={`/${lang}#nosotros`}>{t('navbar.nosotros')}</Link></li>
+                            <li onClick={closeModal}><Link to={`/${lang}#servicios`}>{t('navbar.servicios')}</Link></li>
+                            <li onClick={closeModal}><Link to={`/${lang}/web`}>{t('navbar.web')}</Link></li>
+                            <li onClick={closeModal}><Link to={`/${lang}#staff`}>{t('navbar.equipo')}</Link></li>
+                            <li onClick={closeModal}><Link to={`/${lang}#footer`}>{t('navbar.contacto')}</Link></li>
                             {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}
                         </NavbarList>
                     </ModalMenuContainer>

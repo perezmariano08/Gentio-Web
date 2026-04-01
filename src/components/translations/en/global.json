@@ -3,7 +3,8 @@
         "nosotros": "about us",
         "servicios": "services",
         "contacto": "contact",
-        "equipo": "staff"
+        "equipo": "staff",
+        "web": "web projects"
     },
     "hero": {
         "tendencia": "be trendy",
@@ -183,5 +184,18 @@
     "gentioteam": {
         "title": "Join our team",
         "button": "Upload your profile"
+    },
+    "web": {
+        "title": "Web projects",
+        "subtitle": "Websites, e-commerce and applications focused on performance and user experience.",
+        "visit": "Visit site",
+        "filterAll": "All",
+        "filterAria": "Filter projects by type",
+        "categories": {
+            "apps": "Apps and platforms",
+            "ecommerce": "E-commerce",
+            "corporativos": "Corporate sites",
+            "landing": "Landing pages"
+        }
     }
 }

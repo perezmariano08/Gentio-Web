@@ -1,6 +1,16 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 import { motion } from "framer-motion";
+
+/** Enlace del logo: altura explícita para que el SVG con % no colapse */
+export const NavbarLogoLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 0;
+    flex-shrink: 0;
+`;
 
 export const NavbarContainer = styled(ContainerStyled)`
     height: 80px;
@@ -46,13 +56,22 @@ export const NavbarList = styled(motion.ul)`
         text-transform: uppercase;
     }
 
+    li a[href],
+    li a:visited {
+        color: antiquewhite;
+    }
+
     @media (max-width: 768px) {
         display: none;
     }
 `
 
 export const SvgLogo = styled(motion.svg)`
-
+    height: 50%;
+    min-height: 32px;
+    max-height: 44px;
+    width: auto;
+    display: block;
 `
 
 export const NavbarItem = styled.li`

@@ -3,7 +3,8 @@
         "nosotros": "qui sommes-nous",
         "servicios": "services",
         "contacto": "contact",
-        "equipo": "équipe"
+        "equipo": "équipe",
+        "web": "projets web"
     },
     "hero": {
         "tendencia": "soyez tendance",
@@ -182,5 +183,18 @@
     "gentioteam": {
         "title": "Rejoignez notre équipe",
         "button": "Téléchargez votre profil"
+    },
+    "web": {
+        "title": "Projets web",
+        "subtitle": "Sites, e-commerce et applications orientés performance et expérience utilisateur.",
+        "visit": "Voir le site",
+        "filterAll": "Tous",
+        "filterAria": "Filtrer les projets par type",
+        "categories": {
+            "apps": "Applications et plateformes",
+            "ecommerce": "E-commerce",
+            "corporativos": "Sites institutionnels",
+            "landing": "Landings"
+        }
     }
 }

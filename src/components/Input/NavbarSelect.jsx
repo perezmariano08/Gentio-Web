@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { LiaAngleDownSolid } from "react-icons/lia";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // Imágenes de banderas
 const flagImages = {
@@ -81,7 +81,8 @@ const FlagIcon = styled.img`
 `;
 
 const NavbarSelect = () => {
-  const location = useLocation(); // Detecta la URL actual
+  const location = useLocation();
+  const navigate = useNavigate();
   const [language, setLanguage] = useState("es"); // Estado inicial
   const [t, i18n] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
@@ -108,8 +109,9 @@ const NavbarSelect = () => {
     i18n.changeLanguage(lang);
     setIsOpen(false);
 
-    // Redirige a la URL correspondiente
-    window.location.pathname = `/${lang}`;
+    const segments = location.pathname.split("/").filter(Boolean);
+    const rest = segments.slice(1).join("/");
+    navigate(rest ? `/${lang}/${rest}` : `/${lang}`, { replace: true });
   };
 
   return (
