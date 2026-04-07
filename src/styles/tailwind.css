@@ -1,0 +1,5 @@
+/* Rutas relativas al archivo: src/styles → cubrir todo src y la raíz del proyecto */
+@source '../../index.html';
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tailwindcss';

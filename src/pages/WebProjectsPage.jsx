@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getProjectsByCategory } from "../../data/projects";
-import { ProjectsCategorySection } from "./ProjectsCategorySection";
-import { ProjectsFilter } from "./ProjectsFilter";
-import WebHeroCtas from "./WebHeroCtas";
+import { getProjectsByCategory } from "../data/projects";
+import { ProjectsCategorySection } from "../components/WebProjects/ProjectsCategorySection";
+import { ProjectsFilter } from "../components/WebProjects/ProjectsFilter";
+import WebHeroCtas from "../components/WebProjects/WebHeroCtas";
 import {
   WebPageOuter,
   WebHero,
@@ -13,7 +13,7 @@ import {
   WebTitle,
   WebSubtitle,
   FilterWrap,
-} from "./WebProjectsStyles";
+} from "../components/WebProjects/WebProjectsStyles";
 
 const ease = [0.25, 0.1, 0.25, 1];
 

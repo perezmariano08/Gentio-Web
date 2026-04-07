@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './styles/tailwind.css';
 import AppRouter from './components/AppRouter.jsx';
 import { GlobalStyles } from './styles/GlobalStyles.js';
 import { I18nextProvider } from 'react-i18next';

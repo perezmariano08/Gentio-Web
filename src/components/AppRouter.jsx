@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import MainLayout from "./Layout/MainLayout.jsx";
 import HomePage from "../pages/HomePage.jsx";
-import WebProjectsPage from "./WebProjects/WebProjectsPage.jsx";
+import WebProjectsPage from "../pages/WebProjectsPage.jsx";
+import FormPage from "../pages/FormPage";
 
 const AppRouter = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const AppRouter = () => {
       <Route path="/:lang" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="web" element={<WebProjectsPage />} />
+        <Route path="sorteos" element={<FormPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/es" replace />} />
     </Routes>
