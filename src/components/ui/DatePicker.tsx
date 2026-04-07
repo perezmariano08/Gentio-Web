@@ -14,7 +14,7 @@ const datePadStyle = {
 } as const
 
 const dateInputClass =
-  'box-border h-10 w-full rounded-md border border-[rgba(244,229,212,0.28)] bg-[rgba(10,3,17,0.85)] text-sm leading-normal text-[var(--white)] ' +
+  'box-border h-10 w-full min-w-0 max-w-full rounded-md border border-[rgba(244,229,212,0.28)] bg-[rgba(10,3,17,0.85)] text-sm leading-normal text-[var(--white)] ' +
   'focus:border-[var(--orange-500)] focus:outline-none focus:ring-1 focus:ring-[var(--orange-500)] ' +
   '[color-scheme:dark] ' +
   '[&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:inset-y-0 [&::-webkit-calendar-picker-indicator]:right-0 [&::-webkit-calendar-picker-indicator]:z-[1] [&::-webkit-calendar-picker-indicator]:w-12 [&::-webkit-calendar-picker-indicator]:cursor-pointer [&::-webkit-calendar-picker-indicator]:opacity-0'
@@ -33,7 +33,7 @@ export const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
     const inputRef = useRef<HTMLInputElement | null>(null)
 
     return (
-      <div className="flex w-full flex-col gap-1.5">
+      <div className="flex min-w-0 w-full flex-col gap-1.5">
         <div className="flex items-center gap-2">
           {labelIcon ? (
             <span
@@ -47,7 +47,7 @@ export const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
             {label}
           </label>
         </div>
-        <div className="relative">
+        <div className="relative min-w-0 w-full overflow-x-hidden">
           <input
             ref={mergeRefs(ref, inputRef)}
             id={id}
