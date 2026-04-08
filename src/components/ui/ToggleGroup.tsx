@@ -11,6 +11,8 @@ export interface ToggleGroupProps {
   error?: string
   className?: string
   labelIcon?: ReactNode
+  /** Id único para accesibilidad si hay más de un ToggleGroup en la misma página. */
+  groupLabelId?: string
   /** Contenido del botón SÍ (ej. icono + texto). */
   siLabel?: ReactNode
   /** Contenido del botón NO. */
@@ -24,19 +26,20 @@ export function ToggleGroup({
   error,
   className,
   labelIcon,
+  groupLabelId = 'toggle-tiene-empresa',
   siLabel = 'SÍ',
   noLabel = 'NO',
 }: ToggleGroupProps) {
-  const groupId = 'toggle-tiene-empresa'
+  const groupId = groupLabelId
 
   return (
     <fieldset
       className={cn(
-        'm-0 mb-14 flex flex-col gap-3 border-0 p-0 sm:mb-16',
+        'm-0 mb-14 flex flex-col gap-4 border-0 p-0 sm:mb-16',
         className,
       )}
     >
-      <legend className="mb-1 flex items-center gap-2.5 text-base font-semibold tracking-[0.02em] text-[var(--white)]">
+      <legend className="mb-0 flex items-center gap-2.5 text-base font-semibold tracking-[0.02em] text-[var(--white)]">
         {labelIcon ? (
           <span
             className="inline-flex shrink-0 text-[var(--gray-300)] [&_svg]:h-5 [&_svg]:w-5"
@@ -47,7 +50,7 @@ export function ToggleGroup({
         ) : null}
         {label}
       </legend>
-      <div className="flex flex-wrap gap-3 pt-5" role="group" aria-labelledby={groupId}>
+      <div className="flex flex-wrap gap-3 pt-6" role="group" aria-labelledby={groupId}>
         <span id={groupId} className="sr-only">
           {label}
         </span>

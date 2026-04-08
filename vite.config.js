@@ -10,6 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   const scriptUrl = env.VITE_APPS_SCRIPT_URL || env.URL_FORM || ''
+  const scriptUrlUgc = env.VITE_APPS_SCRIPT_URL_UGC || env.URL_FORM_UGC || ''
 
   return {
     plugins: [tailwindcss(), react()],
@@ -20,6 +21,7 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       'import.meta.env.VITE_APPS_SCRIPT_URL': JSON.stringify(scriptUrl),
+      'import.meta.env.VITE_APPS_SCRIPT_URL_UGC': JSON.stringify(scriptUrlUgc),
     },
   }
 })

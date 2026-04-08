@@ -33,7 +33,7 @@ export const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
     const inputRef = useRef<HTMLInputElement | null>(null)
 
     return (
-      <div className="flex min-w-0 w-full flex-col gap-1.5">
+      <div className="flex min-w-0 w-full flex-col gap-2.5">
         <div className="flex items-center gap-2">
           {labelIcon ? (
             <span

@@ -118,7 +118,7 @@ export function SorteoFormView(props: UseSorteoFormReturn) {
           ) : null}
 
           <div
-            className="flex w-full max-w-xl flex-col gap-8 px-4 sm:px-6 [&_input]:font-[inherit] [&_button]:font-[inherit]"
+            className="flex w-full max-w-xl flex-col gap-9 px-4 sm:px-6 [&_input]:font-[inherit] [&_button]:font-[inherit]"
             style={sorteoFormFont}
           >
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-5">
@@ -170,7 +170,7 @@ export function SorteoFormView(props: UseSorteoFormReturn) {
               {...register('fechaNacimiento')}
             />
 
-            <div className="flex w-full flex-col gap-3 pl-0">
+            <div className="flex w-full flex-col gap-5 pl-0">
               <div className="flex items-center gap-2.5 text-[0.9rem] font-medium tracking-[0.02em] text-[var(--white)]">
                 <span
                   className="inline-flex shrink-0 text-[var(--gray-300)] [&_svg]:h-5 [&_svg]:w-5"
