@@ -40,30 +40,35 @@ const Equipo = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (containerRef.current) {
-                const rows = Array.from(containerRef.current.children);
-                rows.forEach((row, index) => {
-                    const { top, bottom } = row.getBoundingClientRect();
-                    const isInViewport = top < window.innerHeight && bottom >= 0;
-
-                    if (isInViewport && !visibleRows.includes(index)) {
-                        setVisibleRows((prev) => [...prev, index]);
-                    }
-
-                    if (!isInViewport && visibleRows.includes(index)) {
-                        setVisibleRows((prev) => prev.filter((i) => i !== index));
-                    }
-                });
+            if (!containerRef.current) return;
+            const rows = Array.from(containerRef.current.children);
+            const next = [];
+            for (let index = 0; index < rows.length; index++) {
+                const row = rows[index];
+                const { top, bottom } = row.getBoundingClientRect();
+                const isInViewport = top < window.innerHeight && bottom >= 0;
+                if (isInViewport) next.push(index);
             }
+            setVisibleRows((prev) => {
+                if (
+                    prev.length === next.length &&
+                    prev.every((v, i) => v === next[i])
+                ) {
+                    return prev;
+                }
+                return next;
+            });
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', handleScroll);
         handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
         };
-    }, [visibleRows]);
+    }, []);
 
     return (
         <EquipoContainer id="staff">

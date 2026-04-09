@@ -31,12 +31,14 @@ export const ModalMenuHeader = styled.div`
 export const NavbarList = styled.nav`
     flex-direction: column;
     display: flex;
-    gap: 30px;
+    gap: 22px;
     align-items: start;
     justify-content: center;
     width: 100%;
     padding: 0 30px;
     text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1.35;
     
     a {
         color: var(--white);

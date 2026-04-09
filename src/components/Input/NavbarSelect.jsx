@@ -27,7 +27,7 @@ const SelectButton = styled.div`
   padding: 5px 10px;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 0.9rem;
   color: #f4e5d4;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

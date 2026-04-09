@@ -6,6 +6,7 @@ import HomePage from "../pages/HomePage.jsx";
 import WebProjectsPage from "../pages/WebProjectsPage.jsx";
 import FormPage from "../pages/FormPage";
 import CreadoresPage from "../pages/CreadoresPage";
+import EquipoPage from "../pages/EquipoPage";
 
 const AppRouter = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const AppRouter = () => {
         <Route path="web" element={<WebProjectsPage />} />
         <Route path="sorteos" element={<FormPage />} />
         <Route path="creadores" element={<CreadoresPage />} />
+        <Route path="equipo" element={<EquipoPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/es" replace />} />
     </Routes>

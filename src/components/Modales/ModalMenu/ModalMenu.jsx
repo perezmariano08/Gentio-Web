@@ -38,6 +38,7 @@ const ModalMenu = ({ closeModal, isOpen }) => {
                             <li onClick={closeModal}><Link to={`/${lang}#nosotros`}>{t('navbar.nosotros')}</Link></li>
                             <li onClick={closeModal}><Link to={`/${lang}#servicios`}>{t('navbar.servicios')}</Link></li>
                             <li onClick={closeModal}><Link to={`/${lang}/web`}>{t('navbar.web')}</Link></li>
+                            <li onClick={closeModal}><Link to={`/${lang}/creadores`}>{t('navbar.creadores')}</Link></li>
                             <li onClick={closeModal}><Link to={`/${lang}#staff`}>{t('navbar.equipo')}</Link></li>
                             <li onClick={closeModal}><Link to={`/${lang}#footer`}>{t('navbar.contacto')}</Link></li>
                             {/* <li onClick={closeModal}><a href="#staff">staff</a></li> */}

@@ -5,6 +5,8 @@ interface ImportMetaEnv {
   readonly VITE_APPS_SCRIPT_URL: string
   /** URL del Web App para registro de creadores UGC (VITE_… o URL_FORM_UGC vía vite.config). */
   readonly VITE_APPS_SCRIPT_URL_UGC: string
+  /** URL del Web App para postulaciones al equipo (VITE_… o URL_FORM_EQUIPO vía vite.config). */
+  readonly VITE_APPS_SCRIPT_URL_EQUIPO: string
 }
 
 interface ImportMeta {

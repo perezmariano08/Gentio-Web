@@ -106,6 +106,7 @@ const Navbar = () => {
                     <NavbarItem><Link to={`/${lang}#nosotros`}>{t('navbar.nosotros')}</Link></NavbarItem>
                     <NavbarItem><Link to={`/${lang}#servicios`}>{t('navbar.servicios')}</Link></NavbarItem>
                     <NavbarItem><Link to={`/${lang}/web`}>{t('navbar.web')}</Link></NavbarItem>
+                    <NavbarItem><Link to={`/${lang}/creadores`}>{t('navbar.creadores')}</Link></NavbarItem>
                     <NavbarItem><Link to={`/${lang}#staff`}>{t('navbar.equipo')}</Link></NavbarItem>
                     <NavbarItem><Link to={`/${lang}#footer`}>{t('navbar.contacto')}</Link></NavbarItem>
                     <NavbarSelect/>

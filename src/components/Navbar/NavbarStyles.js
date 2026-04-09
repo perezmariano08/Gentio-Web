@@ -50,7 +50,7 @@ export const NavbarWrapper = styled(WrapperStyled)`
 export const NavbarList = styled(motion.ul)`
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 14px;
     li a {
         color: antiquewhite;
         text-transform: uppercase;
@@ -79,7 +79,7 @@ export const NavbarItem = styled.li`
     cursor: pointer;
     transition: color 0.4s ease, transform 0.4s ease;
     font-weight: 500; /* Peso de fuente más ligero para un look más elegante */
-    font-size: 1.1rem; /* Tamaño de fuente ajustado para mejor legibilidad */
+    font-size: 0.9rem; /* Compacto para que entren más ítems en desktop */
     color: #333; /* Color base más suave */
 
     /* Sombra suave en el texto */

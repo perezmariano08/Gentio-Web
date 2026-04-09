@@ -129,15 +129,18 @@ export const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style-type: none;
-        font-family: 'Dunbar Tall', sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    /* En capa base para no pisar utilidades de Tailwind v4 (padding/margin en componentes). */
+    @layer base {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: 'Dunbar Tall', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
     }
 
     html {

@@ -150,27 +150,23 @@ export function CreadorFormView(props: UseCreadorFormReturn) {
               className="m-0 max-w-[560px] text-base leading-relaxed text-[var(--gray-300)]"
               style={formFont}
             >
-              Gracias por sumarte a nuestro equipo de creadores. Haciendo click{' '}
-              <a
-                href={WHATSAPP_CREADORES_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-[var(--orange-500)] underline decoration-[var(--orange-500)]/60 underline-offset-2 transition hover:brightness-110"
-              >
-                acá
-              </a>{' '}
-              te podés sumar al grupo de WhatsApp de Creadores de Gentío.
+              Gracias por sumarte a nuestro equipo de creadores. Unite al grupo de WhatsApp de Creadores de
+              Gentío:
             </p>
-            <p className="m-0 max-w-[560px] break-all text-sm text-[var(--gray-300)]/85" style={formFont}>
-              <a
-                href={WHATSAPP_CREADORES_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--gray-300)] underline transition hover:text-[var(--white)]"
-              >
-                {WHATSAPP_CREADORES_URL}
-              </a>
-            </p>
+            <a
+              href={WHATSAPP_CREADORES_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                'inline-flex min-h-[3rem] max-w-[560px] items-center justify-center rounded-full',
+                'bg-[var(--orange-500)] px-8 py-3.5 text-[0.95rem] font-medium tracking-[0.03em]',
+                'text-[var(--bg)] transition hover:brightness-95',
+                'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-500)]',
+              )}
+              style={formFont}
+            >
+              Unirme acá
+            </a>
           </WebHeroInner>
         </WebHero>
       </WebPageOuter>
@@ -181,7 +177,10 @@ export function CreadorFormView(props: UseCreadorFormReturn) {
     <WebPageOuter>
       <WebHero>
         <WebHeroInner className={pageBottomSpace}>
-          <WebTitle style={{ fontWeight: 700 }}>Sumate a Gentío</WebTitle>
+          <WebTitle style={{ fontWeight: 700 }}>
+            Sumate a la comunidad de{' '}
+            <span className="text-(--orange-500)">creadores de contenido</span> de Gentío
+          </WebTitle>
           <WebSubtitle>
             Completá tus datos y te contactamos cuando tengamos una acción que encaje con tu perfil.
           </WebSubtitle>
@@ -193,7 +192,7 @@ export function CreadorFormView(props: UseCreadorFormReturn) {
           ) : null}
 
           <div
-            className="flex w-full max-w-xl flex-col gap-9 px-4 sm:px-6 [&_input]:font-[inherit] [&_button]:font-[inherit] [&_select]:font-[inherit]"
+            className="flex w-full max-w-xl flex-col gap-9 [&_input]:font-[inherit] [&_button]:font-[inherit] [&_select]:font-[inherit]"
             style={formFont}
           >
             <input type="hidden" {...register('tipoCreador')} />
