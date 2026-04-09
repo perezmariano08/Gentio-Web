@@ -60,7 +60,7 @@ const tipoColaboracionOptions = [
 ] as const
 
 const WHATSAPP_CREADORES_URL =
-  'https://chat.whatsapp.com/IwIIC0eEOOq7V1RlriMwVU?mode=gi_t'
+  'https://chat.whatsapp.com/HYgJfeh6mjl1A1x4dGLNin'
 
 const monotributoOptions = [
   { value: '', label: 'Seleccioná una opción', disabled: true },
@@ -150,8 +150,7 @@ export function CreadorFormView(props: UseCreadorFormReturn) {
               className="m-0 max-w-[560px] text-base leading-relaxed text-[var(--gray-300)]"
               style={formFont}
             >
-              Gracias por sumarte a nuestro equipo de creadores. Unite al grupo de WhatsApp de Creadores de
-              Gentío:
+              Gracias por sumarte a nuestro equipo de creadores. Unite a la comunidad en WhatsApp de Creadores de Gentío:
             </p>
             <a
               href={WHATSAPP_CREADORES_URL}
